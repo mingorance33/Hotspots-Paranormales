@@ -73,26 +73,36 @@
     let capa = L.layerGroup().addTo(map);
 
     btn.addEventListener('click', async () => {
-      btn.disabled = true;
-      document.getElementById('status').textContent = 'Buscando entidades...';
+  btn.disabled = true;
+  document.getElementById('status').textContent = 'Buscando entidades...';
 
-      try {
-        const resp = await fetch('hotspots.json');
-        if (!resp.ok) throw new Error();
-        const datos = await resp.json();
+  try {
+    const resp = await fetch('hotspots.json');
+    const datos = await resp.json();
 
-        datos.forEach(p => {
-          if(p.lat && p.lng) {
-            L.marker([p.lat, p.lng]).addTo(capa)
-             .bindPopup(`<b>${p.titulo}</b>`);
-          }
-        });
-        document.getElementById('status').textContent = `Detectados ${datos.length} focos.`;
-      } catch (e) {
-        document.getElementById('status').textContent = 'Error: ¿Usas Live Server?';
-        btn.disabled = false;
+    datos.forEach(p => {
+      if(p.lat && p.lng) {
+        // --- AQUÍ COLOCAMOS EL CIRCLEMARKER ---
+        L.circleMarker([p.lat, p.lng], {
+          radius: 10,          // Tamaño del círculo
+          fillColor: "#ff0000", // Color de relleno (rojo)
+          color: "#ffffff",    // Color del borde (blanco)
+          weight: 2,           // Grosor del borde
+          opacity: 1,          // Opacidad del borde
+          fillOpacity: 0.6     // Opacidad del relleno
+        })
+        .addTo(capa)
+        .bindPopup(`<b>${p.titulo}</b><br>${p.descripcion || ''}`);
+        // --------------------------------------
       }
     });
+
+    document.getElementById('status').textContent = `Detectados ${datos.length} focos.`;
+  } catch (e) {
+    document.getElementById('status').textContent = 'Error al cargar datos.';
+    btn.disabled = false;
+  }
+});
   </script>
 </body>
 </html>
