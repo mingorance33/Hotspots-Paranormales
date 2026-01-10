@@ -2,107 +2,129 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotspots Paranormales</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotspots Paranormales Dinámicos</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <style>
-    html, body { height: 100%; margin: 0; background: #222; overflow: hidden; }
-    
-    #top-bar {
-      position: absolute; top: 0; left: 0; width: 100%; height: 50px;
-      background: #111; color: white; display: flex; align-items: center;
-      padding: 0 15px; z-index: 2000; border-bottom: 1px solid #444;
-      box-sizing: border-box;
+    body { margin: 0; padding: 0; }
+    #map { height: 100vh; width: 100vw; }
+    .loading-status {
+      position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+      z-index: 1000; background: white; padding: 5px 15px;
+      border-radius: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      display: none; font-family: sans-serif; font-size: 12px;
     }
-
-    #map {
-      position: absolute; top: 50px; bottom: 0; left: 0; right: 0;
-      background: #333; /* Color gris para saber que el contenedor existe */
-    }
-
-    #btn-cargar {
-      padding: 8px 15px; background: #b30000; color: white;
-      border: none; border-radius: 4px; cursor: pointer; font-weight: bold;
-    }
-
-    #status { margin-left: 15px; font-size: 0.9rem; color: #ccc; font-family: sans-serif; }
-
-    /* Forzar que las imágenes se vean */
-    .leaflet-tile-loaded { opacity: 1 !important; }
   </style>
 </head>
 <body>
 
-  <div id="top-bar">
-    <button id="btn-cargar">Cargar Puntos</button>
-    <span id="status">Conectando con el satélite...</span>
-  </div>
-
+  <div id="loading" class="loading-status">Buscando actividad en la red...</div>
   <div id="map"></div>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
   <script>
-    // Inicialización
-    var map = L.map('map', {
-        zoomControl: true,
-        fadeAnimation: false 
-    }).setView([37.18, -5.79], 13); // Centrado en Utrera
-
-    // CAMBIO DE SERVIDOR: Usamos OpenStreetMap estándar (más robusto)
-    // Si este falla, es un problema de tu conexión a internet o bloqueo de firewall
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
+    // 1. Inicialización del Mapa
+    var map = L.map('map').setView([37.18, -5.79], 13); // Centrado en Utrera
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // Función para "despertar" al mapa
-    function forzarRender() {
-        map.invalidateSize();
-        document.getElementById('status').textContent = 'Mapa cargado. Listo.';
+    var markersLayer = L.layerGroup().addTo(map);
+    var loadingEl = document.getElementById('loading');
+
+    // 2. Función para cotejar con internet (usando DuckDuckGo API)
+    async function verificarEnInternet(nombre, tipo) {
+      const query = encodeURIComponent(`${nombre} ${tipo} paranormal misterio leyendas`);
+      const url = `https://api.duckduckgo.com/?q=${query}&format=json&no_html=1`;
+      
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        // Si hay un Abstract o resultados relacionados, consideramos que tiene "referencia"
+        return data.AbstractText !== "" || data.RelatedTopics.length > 0;
+      } catch (e) {
+        return false;
+      }
     }
 
-    window.onload = () => {
-        setTimeout(forzarRender, 800);
-    };
+    // 3. Función principal de búsqueda de topónimos
+    async function buscarToponimos() {
+      loadingEl.style.display = 'block';
+      const bounds = map.getBounds();
+      const bbox = `${bounds.getSouth()},${bounds.getWest()},${bounds.getNorth()},${bounds.getEast()}`;
 
-    // Carga de datos
-    const btn = document.getElementById('btn-cargar');
-    let capa = L.layerGroup().addTo(map);
+      // Consulta Overpass para los tipos específicos que pediste
+      const overpassQuery = `
+        [out:json][timeout:25];
+        (
+          node["historic"](${bbox});
+          way["historic"](${bbox});
+          node["abandoned"="yes"](${bbox});
+          node["building"~"church|monastery|industrial|ruins|farmhouse"](${bbox});
+          node["amenity"~"grave_yard|place_of_worship"](${bbox});
+          node["name"~"Cortijo|Hacienda|Venta|Fábrica|Torre|Cementerio|Monasterio",i](${bbox});
+        );
+        out center;`;
 
-    btn.addEventListener('click', async () => {
-  btn.disabled = true;
-  document.getElementById('status').textContent = 'Buscando entidades...';
+      const url = "https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(overpassQuery);
 
-  try {
-    const resp = await fetch('hotspots.json');
-    const datos = await resp.json();
+      try {
+        const response = await fetch(url);
+        const data = await response.json();
+        
+        markersLayer.clearLayers();
 
-    datos.forEach(p => {
-      if(p.lat && p.lng) {
-        // --- AQUÍ COLOCAMOS EL CIRCLEMARKER ---
-        L.circleMarker([p.lat, p.lng], {
-          radius: 10,          // Tamaño del círculo
-          fillColor: "#ff0000", // Color de relleno (rojo)
-          color: "#ffffff",    // Color del borde (blanco)
-          weight: 2,           // Grosor del borde
-          opacity: 1,          // Opacidad del borde
-          fillOpacity: 0.6     // Opacidad del relleno
-        })
-        .addTo(capa)
-        .bindPopup(`<b>${p.titulo}</b><br>${p.descripcion || ''}`);
-        // --------------------------------------
+        // Procesamos cada lugar encontrado
+        for (let el of data.elements) {
+          const lat = el.lat || (el.center && el.center.lat);
+          const lon = el.lon || (el.center && el.center.lon);
+          const nombre = el.tags.name || "Lugar sin nombre conocido";
+          const tipo = el.tags.historic || el.tags.building || "Sitio de interés";
+
+          if (lat && lon) {
+            // COTEJO: Buscamos si el nombre tiene rastro paranormal
+            const tieneReferencia = await verificarEnInternet(nombre, tipo);
+
+            // Estilo del marcador: Rojo si hay rastros, Azul si es solo el topónimo
+            const markerColor = tieneReferencia ? "#e74c3c" : "#3498db";
+            
+            const marker = L.circleMarker([lat, lon], {
+              radius: tieneReferencia ? 10 : 6,
+              fillColor: markerColor,
+              color: "#fff",
+              weight: 2,
+              fillOpacity: 0.8
+            });
+
+            marker.bindPopup(`
+              <div style="font-family: sans-serif;">
+                <h3 style="margin:0 0 5px 0;">${nombre}</h3>
+                <p><b>Tipo:</b> ${tipo}</p>
+                <hr>
+                <p>${tieneReferencia ? '⚠️ <b>Referencia hallada:</b> Este lugar aparece en registros de misterio/paranormal.' : '<i>Sin coincidencias claras de actividad paranormal en la red.</i>'}</p>
+                <a href="https://www.google.com/search?q=${encodeURIComponent(nombre + ' paranormal')}" target="_blank" style="color: #e74c3c;">Investigar en Google</a>
+              </div>
+            `);
+            markersLayer.addLayer(marker);
+          }
+        }
+      } catch (error) {
+        console.error("Error en la búsqueda:", error);
+      } finally {
+        loadingEl.style.display = 'none';
       }
+    }
+
+    // 4. Eventos
+    // Buscar al mover el mapa (con un pequeño retardo para no saturar la API)
+    let timer;
+    map.on('moveend', () => {
+      clearTimeout(timer);
+      timer = setTimeout(buscarToponimos, 1000);
     });
 
-    document.getElementById('status').textContent = `Detectados ${datos.length} focos.`;
-  } catch (e) {
-    document.getElementById('status').textContent = 'Error al cargar datos.';
-    btn.disabled = false;
-  }
-});
+    // Carga inicial
+    buscarToponimos();
   </script>
 </body>
 </html>
