@@ -3,127 +3,128 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Radar Paranormal Profesional</title>
+  <title>Radar Paranormal v4.0</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <style>
-    body { margin: 0; padding: 0; background: #000; color: #00ff00; font-family: 'Courier New', monospace; }
+    body { margin: 0; padding: 0; background: #000; color: #0f0; font-family: monospace; }
     #map { height: 100vh; width: 100vw; }
     #ui {
       position: absolute; top: 10px; left: 10px; z-index: 1000;
-      background: rgba(0,20,0,0.9); padding: 15px; border: 1px solid #00ff00;
-      pointer-events: none; min-width: 200px;
+      background: rgba(0,20,0,0.9); padding: 15px; border: 1px solid #0f0;
+      min-width: 220px; pointer-events: none;
     }
-    .scanning { color: #ffff00; animation: pulse 1s infinite; }
-    @keyframes pulse { 50% { opacity: 0.5; } }
+    .warn { color: #ff0; }
+    .crit { color: #f00; font-weight: bold; }
   </style>
 </head>
 <body>
 
   <div id="ui">
-    <div>RADAR: <span id="status">LISTO</span></div>
+    <div>SISTEMA: <span id="status">LISTO</span></div>
     <div>UBICACIÓN: <span id="prov">-</span></div>
     <div>DETECTADOS: <span id="count">0</span></div>
+    <div id="msg" style="font-size: 10px; margin-top: 5px; color: #888;"></div>
   </div>
   <div id="map"></div>
 
   <script>
-    // 1. Configuración del Mapa
-    var map = L.map('map').setView([37.38, -5.98], 12);
+    var map = L.map('map').setView([37.38, -5.98], 13);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png').addTo(map);
     var markersLayer = L.layerGroup().addTo(map);
 
-    // Palabras clave para validar si es paranormal
-    const keywords = ["paranormal", "fantasma", "espíritu", "leyenda", "misterio", "maldito", "encantado", "aparición", "psicofonía", "diablo"];
+    const kWords = ["paranormal", "fantasma", "espíritu", "leyenda", "misterio", "maldito", "encantado", "aparición", "psicofonía", "diablo", "muerte", "tragedia"];
 
-    // 2. Función para obtener la provincia
-    async function getProvincia(lat, lon) {
-      try {
-        const r = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`);
-        const d = await r.json();
-        return d.address.province || d.address.state || "Sevilla";
-      } catch (e) { return "Sevilla"; }
-    }
-
-    // 3. Validador Paranormal (Wikipedia)
-    async function esParanormal(nombre, prov) {
-      const url = `https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(nombre + " " + prov)}&format=json&origin=*`;
+    async function checkWiki(name, prov) {
+      // Búsqueda más permisiva en Wikipedia
+      const url = `https://es.wikipedia.org/w/api.php?action=query&list=search&srsearch=${encodeURIComponent(name + " " + prov)}&format=json&origin=*&srlimit=3`;
       try {
         const r = await fetch(url);
         const d = await r.json();
-        if (!d.query.search.length) return { ok: false };
+        if (!d.query.search.length) return false;
         
-        const texto = d.query.search.map(s => s.snippet.toLowerCase()).join(" ");
-        const coincide = keywords.some(k => texto.includes(k));
-        return { ok: coincide, hits: d.query.searchinfo.totalhits };
-      } catch (e) { return { ok: false }; }
+        const fullText = d.query.search.map(s => s.snippet.toLowerCase()).join(" ");
+        return kWords.some(k => fullText.includes(k));
+      } catch (e) { return false; }
     }
 
-    // 4. Función de Escaneo (Buscador de Topónimos)
     async function escanear() {
       const status = document.getElementById('status');
+      const msg = document.getElementById('msg');
       const countEl = document.getElementById('count');
-      const provEl = document.getElementById('prov');
 
-      status.innerText = "ESCANEANDO...";
-      status.className = "scanning";
+      // Validación de Zoom
+      if (map.getZoom() < 12) {
+        status.innerText = "ZOOM MUY ALTO";
+        msg.innerText = "Acércate más para activar el radar.";
+        return;
+      }
 
-      const centro = map.getCenter();
-      const provincia = await getProvincia(centro.lat, centro.lng);
-      provEl.innerText = provincia;
+      status.innerText = "PROCESANDO...";
+      status.className = "";
+      msg.innerText = "Consultando registros geográficos...";
 
       const b = map.getBounds();
       const bbox = `${b.getSouth()},${b.getWest()},${b.getNorth()},${b.getEast()}`;
 
-      // Consulta Overpass (Topónimos solicitados)
-      const query = `[out:json][timeout:15];(
-        node["name"~"Cortijo|Hacienda|Monasterio|Fábrica|Cementerio|Torre|Venta",i](${bbox});
-        way["name"~"Cortijo|Hacienda|Monasterio|Fábrica|Cementerio|Torre|Venta",i](${bbox});
+      // Query simplificada para mayor velocidad
+      const query = `[out:json][timeout:20];(
+        node["name"~"Cortijo|Hacienda|Monasterio|Fábrica|Cementerio|Venta|Torre",i](${bbox});
+        way["name"~"Cortijo|Hacienda|Monasterio|Fábrica|Cementerio|Torre",i](${bbox});
       );out center;`;
 
       try {
         const response = await fetch("https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(query));
-        if (!response.ok) throw new Error("API Limit");
-        
+        if (!response.ok) throw new Error("API Ocupada");
+
         const data = await response.json();
         markersLayer.clearLayers();
         let encontrados = 0;
+
+        msg.innerText = `Analizando ${data.elements.length} candidatos...`;
 
         for (let el of data.elements) {
           const nombre = el.tags.name;
           const lat = el.lat || el.center.lat;
           const lon = el.lon || el.center.lon;
+          const prov = document.getElementById('prov').innerText;
 
-          // Validamos contra internet
-          const info = await esParanormal(nombre, provincia);
+          // Filtro: Si el nombre ya es "sospechoso" lo saltamos a validación directa
+          const esSospechoso = kWords.some(k => nombre.toLowerCase().includes(k));
+          const wikiValid = await checkWiki(nombre, prov);
 
-          if (info.ok) {
+          if (wikiValid || esSospechoso) {
             encontrados++;
             L.circleMarker([lat, lon], {
               radius: 12, fillColor: "#f00", color: "#fff", weight: 2, fillOpacity: 0.8
             }).addTo(markersLayer)
-              .bindPopup(`<div style="color:#000"><b>${nombre}</b><br><span style="color:red">DETECTADO PARANORMAL</span><hr>Refs: ${info.hits}<br><a href="https://www.google.com/search?q=${encodeURIComponent(nombre + ' ' + provincia + ' paranormal')}" target="_blank">Investigar</a></div>`);
+              .bindPopup(`<b>${nombre}</b><br><span style="color:red">REFERENCIA PARANORMAL HALLADA</span><br><br><a href="https://www.google.com/search?q=${encodeURIComponent(nombre + ' ' + prov + ' paranormal')}" target="_blank">Abrir Informe</a>`);
           }
         }
         countEl.innerText = encontrados;
         status.innerText = "RADAR ACTIVO";
-        status.className = "";
+        msg.innerText = encontrados > 0 ? "Objetos detectados." : "Sin actividad paranormal en esta zona.";
       } catch (err) {
-        status.innerText = "ESPERANDO SERVIDOR...";
-        status.className = "";
+        status.innerText = "ERROR DE CARGA";
+        status.className = "crit";
+        msg.innerText = "Servidor saturado. Espera 10 segundos.";
       }
     }
 
-    // 5. Gestor de movimiento para evitar bloqueos
-    let delayTimer;
-    map.on('moveend', () => {
-      document.getElementById('status').innerText = "PAUSA DE SEGURIDAD...";
-      clearTimeout(delayTimer);
-      delayTimer = setTimeout(escanear, 2000); // Espera 2 seg tras mover el mapa
+    // Geocodificación de provincia
+    map.on('moveend', async () => {
+      const c = map.getCenter();
+      try {
+        const r = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${c.lat}&lon=${c.lng}`);
+        const d = await r.json();
+        document.getElementById('prov').innerText = d.address.province || d.address.state || "Sevilla";
+      } catch(e){}
+      
+      clearTimeout(window.t);
+      window.t = setTimeout(escanear, 2000);
     });
 
-    // Ejecución inicial
-    setTimeout(escanear, 1000);
+    escanear();
   </script>
 </body>
 </html>
