@@ -3,118 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Radar de Misterio Sevilla</title>
+  <title>Radar Paranormal Wikipedia</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <style>
-    body { margin: 0; padding: 0; background: #0a0a0a; }
+    body { margin: 0; padding: 0; background: #050505; }
     #map { height: 100vh; width: 100vw; }
-    #status {
-      position: absolute; top: 15px; left: 50%; transform: translateX(-50%);
-      z-index: 1000; background: #8b0000; color: white;
-      padding: 10px 20px; border-radius: 2px; font-family: 'Courier New', monospace;
-      font-weight: bold; border: 2px solid #ff0000; display: none;
-      box-shadow: 0 0 15px rgba(255,0,0,0.5);
+    #loader {
+      position: absolute; top: 20px; left: 50%; transform: translateX(-50%);
+      z-index: 1000; background: rgba(255,0,0,0.9); color: white;
+      padding: 10px 20px; font-family: monospace; border: 2px solid white;
+      display: none; box-shadow: 0 0 20px red;
     }
   </style>
 </head>
 <body>
 
-  <div id="status">RASTREANDO ACTIVIDAD...</div>
+  <div id="loader">ESCANEANDO REGISTROS DE WIKIPEDIA...</div>
   <div id="map"></div>
 
   <script>
-    // Centramos inicialmente en Sevilla/Carmona donde está el Monasterio del Diablo
-    var map = L.map('map').setView([37.38, -5.98], 11);
+    var map = L.map('map').setView([37.38, -5.98], 12); // Sevilla/Carmona
     
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap'
+      attribution: '&copy; Wikipedia Contributors'
     }).addTo(map);
 
     var markersLayer = L.layerGroup().addTo(map);
-    var statusEl = document.getElementById('status');
 
-    // Función de búsqueda mejorada
-    async function tienePresenciaInternet(nombre) {
-      if (!nombre) return false;
+    async function buscarEnWikipedia() {
+      document.getElementById('loader').style.display = 'block';
+      markersLayer.clearLayers();
+
+      const center = map.getCenter();
+      // Wikipedia busca en un radio desde el centro del mapa (en metros)
+      const radius = 10000; 
       
-      // Intentamos una búsqueda más amplia
-      const searchTerms = `${nombre} misterio paranormal leyendas`;
-      const url = `https://api.duckduckgo.com/?q=${encodeURIComponent(searchTerms)}&format=json&no_html=1`;
+      // 1. Buscamos artículos cercanos con coordenadas
+      const url = `https://es.wikipedia.org/w/api.php?action=query&list=geosearch&gsradius=${radius}&gscoord=${center.lat}|${center.lng}&format=json&origin=*&gslimit=50`;
 
       try {
-        const res = await fetch(url);
-        const data = await res.json();
-        // El Monasterio del Diablo suele aparecer en RelatedTopics o Abstract
-        return (data.AbstractText !== "" || data.RelatedTopics.length > 0 || data.Results.length > 0);
-      } catch (e) {
-        return false;
-      }
-    }
-
-    async function escanear() {
-      statusEl.style.display = 'block';
-      const b = map.getBounds();
-      const bbox = `${b.getSouth()},${b.getWest()},${b.getNorth()},${b.getEast()}`;
-
-      // Query de Overpass más amplia para no perder edificios históricos/en ruinas
-      const query = `[out:json][timeout:30];
-        (
-          node["name"~"Monasterio|Cortijo|Hacienda|Fábrica|Cementerio|Torre|Iglesia",i](${bbox});
-          way["name"~"Monasterio|Cortijo|Hacienda|Fábrica|Cementerio|Torre|Iglesia",i](${bbox});
-          node["historic"~"ruins|monastery|castle"](${bbox});
-          way["historic"~"ruins|monastery|castle"](${bbox});
-        );
-        out center;`;
-
-      try {
-        const response = await fetch("https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(query));
+        const response = await fetch(url);
         const data = await response.json();
-        
-        markersLayer.clearLayers();
+        const locations = data.query.geosearch;
 
-        for (let item of data.elements) {
-          const tags = item.tags || {};
-          const nombre = tags.name || "Lugar sin nombre";
-          const lat = item.lat || item.center.lat;
-          const lon = item.lon || item.center.lon;
+        for (let loc of locations) {
+          // 2. Por cada lugar, pedimos un resumen para ver si es "interesante" (paranormal/histórico)
+          const detailUrl = `https://es.wikipedia.org/w/api.php?action=query&prop=extracts|info&exintro&titles=${encodeURIComponent(loc.title)}&format=json&origin=*&inprop=url`;
+          const detRes = await fetch(detailUrl);
+          const detData = await detRes.json();
+          const page = Object.values(detData.query.pages)[0];
+          const text = page.extract ? page.extract.toLowerCase() : "";
+          const fullUrl = page.fullurl;
 
-          // Verificación: si es un nombre conocido como "Monasterio del Diablo" 
-          // o si pasa el filtro de internet.
-          const esConocido = nombre.toLowerCase().includes("diablo") || 
-                             nombre.toLowerCase().includes("miedo") ||
-                             nombre.toLowerCase().includes("muerte");
-          
-          const internetCheck = await tienePresenciaInternet(nombre);
+          // Filtro de "Interés": ¿Contiene palabras clave?
+          const keywords = ["leyenda", "misterio", "fantasma", "aparición", "monasterio", "crimen", "abandonado", "ruinas", "convento", "palacio"];
+          const matches = keywords.some(word => text.includes(word));
 
-          if (internetCheck || esConocido) {
-            const marker = L.circleMarker([lat, lon], {
+          if (matches || loc.title.toLowerCase().includes("monasterio") || loc.title.toLowerCase().includes("diablo")) {
+            // 3. Insertamos en el mapa
+            const marker = L.circleMarker([loc.lat, loc.lon], {
               radius: 12,
               fillColor: "#ff0000",
               color: "#fff",
-              weight: 3,
+              weight: 2,
               fillOpacity: 0.8
             }).addTo(markersLayer);
 
             marker.bindPopup(`
-              <div style="background:#000; color:#fff; padding:10px; border:1px solid red;">
-                <strong style="font-size:1.2em;">${nombre}</strong><br><br>
-                <span style="color:#ff4444;">⚠ ACTIVIDAD DETECTADA EN LA RED</span><hr>
-                <a href="https://www.google.com/search?q=${encodeURIComponent(nombre + ' sevilla paranormal')}" 
-                   target="_blank" style="color:#00ff00; text-decoration:none;">➔ ABRIR EXPEDIENTE</a>
+              <div style="font-family:sans-serif;">
+                <h3 style="margin:0">${loc.title}</h3>
+                <p style="font-size:12px; color:#666;">Distancia: ${loc.dist}m</p>
+                <p style="font-size:13px;">${text.substring(0, 150)}...</p>
+                <a href="${fullUrl}" target="_blank" style="color:red; font-weight:bold;">Leer historia completa</a>
               </div>
             `);
           }
         }
-      } catch (err) {
-        console.error("Error en radar");
+      } catch (e) {
+        console.error("Error cargando Wikipedia", e);
       } finally {
-        statusEl.style.display = 'none';
+        document.getElementById('loader').style.display = 'none';
       }
     }
 
-    map.on('moveend', escanear);
-    escanear();
+    // Escuchar cuando el usuario deja de mover el mapa
+    map.on('moveend', buscarEnWikipedia);
+    
+    // Carga inicial
+    buscarEnWikipedia();
   </script>
 </body>
 </html>
