@@ -3,94 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Radar Paranormal Ultra-Estable</title>
+  <title>Radar Paranormal Andalucía</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <style>
-    body { margin: 0; padding: 0; background: #000; font-family: 'Courier New', monospace; }
+    body { margin: 0; padding: 0; background: #050505; color: #00ff00; font-family: 'Courier New', monospace; }
     #map { height: 100vh; width: 100vw; }
-    #status-bar {
-      position: absolute; bottom: 20px; left: 20px; z-index: 1000;
-      background: rgba(0,0,0,0.9); color: #0f0; padding: 10px;
-      border: 1px solid #0f0; font-size: 12px;
+    #ui-overlay {
+      position: absolute; top: 10px; left: 10px; z-index: 1000;
+      background: rgba(0,20,0,0.85); padding: 15px; border: 1px solid #00ff00;
+      pointer-events: none;
     }
+    .status-active { color: #00ff00; }
+    .status-search { color: #ffff00; }
   </style>
 </head>
 <body>
 
-  <div id="status-bar">SISTEMA ONLINE | SIN ERRORES DE RED</div>
+  <div id="ui-overlay">
+    <div>ESTADO: <span id="status">INICIALIZANDO...</span></div>
+    <div>OBJETOS EN MEMORIA: <span id="count">0</span></div>
+  </div>
   <div id="map"></div>
 
   <script>
-    // 1. BASE DE DATOS LOCAL (Evita consultas constantes a internet)
-    const baseDeDatos = [
-      { n: "Monasterio del Diablo (San Antón)", t: "Monasterio", lat: 37.4042, lng: -5.7369, ref: "15k+" },
-      { n: "Cortijo Jurado", t: "Cortijo", lat: 36.7261, lng: -4.5514, ref: "45k+" },
-      { n: "Hospital de las Cinco Llagas", t: "Edificio Histórico", lat: 37.4003, lng: -5.9872, ref: "8k+" },
-      { n: "Hacienda del Vizir", t: "Hacienda", lat: 37.2583, lng: -5.9012, ref: "1k+" },
-      { n: "Fábrica de Sombreros", t: "Fábrica", lat: 37.3941, lng: -5.9836, ref: "3k+" },
-      { n: "Cementerio de San Fernando", t: "Cementerio", lat: 37.4172, lng: -5.9754, ref: "12k+" },
-      { n: "Torre del Oro (Leyendas)", t: "Torre", lat: 37.3824, lng: -5.9964, ref: "5k+" },
-      { n: "Antigua Universidad Laboral", t: "Edificio", lat: 37.3542, lng: -5.9344, ref: "2k+" }
-    ];
-
-    var map = L.map('map').setView([37.38, -5.98], 11);
-    
+    var map = L.map('map').setView([37.38, -5.98], 8);
     L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png').addTo(map);
-
     var markersLayer = L.layerGroup().addTo(map);
 
-    // Función que dibuja los puntos SIN NECESIDAD DE INTERNET
-    function cargarPuntosLocales() {
-      baseDeDatos.forEach(p => {
-        const marker = L.circleMarker([p.lat, p.lng], {
-          radius: 12,
-          fillColor: "#ff0000",
-          color: "#fff",
-          weight: 2,
-          fillOpacity: 0.9
-        }).addTo(markersLayer);
-
-        marker.bindPopup(`
-          <div style="color:black">
-            <b>${p.n}</b><br>
-            <i>Tipo: ${p.t}</i><hr>
-            Popularidad Paranormal: ${p.ref} refs.<br><br>
-            <a href="https://www.google.com/search?q=${encodeURIComponent(p.n + ' paranormal')}" target="_blank">Investigar ahora</a>
-          </div>
-        `);
-      });
-    }
-
-    // 3. BUSCADOR DE APOYO (Solo si quieres buscar más cosas fuera de la lista)
-    async function buscadorAuxiliar() {
-      // Esta función solo se activa si el usuario lo desea, reduciendo el riesgo de error
-      const b = map.getBounds();
-      const bbox = `${b.getSouth()},${b.getWest()},${b.getNorth()},${b.getEast()}`;
-      const query = `[out:json][timeout:10];(node["name"~"Cortijo|Monasterio|Fábrica",i](${bbox}););out center;`;
+    // Cargar datos desde el archivo externo hotspots.json
+    async function cargarBaseDeDatos() {
+      const statusEl = document.getElementById('status');
+      const countEl = document.getElementById('count');
       
       try {
-        const res = await fetch("https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(query));
-        const data = await res.json();
-        // Solo añade si no existe ya en la base de datos local
-        data.elements.forEach(el => {
-            L.circleMarker([el.lat || el.center.lat, el.lon || el.center.lon], {
-              radius: 6, fillColor: "#555", color: "#fff", weight: 1, fillOpacity: 0.5
-            }).addTo(markersLayer).bindPopup(el.tags.name + " (Candidato a estudio)");
+        const response = await fetch('hotspots.json');
+        const data = await response.json();
+        
+        data.forEach(p => {
+          const marker = L.circleMarker([p.lat, p.lng], {
+            radius: 12, fillColor: "#ff0000", color: "#fff", weight: 2, fillOpacity: 0.9
+          }).addTo(markersLayer);
+
+          marker.bindPopup(`
+            <div style="color:black; font-family:sans-serif;">
+              <h3 style="margin:0">${p.n}</h3>
+              <small><b>Provincia:</b> ${p.p}</small><hr>
+              Popularidad: ${p.ref} menciones.<br><br>
+              <a href="https://www.google.com/search?q=${encodeURIComponent(p.n + ' paranormal')}" target="_blank" style="color:red; font-weight:bold;">ABRIR EXPEDIENTE</a>
+            </div>
+          `);
         });
+
+        statusEl.innerText = "RADAR LISTO";
+        countEl.innerText = data.length;
+
       } catch (e) {
-        console.log("Servidor ocupado, usando base de datos local.");
+        statusEl.innerText = "ERROR CARGA JSON";
+        console.error("Asegúrate de ejecutar esto en un servidor (Live Server) o subir el JSON.");
       }
     }
 
-    // Ejecución inicial
-    cargarPuntosLocales();
+    // Buscador complementario para topónimos (solo si la red está libre)
+    async function escanearToponimos() {
+      if (map.getZoom() < 13) return;
+      
+      const b = map.getBounds();
+      const bbox = `${b.getSouth()},${b.getWest()},${b.getNorth()},${b.getEast()}`;
+      const query = `[out:json][timeout:10];(node["name"~"Cortijo|Hacienda|Monasterio",i](${bbox}););out center;`;
 
-    // Solo busca nuevos candidatos cada vez que te mueves, pero sin bloquear el mapa
-    map.on('moveend', () => {
-        setTimeout(buscadorAuxiliar, 1000);
-    });
+      try {
+        const res = await fetch("https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(query));
+        const d = await res.json();
+        d.elements.forEach(el => {
+          L.circleMarker([el.lat || el.center.lat, el.lon || el.center.lon], {
+            radius: 6, fillColor: "#555", color: "#fff", weight: 1, fillOpacity: 0.4
+          }).addTo(markersLayer).bindPopup(el.tags.name + " (Sin confirmar)");
+        });
+      } catch (e) { /* Error silencioso para no molestar */ }
+    }
 
+    map.on('moveend', escanearToponimos);
+    cargarBaseDeDatos();
   </script>
 </body>
 </html>
