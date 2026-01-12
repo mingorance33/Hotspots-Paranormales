@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <title>Hotspots Paranormales</title>
+  <title>Hotspots Paranormales | Agustín Bola Mórtimer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
@@ -12,6 +12,7 @@
       --color-fondo: #050506;
       --color-texto: #f5f5f5;
       --color-rojo: #b10018;
+      --color-youtube: #ff0000;
       --color-panel: rgba(5, 5, 6, 0.95);
       --color-borde: rgba(255, 255, 255, 0.15);
     }
@@ -28,32 +29,47 @@
 
     #map { width: 100%; height: 100vh; z-index: 1; }
 
-    /* Cabecera optimizada */
+    /* Cabecera Enlace a YouTube */
     .header {
       position: fixed;
       top: 10px;
       left: 54px; 
       width: auto;
-      max-width: calc(100% - 120px); /* Espacio extra para el botón de capas */
+      max-width: calc(100% - 120px);
       padding: 8px 14px;
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       z-index: 1000;
       background: var(--color-panel);
       backdrop-filter: blur(8px);
       border-radius: 8px;
       border: 1px solid var(--color-borde);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-      pointer-events: auto;
+      text-decoration: none; /* Quitar subrayado de enlace */
+      color: inherit;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .header:hover {
+      background: rgba(20, 20, 20, 0.98);
+      border-color: var(--color-rojo);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(177, 0, 24, 0.3);
     }
 
     .header-logo {
-      width: 40px; height: 40px;
+      width: 42px; height: 42px;
       border-radius: 50%;
       overflow: hidden;
       border: 1px solid var(--color-rojo);
       flex-shrink: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .header:hover .header-logo {
+      transform: scale(1.1);
     }
 
     .header-logo img { width: 100%; height: 100%; object-fit: cover; }
@@ -69,8 +85,8 @@
 
     .header-subtitle {
       font-size: 0.7rem;
-      opacity: 0.8;
-      white-space: nowrap;
+      opacity: 0.9;
+      color: #ccc;
     }
 
     /* Estilos del Control de Capas */
@@ -80,42 +96,62 @@
       color: var(--color-texto) !important;
     }
 
-    .leaflet-control-layers-list { padding: 5px; }
-
-    /* Ajuste específico para móvil vertical */
     @media (max-width: 600px) {
-      .header {
-        left: 50px;
-        padding: 6px 10px;
-      }
+      .header { left: 50px; padding: 6px 10px; }
       .header-subtitle { display: none; }
-      
-      .leaflet-top.leaflet-right {
-        top: 10px !important;
-        right: 10px !important;
-      }
-
-      .leaflet-control-layers-toggle {
-        width: 44px !important;
-        height: 44px !important;
-      }
+      .leaflet-top.leaflet-right { top: 10px !important; right: 10px !important; }
     }
 
-    /* Popups */
-    .popup-title { font-weight: bold; color: var(--color-rojo); text-transform: uppercase; }
+    /* Popups Estilo Paranormal */
+    .leaflet-popup-content-wrapper {
+      background: rgba(0, 0, 0, 0.95);
+      color: var(--color-texto);
+      border: 1px solid var(--color-borde);
+    }
+
+    .popup-title { 
+      font-weight: bold; 
+      color: var(--color-rojo); 
+      text-transform: uppercase; 
+      margin-bottom: 5px;
+    }
+
+    .popup-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .btn-popup {
+      display: block;
+      text-align: center;
+      padding: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 11px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      transition: opacity 0.2s;
+    }
+
+    .btn-maps { background: #333; color: white; border: 1px solid #555; }
+    .btn-youtube { background: var(--color-youtube); color: white; }
+    .btn-popup:hover { opacity: 0.8; }
+
   </style>
 </head>
 <body>
 
-  <div class="header">
+  <a href="https://www.youtube.com/@TuCanalAqui" target="_blank" class="header" title="Ver canal de YouTube">
     <div class="header-logo">
       <img src="terrifie.jpg" alt="Logo">
     </div>
     <div class="header-text">
       <div class="header-title">Bola Mórtimer</div>
-      <div class="header-subtitle">Mapa Paranormal</div>
+      <div class="header-subtitle">Investigación Paranormal • YouTube</div>
     </div>
-  </div>
+  </a>
 
   <div id="map"></div>
 
@@ -125,28 +161,14 @@
     const map = L.map('map').setView([40.0, -3.7], 6);
 
     // Capas Base
-    const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '© OpenStreetMap'
-    });
-
-    const ortofoto = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-      maxZoom: 19,
-      attribution: 'Tiles © Esri'
-    });
-
-    // Etiquetas transparentes para el modo Híbrido
-    const etiquetas = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
-      pane: 'markerPane', // Asegura que las etiquetas queden sobre el mapa pero bajo los iconos
-      maxZoom: 19
-    });
+    const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 });
+    const ortofoto = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19 });
+    const etiquetas = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', { pane: 'markerPane', maxZoom: 19 });
 
     const hibrido = L.layerGroup([ortofoto, etiquetas]);
 
-    // Capa inicial
     osm.addTo(map);
 
-    // Selector de capas con los nombres cortos que sugeriste
     const baseLayers = {
       "Mapa": osm,
       "Satélite": ortofoto,
@@ -163,14 +185,17 @@
     });
 
     function crearPopup(h) {
-      // URL de Google Maps corregida para navegación directa
+      // Reemplaza esta URL con la de tu canal o video específico
+      const youtubeUrl = "https://www.youtube.com/@TuCanalAqui";
       const gMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${h.lat},${h.lng}`;
+      
       return `
-        <div class="popup-title">${h.name || 'Ente Desconocido'}</div>
-        <p>${h.description || 'Sin descripción disponible.'}</p>
-        <a href="${gMapsUrl}" target="_blank" style="color:var(--color-rojo); text-decoration:none; font-weight:bold; font-size:12px;">
-          📍 IR AL DESTINO
-        </a>
+        <div class="popup-title">${h.name || 'Lugar Marcado'}</div>
+        <div style="font-size: 13px; opacity: 0.9;">${h.description || ''}</div>
+        <div class="popup-buttons">
+          <a href="${gMapsUrl}" target="_blank" class="btn-popup btn-maps">📍 Cómo llegar</a>
+          <a href="${youtubeUrl}" target="_blank" class="btn-popup btn-youtube">🎥 Ver Investigación</a>
+        </div>
       `;
     }
 
@@ -185,7 +210,7 @@
           }
         });
       })
-      .catch(err => console.error('Error cargando datos:', err));
+      .catch(err => console.error('Error:', err));
   </script>
 </body>
 </html>
