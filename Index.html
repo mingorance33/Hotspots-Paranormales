@@ -3,14 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <title>Hotspots Paranormales</title>
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    crossorigin=""
-  />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
 
   <style>
     :root {
@@ -21,25 +16,17 @@
       --color-borde: rgba(255, 255, 255, 0.15);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
+      margin: 0; padding: 0; height: 100%;
       background: var(--color-fondo);
       color: var(--color-texto);
       font-family: system-ui, -apple-system, sans-serif;
       overflow: hidden;
     }
 
-    #map {
-      width: 100%;
-      height: 100vh;
-      z-index: 1;
-    }
+    #map { width: 100%; height: 100vh; z-index: 1; }
 
     /* Cabecera optimizada */
     .header {
@@ -47,7 +34,7 @@
       top: 10px;
       left: 54px; 
       width: auto;
-      max-width: calc(100% - 110px); /* Espacio para el zoom y el control de capas */
+      max-width: calc(100% - 120px); /* Espacio extra para el botón de capas */
       padding: 8px 14px;
       display: flex;
       align-items: center;
@@ -62,24 +49,20 @@
     }
 
     .header-logo {
-      width: 40px;
-      height: 40px;
+      width: 40px; height: 40px;
       border-radius: 50%;
       overflow: hidden;
       border: 1px solid var(--color-rojo);
       flex-shrink: 0;
     }
 
-    .header-logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .header-logo img { width: 100%; height: 100%; object-fit: cover; }
+
+    .header-text { display: flex; flex-direction: column; line-height: 1.2; }
 
     .header-title {
       font-size: 0.9rem;
       font-weight: bold;
-      letter-spacing: 0.05em;
       text-transform: uppercase;
       color: var(--color-rojo);
     }
@@ -88,52 +71,38 @@
       font-size: 0.7rem;
       opacity: 0.8;
       white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
 
-    /* ESTILOS LEAFLET PERSONALIZADOS */
+    /* Estilos del Control de Capas */
     .leaflet-control-layers {
       background: var(--color-panel) !important;
       border: 1px solid var(--color-borde) !important;
       color: var(--color-texto) !important;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.5) !important;
     }
 
-    .leaflet-control-layers-list {
-      padding: 5px;
-    }
+    .leaflet-control-layers-list { padding: 5px; }
 
-    /* AJUSTES PARA MÓVIL VERTICAL */
+    /* Ajuste específico para móvil vertical */
     @media (max-width: 600px) {
       .header {
         left: 50px;
-        max-width: calc(100% - 100px);
+        padding: 6px 10px;
       }
+      .header-subtitle { display: none; }
       
-      .header-subtitle {
-        display: none; /* Ahorra espacio en vertical */
-      }
-
-      /* Forzamos la visibilidad del control de capas en la esquina superior derecha */
       .leaflet-top.leaflet-right {
         top: 10px !important;
         right: 10px !important;
-        display: block !important;
-        z-index: 1100 !important;
       }
 
       .leaflet-control-layers-toggle {
-        width: 44px !important; /* Más grande para dedos en móvil */
+        width: 44px !important;
         height: 44px !important;
       }
     }
 
-    .popup-title {
-      font-weight: bold;
-      color: var(--color-rojo);
-      text-transform: uppercase;
-    }
+    /* Popups */
+    .popup-title { font-weight: bold; color: var(--color-rojo); text-transform: uppercase; }
   </style>
 </head>
 <body>
@@ -153,11 +122,9 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <script>
-    const map = L.map('map', {
-      zoomControl: true
-    }).setView([40.0, -3.7], 6);
+    const map = L.map('map').setView([40.0, -3.7], 6);
 
-    // 1. CAPAS BASE
+    // Capas Base
     const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '© OpenStreetMap'
@@ -168,27 +135,26 @@
       attribution: 'Tiles © Esri'
     });
 
-    // 2. CAPA HÍBRIDA (Satélite + Etiquetas)
+    // Etiquetas transparentes para el modo Híbrido
     const etiquetas = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
-      pane: 'shadowPane', // Las etiquetas van por encima de todo
+      pane: 'markerPane', // Asegura que las etiquetas queden sobre el mapa pero bajo los iconos
       maxZoom: 19
     });
 
     const hibrido = L.layerGroup([ortofoto, etiquetas]);
 
-    // Añadir mapa por defecto
+    // Capa inicial
     osm.addTo(map);
 
+    // Selector de capas con los nombres cortos que sugeriste
     const baseLayers = {
       "Mapa": osm,
       "Satélite": ortofoto,
       "Híbrido": hibrido
     };
 
-    // Control de capas
     L.control.layers(baseLayers, null, { collapsed: true }).addTo(map);
 
-    // Icono personalizado
     const paranormalIcon = L.icon({
       iconUrl: 'marker-paranormal.png',
       iconSize: [40, 40],
@@ -197,11 +163,13 @@
     });
 
     function crearPopup(h) {
+      // URL de Google Maps corregida para navegación directa
+      const gMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${h.lat},${h.lng}`;
       return `
-        <div class="popup-title">${h.name || 'Hotspot'}</div>
-        <p>${h.description || ''}</p>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=${h.lat},${h.lng}" target="_blank" style="color:#b10018; text-decoration:none; font-weight:bold;">
-          📍 CÓMO LLEGAR
+        <div class="popup-title">${h.name || 'Ente Desconocido'}</div>
+        <p>${h.description || 'Sin descripción disponible.'}</p>
+        <a href="${gMapsUrl}" target="_blank" style="color:var(--color-rojo); text-decoration:none; font-weight:bold; font-size:12px;">
+          📍 IR AL DESTINO
         </a>
       `;
     }
@@ -217,7 +185,7 @@
           }
         });
       })
-      .catch(err => console.error('Error:', err));
+      .catch(err => console.error('Error cargando datos:', err));
   </script>
 </body>
 </html>
