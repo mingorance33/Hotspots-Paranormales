@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Hotspots Paranormales</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <link
     rel="stylesheet"
@@ -17,8 +17,8 @@
       --color-fondo: #050506;
       --color-texto: #f5f5f5;
       --color-rojo: #b10018;
-      --color-panel: rgba(5, 5, 6, 0.92);
-      --color-borde: rgba(255, 255, 255, 0.08);
+      --color-panel: rgba(5, 5, 6, 0.95);
+      --color-borde: rgba(255, 255, 255, 0.15);
     }
 
     * {
@@ -31,7 +31,7 @@
       height: 100%;
       background: var(--color-fondo);
       color: var(--color-texto);
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: system-ui, -apple-system, sans-serif;
       overflow: hidden;
     }
 
@@ -41,29 +41,29 @@
       z-index: 1;
     }
 
-    /* Cabecera ajustada para no tapar el ZOOM */
+    /* Cabecera optimizada */
     .header {
       position: fixed;
       top: 10px;
-      left: 54px; /* Desplazamiento suficiente para dejar ver los botones + y - */
-      width: auto; /* Ya no ocupa el 100%, solo lo que necesita su contenido */
-      max-width: calc(100% - 70px);
-      padding: 8px 16px;
+      left: 54px; 
+      width: auto;
+      max-width: calc(100% - 110px); /* Espacio para el zoom y el control de capas */
+      padding: 8px 14px;
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
       z-index: 1000;
-      background: rgba(0, 0, 0, 0.75);
+      background: var(--color-panel);
       backdrop-filter: blur(8px);
       border-radius: 8px;
       border: 1px solid var(--color-borde);
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-      pointer-events: auto; /* Ahora permite hacer clic en el logo si lo necesitas */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+      pointer-events: auto;
     }
 
     .header-logo {
-      width: 44px;
-      height: 44px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       overflow: hidden;
       border: 1px solid var(--color-rojo);
@@ -74,104 +74,77 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
-    }
-
-    .header-text {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.2;
     }
 
     .header-title {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: bold;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.05em;
       text-transform: uppercase;
       color: var(--color-rojo);
-      text-shadow: 0 0 8px rgba(177, 0, 24, 0.5);
     }
 
     .header-subtitle {
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       opacity: 0.8;
       white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    /* Control de capas Leaflet */
+    /* ESTILOS LEAFLET PERSONALIZADOS */
     .leaflet-control-layers {
       background: var(--color-panel) !important;
       border: 1px solid var(--color-borde) !important;
-      color: var(--color-texto);
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
-      font-size: 0.85rem;
+      color: var(--color-texto) !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.5) !important;
     }
 
-    .leaflet-control-layers-toggle {
-      width: 34px;
-      height: 34px;
+    .leaflet-control-layers-list {
+      padding: 5px;
     }
 
-    /* Ajustes para móviles */
+    /* AJUSTES PARA MÓVIL VERTICAL */
     @media (max-width: 600px) {
       .header {
         left: 50px;
-        top: 10px;
-        padding: 6px 10px;
+        max-width: calc(100% - 100px);
       }
       
-      .header-logo {
-        width: 36px;
-        height: 36px;
-      }
-
-      .header-title {
-        font-size: 0.85rem;
-      }
-
       .header-subtitle {
-        display: none; /* Ocultamos subtítulo en móvil muy pequeño para ahorrar espacio */
+        display: none; /* Ahorra espacio en vertical */
       }
 
+      /* Forzamos la visibilidad del control de capas en la esquina superior derecha */
       .leaflet-top.leaflet-right {
-        bottom: 50px;
-        top: auto;
+        top: 10px !important;
+        right: 10px !important;
+        display: block !important;
+        z-index: 1100 !important;
       }
-    }
 
-    /* Popups estilo paranormal */
-    .leaflet-popup-content-wrapper {
-      background: rgba(0, 0, 0, 0.92);
-      color: var(--color-texto);
-      border-radius: 4px;
-      border: 1px solid var(--color-borde);
-      box-shadow: 0 0 18px rgba(0, 0, 0, 0.95);
+      .leaflet-control-layers-toggle {
+        width: 44px !important; /* Más grande para dedos en móvil */
+        height: 44px !important;
+      }
     }
 
     .popup-title {
-      font-weight: 700;
+      font-weight: bold;
       color: var(--color-rojo);
-      margin-bottom: 4px;
       text-transform: uppercase;
-    }
-
-    .popup-link {
-      display: inline-block;
-      margin-top: 8px;
-      color: var(--color-rojo);
-      text-decoration: none;
-      font-size: 0.8rem;
     }
   </style>
 </head>
 <body>
+
   <div class="header">
     <div class="header-logo">
       <img src="terrifie.jpg" alt="Logo">
     </div>
     <div class="header-text">
-      <div class="header-title">Agustín Bola Mórtimer</div>
-      <div class="header-subtitle">Mapa de fenómenos paranormales</div>
+      <div class="header-title">Bola Mórtimer</div>
+      <div class="header-subtitle">Mapa Paranormal</div>
     </div>
   </div>
 
@@ -180,8 +153,11 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 
   <script>
-    const map = L.map('map').setView([40.0, -3.7], 6);
+    const map = L.map('map', {
+      zoomControl: true
+    }).setView([40.0, -3.7], 6);
 
+    // 1. CAPAS BASE
     const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '© OpenStreetMap'
@@ -192,15 +168,27 @@
       attribution: 'Tiles © Esri'
     });
 
+    // 2. CAPA HÍBRIDA (Satélite + Etiquetas)
+    const etiquetas = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
+      pane: 'shadowPane', // Las etiquetas van por encima de todo
+      maxZoom: 19
+    });
+
+    const hibrido = L.layerGroup([ortofoto, etiquetas]);
+
+    // Añadir mapa por defecto
     osm.addTo(map);
 
     const baseLayers = {
       "Mapa": osm,
-      "Satélite": ortofoto
+      "Satélite": ortofoto,
+      "Híbrido (Sat+Calles)": hibrido
     };
 
+    // Control de capas
     L.control.layers(baseLayers, null, { collapsed: true }).addTo(map);
 
+    // Icono personalizado
     const paranormalIcon = L.icon({
       iconUrl: 'marker-paranormal.png',
       iconSize: [40, 40],
@@ -211,9 +199,9 @@
     function crearPopup(h) {
       return `
         <div class="popup-title">${h.name || 'Hotspot'}</div>
-        <div class="popup-desc">${h.description || ''}</div>
-        <a class="popup-link" href="https://www.google.com/maps?q=${h.lat},${h.lng}" target="_blank">
-          📍 Cómo llegar
+        <p>${h.description || ''}</p>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=${h.lat},${h.lng}" target="_blank" style="color:#b10018; text-decoration:none; font-weight:bold;">
+          📍 CÓMO LLEGAR
         </a>
       `;
     }
