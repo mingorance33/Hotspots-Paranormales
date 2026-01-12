@@ -1,90 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Radar Paranormal Andalucía</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <meta charset="UTF-8" />
+  <title>Hotspots Paranormales</title>
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
   <style>
-    body { margin: 0; padding: 0; background: #050505; color: #00ff00; font-family: 'Courier New', monospace; }
-    #map { height: 100vh; width: 100vw; }
-    #ui-overlay {
-      position: absolute; top: 10px; left: 10px; z-index: 1000;
-      background: rgba(0,20,0,0.85); padding: 15px; border: 1px solid #00ff00;
-      pointer-events: none;
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #000;
+      color: #fff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-    .status-active { color: #00ff00; }
-    .status-search { color: #ffff00; }
+
+    #map {
+      width: 100%;
+      height: 100vh;
+    }
   </style>
 </head>
 <body>
-
-  <div id="ui-overlay">
-    <div>ESTADO: <span id="status">INICIALIZANDO...</span></div>
-    <div>OBJETOS EN MEMORIA: <span id="count">0</span></div>
-  </div>
+  <!-- Solo mapa -->
   <div id="map"></div>
 
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
   <script>
-    var map = L.map('map').setView([37.38, -5.98], 8);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png').addTo(map);
-    var markersLayer = L.layerGroup().addTo(map);
+    // Centrado inicial (ajusta si quieres otra zona por defecto)
+    const map = L.map('map').setView([37.5, -4.5], 7);
 
-    // Cargar datos desde el archivo externo hotspots.json
-    async function cargarBaseDeDatos() {
-      const statusEl = document.getElementById('status');
-      const countEl = document.getElementById('count');
-      
-      try {
-        const response = await fetch('hotspots.json');
-        const data = await response.json();
-        
-        data.forEach(p => {
-          const marker = L.circleMarker([p.lat, p.lng], {
-            radius: 12, fillColor: "#ff0000", color: "#fff", weight: 2, fillOpacity: 0.9
-          }).addTo(markersLayer);
+    // Capa base
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; OpenStreetMap'
+    }).addTo(map);
 
-          marker.bindPopup(`
-            <div style="color:black; font-family:sans-serif;">
-              <h3 style="margin:0">${p.n}</h3>
-              <small><b>Provincia:</b> ${p.p}</small><hr>
-              Popularidad: ${p.ref} menciones.<br><br>
-              <a href="https://www.google.com/search?q=${encodeURIComponent(p.n + ' paranormal')}" target="_blank" style="color:red; font-weight:bold;">ABRIR EXPEDIENTE</a>
-            </div>
-          `);
+    // Cargar hotspots desde hotspots.json generado por tu app Tkinter
+    fetch('hotspots.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('No se pudo cargar hotspots.json');
+        }
+        return response.json();
+      })
+      .then(data => {
+        data.forEach(h => {
+          if (typeof h.lat === 'number' && typeof h.lng === 'number') {
+            L.marker([h.lat, h.lng])
+              .addTo(map)
+              .bindPopup(
+                '<b>' + (h.name || 'Sin nombre') + '</b><br>' +
+                (h.description || '')
+              );
+          }
         });
-
-        statusEl.innerText = "RADAR LISTO";
-        countEl.innerText = data.length;
-
-      } catch (e) {
-        statusEl.innerText = "ERROR CARGA JSON";
-        console.error("Asegúrate de ejecutar esto en un servidor (Live Server) o subir el JSON.");
-      }
-    }
-
-    // Buscador complementario para topónimos (solo si la red está libre)
-    async function escanearToponimos() {
-      if (map.getZoom() < 13) return;
-      
-      const b = map.getBounds();
-      const bbox = `${b.getSouth()},${b.getWest()},${b.getNorth()},${b.getEast()}`;
-      const query = `[out:json][timeout:10];(node["name"~"Cortijo|Hacienda|Monasterio",i](${bbox}););out center;`;
-
-      try {
-        const res = await fetch("https://overpass-api.de/api/interpreter?data=" + encodeURIComponent(query));
-        const d = await res.json();
-        d.elements.forEach(el => {
-          L.circleMarker([el.lat || el.center.lat, el.lon || el.center.lon], {
-            radius: 6, fillColor: "#555", color: "#fff", weight: 1, fillOpacity: 0.4
-          }).addTo(markersLayer).bindPopup(el.tags.name + " (Sin confirmar)");
-        });
-      } catch (e) { /* Error silencioso para no molestar */ }
-    }
-
-    map.on('moveend', escanearToponimos);
-    cargarBaseDeDatos();
+      })
+      .catch(err => {
+        console.error('Error cargando hotspots.json:', err);
+      });
   </script>
 </body>
 </html>
