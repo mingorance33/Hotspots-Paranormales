@@ -29,21 +29,14 @@
     html, body { margin: 0; padding: 0; height: 100%; background: var(--color-fondo); color: var(--color-texto); font-family: sans-serif; overflow: hidden; }
     #map { width: 100%; height: 100vh; z-index: 1; }
 
-    /* Banner Superior */
-    .header {
-      position: fixed; top: 10px; left: 54px; 
-      display: flex; align-items: center; z-index: 1000;
-      background: var(--color-panel); backdrop-filter: blur(8px);
-      padding: 8px 14px; border-radius: 8px; border: 1px solid var(--color-borde);
-      text-decoration: none; color: inherit; transition: 0.2s;
-    }
+    /* Header y UI */
+    .header { position: fixed; top: 10px; left: 54px; display: flex; align-items: center; z-index: 1000; background: var(--color-panel); backdrop-filter: blur(8px); padding: 8px 14px; border-radius: 8px; border: 1px solid var(--color-borde); text-decoration: none; color: inherit; }
     .header-logo { width: 42px; height: 42px; border-radius: 50%; overflow: hidden; border: 1px solid var(--color-rojo); flex-shrink: 0; }
     .header-logo img { width: 100%; height: 100%; object-fit: cover; }
     .header-text { margin-left: 12px; }
     .header-title { font-size: 0.9rem; font-weight: bold; text-transform: uppercase; color: var(--color-rojo); }
-    .header-subtitle { font-size: 0.7rem; opacity: 0.9; }
 
-    /* Buscador junto al Zoom */
+    /* Buscador */
     .leaflet-control-search { background: var(--color-panel); border: 2px solid rgba(255,255,255,0.2); border-radius: 4px; display: flex; flex-direction: column; }
     .search-wrapper { display: flex; align-items: center; padding: 2px; }
     #search-input { width: 0; height: 30px; border: none; background: transparent; color: white; padding: 0; transition: width 0.3s; outline: none; }
@@ -51,35 +44,28 @@
     .search-icon-btn { width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; color: var(--color-rojo); }
     #search-results { background: var(--color-panel); max-height: 200px; overflow-y: auto; width: 210px; display: none; border-top: 1px solid var(--color-borde); }
     .search-item { padding: 8px 12px; cursor: pointer; border-bottom: 1px solid var(--color-borde); font-size: 0.85rem; }
-    .search-item:hover { background: rgba(177, 0, 24, 0.3); }
 
-    /* Contacto */
-    .contact-footer {
-      position: fixed; bottom: 20px; left: 20px; z-index: 1000;
-      display: flex; align-items: center; background: var(--color-panel);
-      padding: 10px 16px; border-radius: 30px; border: 1px solid var(--color-borde);
-      text-decoration: none; color: var(--color-texto); backdrop-filter: blur(8px);
-    }
-
-    /* Popups y Miniaturas (Punto 3) */
+    /* POPUPS CON ETIQUETAS AUTOMÁTICAS */
     .leaflet-popup-content-wrapper { background: rgba(0, 0, 0, 0.95); color: var(--color-texto); border: 1px solid var(--color-borde); padding: 0; overflow: hidden; }
     .leaflet-popup-content { margin: 0; width: 220px !important; }
     .popup-img { width: 100%; height: 120px; object-fit: cover; border-bottom: 2px solid var(--color-rojo); }
     .popup-body { padding: 12px; }
-    .popup-title { font-weight: bold; color: var(--color-rojo); text-transform: uppercase; display: block; margin-bottom: 5px; }
+    .popup-title { font-weight: bold; color: var(--color-rojo); text-transform: uppercase; display: block; }
+    
+    /* Etiquetas (Tags) */
+    .tag-container { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0; }
+    .tag { font-size: 9px; padding: 2px 6px; border-radius: 4px; text-transform: uppercase; font-weight: bold; border: 1px solid rgba(255,255,255,0.2); }
+    .tag-evp { background: #1a4d8a; color: #fff; } /* Azul para audio */
+    .tag-vision { background: #8a1a1a; color: #fff; } /* Rojo para visual */
+    .tag-phys { background: #8a6d1a; color: #fff; } /* Oro para poltergeist */
+
     .btn-popup { display: block; text-align: center; padding: 8px; text-decoration: none; font-weight: bold; font-size: 11px; border-radius: 4px; margin-top: 8px; }
     .btn-maps { background: #333; color: white; }
     .btn-youtube { background: var(--color-youtube); color: white; }
 
-    /* Estilos Cluster y Tooltip */
-    .leaflet-tooltip { background: var(--color-panel) !important; color: white !important; border: 1px solid var(--color-rojo) !important; }
-    .marker-cluster-small div, .marker-cluster-medium div, .marker-cluster-large div { background-color: rgba(177, 0, 24, 0.8) !important; color: white !important; }
-    .leaflet-control-layers { background: var(--color-panel) !important; color: white !important; border: 1px solid var(--color-borde) !important; }
+    .contact-footer { position: fixed; bottom: 20px; left: 20px; z-index: 1000; display: flex; align-items: center; background: var(--color-panel); padding: 10px 16px; border-radius: 30px; border: 1px solid var(--color-borde); text-decoration: none; color: var(--color-texto); backdrop-filter: blur(8px); }
 
-    @media (max-width: 600px) {
-      .header-subtitle, .contact-label { display: none; }
-      .header { left: 50px; }
-    }
+    @media (max-width: 600px) { .header-subtitle, .contact-label { display: none; } }
   </style>
 </head>
 <body>
@@ -88,7 +74,6 @@
     <div class="header-logo"><img src="terrifie.jpg" alt="Logo"></div>
     <div class="header-text">
       <div class="header-title">Agustín Bola Mórtimer</div>
-      <div class="header-subtitle">Investigaciones Paranormales</div>
     </div>
   </a>
 
@@ -103,90 +88,93 @@
   <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
   <script>
-    const map = L.map('map', { zoomControl: true }).setView([37.3, -5.9], 10);
+    const map = L.map('map').setView([37.3, -5.9], 10);
     let allData = [];
 
-    // Capas
-    const capaOSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map);
-    const capaSatelite = L.layerGroup([
-        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19 }),
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 19 })
-    ]);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 }).addTo(map);
 
-    L.control.layers({"Mapa": capaOSM, "Satélite": capaSatelite}, null, { collapsed: true }).addTo(map);
+    // Lógica de Etiquetas Automáticas
+    function generarTags(descripcion) {
+      const desc = descripcion.toLowerCase();
+      let tagsHTML = '<div class="tag-container">';
+      
+      const reglas = [
+        { palabras: ['psicofonía', 'psicofonias', 'audio', 'voces', 'voz', 'evp'], clase: 'tag-evp', label: '🎙️ Audio' },
+        { palabras: ['aparición', 'apariciones', 'sombra', 'sombras', 'figura', 'espectro', 'visual'], clase: 'tag-vision', label: '👁️ Visual' },
+        { palabras: ['poltergeist', 'movimiento', 'golpes', 'ruido', 'físico', 'empujón'], clase: 'tag-phys', label: '🔥 Físico' }
+      ];
 
-    // Buscador
-    const SearchControl = L.Control.extend({
-        options: { position: 'topleft' },
-        onAdd: function() {
-            const container = L.DomUtil.create('div', 'leaflet-control-search leaflet-bar');
-            container.innerHTML = `<div class="search-wrapper"><div class="search-icon-btn">🔍</div><input type="text" id="search-input" placeholder="Buscar lugar..."></div><div id="search-results"></div>`;
-            L.DomEvent.disableClickPropagation(container);
-            return container;
+      reglas.forEach(regla => {
+        if (regla.palabras.some(p => desc.includes(p))) {
+          tagsHTML += `<span class="tag ${regla.clase}">${regla.label}</span>`;
         }
-    });
-    map.addControl(new SearchControl());
+      });
 
-    // Marcadores
-    const markers = L.markerClusterGroup();
-    const paranormalIcon = L.icon({ iconUrl: 'marker-paranormal.png', iconSize: [20, 20], iconAnchor: [10, 20], popupAnchor: [0, -20] });
+      tagsHTML += '</div>';
+      return tagsHTML;
+    }
 
-    // Función del Punto 3: Extrae miniatura de YouTube automáticamente
     function crearPopup(h) {
       let thumbnail = '';
-      if (h.video && h.video.includes('v=')) {
-          const videoId = h.video.split('v=')[1].split('&')[0];
-          thumbnail = `<img src="https://img.youtube.com/vi/${videoId}/mqdefault.jpg" class="popup-img">`;
-      } else if (h.video && h.video.includes('youtu.be/')) {
-          const videoId = h.video.split('youtu.be/')[1].split('?')[0];
+      if (h.video) {
+          const videoId = h.video.includes('v=') ? h.video.split('v=')[1].split('&')[0] : h.video.split('youtu.be/')[1].split('?')[0];
           thumbnail = `<img src="https://img.youtube.com/vi/${videoId}/mqdefault.jpg" class="popup-img">`;
       }
 
+      const tags = generarTags(h.description);
       const gMapsUrl = `https://www.google.com/maps/search/?api=1&query=${h.lat},${h.lng}`;
-      let btnYT = (h.video) ? `<a href="${h.video}" target="_blank" class="btn-popup btn-youtube">🎥 Ver Investigación</a>` : "";
+      let btnYT = h.video ? `<a href="${h.video}" target="_blank" class="btn-popup btn-youtube">🎥 Ver Investigación</a>` : "";
 
       return `
         ${thumbnail}
         <div class="popup-body">
           <span class="popup-title">${h.name}</span>
-          <p style="font-size:11px; margin: 5px 0; line-height:1.3;">${h.description}</p>
+          ${tags}
+          <p style="font-size:11px; margin: 5px 0; color:#ccc;">${h.description}</p>
           <a href="${gMapsUrl}" target="_blank" class="btn-popup btn-maps">📍 Cómo llegar</a>
           ${btnYT}
         </div>
       `;
     }
 
+    // Buscador
+    const SearchControl = L.Control.extend({
+        options: { position: 'topleft' },
+        onAdd: function() {
+            const container = L.DomUtil.create('div', 'leaflet-control-search leaflet-bar');
+            container.innerHTML = `<div class="search-wrapper"><div class="search-icon-btn">🔍</div><input type="text" id="search-input" placeholder="Buscar..."></div><div id="search-results"></div>`;
+            L.DomEvent.disableClickPropagation(container);
+            return container;
+        }
+    });
+    map.addControl(new SearchControl());
+
+    const markers = L.markerClusterGroup();
+    const paranormalIcon = L.icon({ iconUrl: 'marker-paranormal.png', iconSize: [20, 20], iconAnchor: [10, 20], popupAnchor: [0, -20] });
+
     fetch('hotspots.json').then(r => r.json()).then(data => {
       allData = data;
       data.forEach(h => {
-        if (h.lat && h.lng) {
-          const m = L.marker([h.lat, h.lng], { icon: paranormalIcon });
-          m.bindTooltip(h.name, { direction: 'top', offset: [0, -10] });
-          m.bindPopup(crearPopup(h));
-          markers.addLayer(m);
-        }
+        const m = L.marker([h.lat, h.lng], { icon: paranormalIcon }).bindPopup(crearPopup(h));
+        markers.addLayer(m);
       });
       map.addLayer(markers);
     });
 
-    // Lógica Buscador
     document.addEventListener('input', (e) => {
         if (e.target.id !== 'search-input') return;
         const val = e.target.value.toLowerCase();
         const resDiv = document.getElementById('search-results');
         resDiv.innerHTML = '';
         if (val.length < 2) { resDiv.style.display = 'none'; return; }
-        const filtered = allData.filter(h => h.name.toLowerCase().includes(val) || h.description.toLowerCase().includes(val));
-        if (filtered.length > 0) {
-            resDiv.style.display = 'block';
-            filtered.forEach(h => {
-                const item = document.createElement('div');
-                item.className = 'search-item';
-                item.innerHTML = h.name;
-                item.onclick = () => { map.flyTo([h.lat, h.lng], 16); resDiv.style.display = 'none'; };
-                resDiv.appendChild(item);
-            });
-        } else { resDiv.style.display = 'none'; }
+        allData.filter(h => h.name.toLowerCase().includes(val)).forEach(h => {
+            const item = document.createElement('div');
+            item.className = 'search-item';
+            item.innerHTML = h.name;
+            item.onclick = () => { map.flyTo([h.lat, h.lng], 16); resDiv.style.display = 'none'; };
+            resDiv.appendChild(item);
+        });
+        resDiv.style.display = 'block';
     });
   </script>
 </body>
