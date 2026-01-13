@@ -30,7 +30,7 @@
     html, body { margin: 0; padding: 0; height: 100%; background: var(--color-fondo); color: var(--color-texto); font-family: sans-serif; overflow: hidden; }
     #map { width: 100%; height: 100vh; z-index: 1; }
 
-    /* UI: Header */
+    /* Header */
     .header { position: fixed; top: 10px; left: 54px; display: flex; align-items: center; z-index: 1000; background: var(--color-panel); backdrop-filter: blur(8px); padding: 8px 14px; border-radius: 8px; border: 1px solid var(--color-borde); text-decoration: none; color: inherit; }
     .header-logo { width: 42px; height: 42px; border-radius: 50%; overflow: hidden; border: 1px solid var(--color-rojo); flex-shrink: 0; }
     .header-logo img { width: 100%; height: 100%; object-fit: cover; }
@@ -103,14 +103,12 @@
         L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19 }),
         L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 19 })
     ]);
-    const oscuro = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 20 });
     const topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxZoom: 17 });
 
-    // Activamos la oscura por defecto
-    oscuro.addTo(map);
+    // Activamos OSM por defecto
+    osm.addTo(map);
 
     const baseLayers = {
-        "Modo Noche": oscuro,
         "Mapa Normal": osm,
         "Satélite": satelite,
         "Relieve Topo": topo
@@ -126,7 +124,7 @@
       popupAnchor: [0, -10]
     });
 
-    // --- FUNCIONES LÓGICA ---
+    // --- LÓGICA ---
     function cleanText(text) { return text ? text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") : ""; }
 
     function generarTags(descripcion) {
