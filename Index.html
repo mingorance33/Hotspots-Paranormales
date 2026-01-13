@@ -105,9 +105,8 @@
     const map = L.map('map').setView([37.3, -5.9], 10);
     let allData = [];
 
-    // Capas
-    // Original
-    // const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+    // Capas   
+    const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
       
     // Buscador junto al zoom
     const SearchControl = L.Control.extend({
