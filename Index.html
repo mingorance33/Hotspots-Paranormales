@@ -30,7 +30,7 @@
     html, body { margin: 0; padding: 0; height: 100%; background: var(--color-fondo); color: var(--color-texto); font-family: sans-serif; overflow: hidden; }
     #map { width: 100%; height: 100vh; z-index: 1; }
 
-    /* Estilos UI */
+    /* UI: Header */
     .header { position: fixed; top: 10px; left: 54px; display: flex; align-items: center; z-index: 1000; background: var(--color-panel); backdrop-filter: blur(8px); padding: 8px 14px; border-radius: 8px; border: 1px solid var(--color-borde); text-decoration: none; color: inherit; }
     .header-logo { width: 42px; height: 42px; border-radius: 50%; overflow: hidden; border: 1px solid var(--color-rojo); flex-shrink: 0; }
     .header-logo img { width: 100%; height: 100%; object-fit: cover; }
@@ -38,14 +38,14 @@
 
     /* Popups Estilo Ficha */
     .leaflet-popup-content-wrapper { background: rgba(0, 0, 0, 0.95); color: var(--color-texto); border: 1px solid var(--color-borde); padding: 0; overflow: hidden; border-radius: 8px; }
-    .leaflet-popup-content { margin: 0; width: 220px !important; }
-    .popup-img { width: 100%; height: 120px; object-fit: cover; border-bottom: 2px solid var(--color-rojo); display: block; }
+    .leaflet-popup-content { margin: 0; width: 240px !important; }
+    .popup-img { width: 100%; height: 130px; object-fit: cover; border-bottom: 2px solid var(--color-rojo); display: block; }
     .popup-body { padding: 12px; }
-    .popup-title { font-weight: bold; color: var(--color-rojo); text-transform: uppercase; display: block; font-size: 14px; }
+    .popup-title { font-weight: bold; color: var(--color-rojo); text-transform: uppercase; display: block; font-size: 14px; margin-bottom: 5px; }
     
     /* Etiquetas Automáticas */
     .tag-container { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px 0; }
-    .tag { font-size: 9px; padding: 3px 7px; border-radius: 4px; text-transform: uppercase; font-weight: bold; }
+    .tag { font-size: 9px; padding: 3px 7px; border-radius: 4px; text-transform: uppercase; font-weight: bold; border: 1px solid rgba(255,255,255,0.1); }
     .tag-psicofonia { background: #1a4d8a; color: #fff; }
     .tag-aparicion { background: #b10018; color: #fff; }
     .tag-poltergeist { background: #8a6d1a; color: #fff; }
@@ -53,10 +53,6 @@
     .btn-popup { display: block; text-align: center; padding: 8px; text-decoration: none; font-weight: bold; font-size: 11px; border-radius: 4px; margin-top: 8px; }
     .btn-maps { background: #333; color: white; }
     .btn-youtube { background: var(--color-youtube); color: white; }
-
-    /* Footer y TikTok */
-    .contact-footer { position: fixed; bottom: 20px; left: 20px; z-index: 1000; display: flex; align-items: center; background: var(--color-panel); padding: 10px 16px; border-radius: 30px; border: 1px solid var(--color-borde); text-decoration: none; color: var(--color-texto); backdrop-filter: blur(8px); }
-    .footer-icon { width: 16px; fill: white; margin: 0 8px; }
 
     /* Buscador */
     .leaflet-control-search { background: var(--color-panel); border: 2px solid rgba(255,255,255,0.2); border-radius: 4px; display: flex; flex-direction: column; }
@@ -67,7 +63,11 @@
     #search-results { background: var(--color-panel); max-height: 200px; overflow-y: auto; width: 210px; display: none; border-top: 1px solid var(--color-borde); }
     .search-item { padding: 8px 12px; cursor: pointer; border-bottom: 1px solid var(--color-borde); font-size: 0.85rem; }
 
-    /* Selector Capas Oscuro */
+    /* Footer Contacto */
+    .contact-footer { position: fixed; bottom: 20px; left: 20px; z-index: 1000; display: flex; align-items: center; background: var(--color-panel); padding: 10px 16px; border-radius: 30px; border: 1px solid var(--color-borde); text-decoration: none; color: var(--color-texto); backdrop-filter: blur(8px); }
+    .footer-icon { width: 16px; fill: white; margin: 0 8px; vertical-align: middle; }
+
+    /* Capas UI */
     .leaflet-control-layers { background: var(--color-panel) !important; color: white !important; border: 1px solid var(--color-borde) !important; }
 
     @media (max-width: 600px) { .contact-label { display: none; } .header { left: 50px; } }
@@ -83,7 +83,7 @@
   <div id="map"></div>
 
   <div class="contact-footer">
-    <a href="mailto:tu-correo@ejemplo.com" style="color:var(--color-rojo); font-weight:bold; text-decoration:none;">✉</a>
+    <a href="mailto:tu-correo@ejemplo.com" style="color:var(--color-rojo); text-decoration:none; font-weight:bold;">✉</a>
     <a href="https://www.tiktok.com/@agustinbolamortimer_666" target="_blank">
       <svg class="footer-icon" viewBox="0 0 448 512"><path d="M448 209.91a210.06 210.06 0 0 1-122.77-39.25V349.38A162.55 162.55 0 1 1 185 188.31V278.2a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.18 121.18 0 0 0 1.86 22.32c7.87 3.34 15.33 7.45 22.43 12.17a126.66 126.66 0 0 0 77.32 26.06V130c-14.27-.11-28.38-2.58-41.69-7.23a127.84 127.84 0 0 0-37.16-21.36V209.91z"/></svg>
     </a>
@@ -97,26 +97,36 @@
     const map = L.map('map', { zoomControl: true }).setView([37.3, -5.9], 10);
     let allData = [];
 
-    // --- CAPAS ---
+    // --- CAPAS BASE ---
     const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 19 });
     const satelite = L.layerGroup([
-      L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19 }),
-      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 19 })
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19 }),
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', { maxZoom: 19 })
     ]);
-    osm.addTo(map);
+    const oscuro = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', { maxZoom: 20 });
+    const topo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxZoom: 17 });
 
-    L.control.layers({"Mapa": osm, "Satélite": satelite}, null, { position: 'topright' }).addTo(map);
+    // Activamos la oscura por defecto
+    oscuro.addTo(map);
 
-    // --- ICONO ROJO (SVG para que nunca falle) ---
+    const baseLayers = {
+        "Modo Noche": oscuro,
+        "Mapa Normal": osm,
+        "Satélite": satelite,
+        "Relieve Topo": topo
+    };
+    L.control.layers(baseLayers, null, { position: 'topright' }).addTo(map);
+
+    // --- ICONO CUSTOM ---
     const paranormalIcon = L.divIcon({
       className: 'custom-div-icon',
-      html: `<div style="background-color:var(--color-rojo); width:15px; height:15px; border-radius:50%; border:2px solid white; box-shadow: 0 0 10px var(--color-rojo);"></div>`,
+      html: `<div style="background-color:var(--color-rojo); width:15px; height:15px; border-radius:50%; border:2px solid white; box-shadow: 0 0 12px var(--color-rojo);"></div>`,
       iconSize: [15, 15],
       iconAnchor: [7, 7],
       popupAnchor: [0, -10]
     });
 
-    // --- LÓGICA ---
+    // --- FUNCIONES LÓGICA ---
     function cleanText(text) { return text ? text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") : ""; }
 
     function generarTags(descripcion) {
@@ -126,7 +136,7 @@
       let found = false;
       const reglas = [
         { terminos: ['psicofonia', 'audio', 'voces'], clase: 'tag-psicofonia', label: '🎙️ Psicofonías' },
-        { terminos: ['aparicion', 'sombra', 'espectro'], clase: 'tag-aparicion', label: '👁️ Apariciones' },
+        { terminos: ['aparicion', 'sombra', 'espectro', 'figura'], clase: 'tag-aparicion', label: '👁️ Apariciones' },
         { terminos: ['poltergeist', 'movimiento', 'golpes'], clase: 'tag-poltergeist', label: '🔥 Poltergeist' }
       ];
       reglas.forEach(r => {
@@ -147,10 +157,21 @@
       const gMapsUrl = `https://www.google.com/maps/search/?api=1&query=${h.lat},${h.lng}`;
       const btnYT = (h.video && h.video.trim() !== "") ? `<a href="${h.video}" target="_blank" class="btn-popup btn-youtube">🎥 Ver Investigación</a>` : "";
 
-      return `${thumbnail}<div class="popup-body"><span class="popup-title">${h.name}</span>${tags}<p style="font-size:11px; color:#ccc; margin: 8px 0;">${h.description || ''}</p><a href="${gMapsUrl}" target="_blank" class="btn-popup btn-maps">📍 Cómo llegar</a>${btnYT}</div>`;
+      return `${thumbnail}<div class="popup-body"><span class="popup-title">${h.name}</span>${tags}<p style="font-size:11px; color:#ccc; margin: 8px 0; line-height:1.4;">${h.description || ''}</p><a href="${gMapsUrl}" target="_blank" class="btn-popup btn-maps">📍 Cómo llegar</a>${btnYT}</div>`;
     }
 
-    // --- CARGA DE DATOS ---
+    // --- BUSCADOR ---
+    const SearchControl = L.Control.extend({
+        options: { position: 'topleft' },
+        onAdd: function() {
+            const container = L.DomUtil.create('div', 'leaflet-control-search leaflet-bar');
+            container.innerHTML = `<div class="search-wrapper"><div class="search-icon-btn">🔍</div><input type="text" id="search-input" placeholder="Buscar..."></div><div id="search-results"></div>`;
+            return container;
+        }
+    });
+    map.addControl(new SearchControl());
+
+    // --- CARGAR DATOS ---
     fetch('hotspots.json').then(r => r.json()).then(data => {
       allData = data;
       const markers = L.markerClusterGroup();
@@ -164,30 +185,19 @@
       map.addLayer(markers);
     });
 
-    // --- BUSCADOR ---
-    const SearchControl = L.Control.extend({
-      options: { position: 'topleft' },
-      onAdd: function() {
-        const container = L.DomUtil.create('div', 'leaflet-control-search leaflet-bar');
-        container.innerHTML = `<div class="search-wrapper"><div class="search-icon-btn">🔍</div><input type="text" id="search-input" placeholder="Buscar..."></div><div id="search-results"></div>`;
-        return container;
-      }
-    });
-    map.addControl(new SearchControl());
-
     document.addEventListener('input', (e) => {
-      if (e.target.id !== 'search-input') return;
-      const val = cleanText(e.target.value);
-      const resDiv = document.getElementById('search-results');
-      resDiv.innerHTML = '';
-      if (val.length < 2) { resDiv.style.display = 'none'; return; }
-      allData.filter(h => cleanText(h.name).includes(val)).forEach(h => {
-        const item = document.createElement('div');
-        item.className = 'search-item'; item.innerHTML = h.name;
-        item.onclick = () => { map.flyTo([h.lat, h.lng], 16); resDiv.style.display = 'none'; };
-        resDiv.appendChild(item);
-      });
-      resDiv.style.display = 'block';
+        if (e.target.id !== 'search-input') return;
+        const val = cleanText(e.target.value);
+        const resDiv = document.getElementById('search-results');
+        resDiv.innerHTML = '';
+        if (val.length < 2) { resDiv.style.display = 'none'; return; }
+        allData.filter(h => cleanText(h.name).includes(val)).forEach(h => {
+            const item = document.createElement('div');
+            item.className = 'search-item'; item.innerHTML = h.name;
+            item.onclick = () => { map.flyTo([h.lat, h.lng], 16); resDiv.style.display = 'none'; };
+            resDiv.appendChild(item);
+        });
+        resDiv.style.display = 'block';
     });
   </script>
 </body>
