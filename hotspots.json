@@ -110,5 +110,75 @@
     "lng": -5.91561127255286,
     "description": "Descripción: Este antiguo asentamiento agrícola, hoy reducido a escombros y muros desconchados, es evitado por muchos debido a las historias de tragedias rurales y la soledad extrema del lugar. Es un enclave donde el silencio del campo se rompe con sonidos difíciles de explicar.",
     "video": "https://www.youtube.com/watch?v=dLayeD8EAeQ&t=3s"
+  },
+  {
+    "name": "Calle Císter (Málaga)",
+    "lat": 36.72050829838,
+    "lng": -4.417908090782423,
+    "description": "El único caso en España con un informe policial que detalla fenómenos poltergeist (objetos volando, muebles moviéndose) en una oficina.",
+    "video": ""
+  },
+  {
+    "name": "Cementerio San Miguel de Málaga",
+    "lat": 36.73346139106734,
+    "lng": -4.418323482800334,
+    "description": "Es famoso en el mundo paranormal por las supuestas apariciones de una \"dama de blanco\" y por la intensa actividad registrada en torno al mausoleo de la familia Heredia.",
+    "video": ""
+  },
+  {
+    "name": "Casa de los Espíritus\"  Mairena del Aljarafe",
+    "lat": 37.336841160749934,
+    "lng": -6.037936513709404,
+    "description": "También conocida por algunos como la \"Casa del Alemán\", ya no existe físicamente, ya que fue demolida debido a su estado de ruina y peligrosidad. Sin embargo, su ubicación sigue siendo un punto de referencia para los investigadores del misterio en Sevilla.",
+    "video": ""
+  },
+  {
+    "name": "Poblado de los Hurones (Cádiz)",
+    "lat": 36.66074302821085,
+    "lng": -5.563097481060095,
+    "description": "Sitio muy frecuentado por grupos de investigación debido al aislamiento de sus edificaciones y los registros de psicofonías obtenidos en las antiguas viviendas de los trabajadores y los alrededores de la presa.",
+    "video": ""
+  },
+  {
+    "name": "La Dehesilla de Algar (Cádiz)",
+    "lat": 36.65999387733902,
+    "lng": -5.653657187864698,
+    "description": "Cortijo abandonado donde se dice que se escuchan lamentos y gritos en mitad de la noche.",
+    "video": ""
+  },
+  {
+    "name": "Hospital Manuel Lois (Huelva)",
+    "lat": 37.256543702536916,
+    "lng": -6.946551292097527,
+    "description": "Fue el escenario principal del caso de la \"Dama Blanca\", una aparición que, según los testigos, recorría las plantas del hospital cuando este ya estaba en semi-abandono. También se reportaron sonidos de camillas metálicas arrastrándose y luces que se encendían en plantas donde no había suministro eléctrico. Es un sitio con una carga histórica muy pesada, ya que durante décadas fue el hospital de referencia de la provincia y acumuló muchísimas historias de dolor y muerte que parecen haber dejado una huella residual en el terreno",
+    "video": ""
+  },
+  {
+    "name": "Sanatorio de la Alfaguara (Granada)",
+    "lat": 37.26474158425875,
+    "lng": -3.5186122976350034,
+    "description": "ste lugar es uno de los epicentros del misterio en Andalucía oriental. Fue fundado por Bertha Wilhelmi a principios del siglo XX para tratar a enfermos de tuberculosis, aprovechando el aire puro de la sierra. Tras su cierre y abandono, las ruinas han sido escenario de numerosas investigaciones paranormales.",
+    "video": ""
+  },
+  {
+    "name": "Tablate (Granada)",
+    "lat": 36.920351065504875,
+    "lng": -3.524640779937829,
+    "description": "Es un lugar de referencia para la obtención de psicofonías. Los investigadores suelen centrarse en la antigua iglesia (donde se dice que se escuchan rezos y lamentos) y en las casas en ruinas. Además, existe la leyenda de que en las noches cerradas se puede oír el eco de los cascos de caballos y el entrechocar de espadas, rememorando las batallas que allí ocurrieron. El silencio del despoblado, roto solo por el viento que corre por el barranco, crea una sensación de vigilancia constante que muchos visitantes reportan.",
+    "video": ""
+  },
+  {
+    "name": "Castillo de Almodóvar del Río (Córdoba)",
+    "lat": 37.80743696807034,
+    "lng": -5.023838328836333,
+    "description": "La leyenda cuenta que el espíritu de la Princesa Zaida aparece cada 28 de marzo (aniversario de la muerte de su amado Fath-Al-Mamun) en la Torre del Homenaje. Los testimonios hablan de una figura blanca que suspira y espera mirando hacia el horizonte. Investigadores han visitado el lugar buscando registros de estas apariciones y psicofonías en las zonas más antiguas de la fortaleza.",
+    "video": ""
+  },
+  {
+    "name": "Monasterio de Montesión (Cazorla, Jaén)",
+    "lat": 37.891849764579185,
+    "lng": -3.0135321865090003,
+    "description": "En los últimos años ha cobrado fama en círculos de investigación por el avistamiento de esferas de luz (orbes) en los alrededores y la obtención de psicofonías en su antigua cripta y en las zonas de oración. El aislamiento acústico de la zona es casi total, lo que facilita mucho la grabación de registros limpios.",
+    "video": ""
   }
 ]
