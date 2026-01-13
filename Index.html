@@ -44,22 +44,16 @@
     .header-subtitle { font-size: 0.7rem; opacity: 0.9; }
 
     /* Buscador junto al Zoom */
-    .leaflet-control-search {
-        background: var(--color-panel); border: 2px solid rgba(255,255,255,0.2);
-        border-radius: 4px; display: flex; flex-direction: column;
-    }
+    .leaflet-control-search { background: var(--color-panel); border: 2px solid rgba(255,255,255,0.2); border-radius: 4px; display: flex; flex-direction: column; }
     .search-wrapper { display: flex; align-items: center; padding: 2px; }
-    #search-input {
-        width: 0; height: 30px; border: none; background: transparent; color: white;
-        padding: 0; transition: width 0.3s; outline: none;
-    }
+    #search-input { width: 0; height: 30px; border: none; background: transparent; color: white; padding: 0; transition: width 0.3s; outline: none; }
     .leaflet-control-search:hover #search-input { width: 180px; padding: 0 10px; }
     .search-icon-btn { width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; color: var(--color-rojo); }
     #search-results { background: var(--color-panel); max-height: 200px; overflow-y: auto; width: 210px; display: none; border-top: 1px solid var(--color-borde); }
     .search-item { padding: 8px 12px; cursor: pointer; border-bottom: 1px solid var(--color-borde); font-size: 0.85rem; }
     .search-item:hover { background: rgba(177, 0, 24, 0.3); }
 
-    /* Contacto Abajo Izquierda */
+    /* Contacto */
     .contact-footer {
       position: fixed; bottom: 20px; left: 20px; z-index: 1000;
       display: flex; align-items: center; background: var(--color-panel);
@@ -67,13 +61,16 @@
       text-decoration: none; color: var(--color-texto); backdrop-filter: blur(8px);
     }
 
-    /* Estilos Mapa y Clusters */
+    /* Estilos Mapa Oscuro */
     .leaflet-tooltip { background: var(--color-panel) !important; color: white !important; border: 1px solid var(--color-rojo) !important; }
     .marker-cluster-small div, .marker-cluster-medium div, .marker-cluster-large div { background-color: rgba(177, 0, 24, 0.8) !important; color: white !important; }
     .leaflet-popup-content-wrapper { background: rgba(0, 0, 0, 0.95); color: var(--color-texto); border: 1px solid var(--color-borde); }
     .btn-popup { display: block; text-align: center; padding: 8px; text-decoration: none; font-weight: bold; font-size: 11px; border-radius: 4px; margin-top: 10px; }
     .btn-maps { background: #333; color: white; }
     .btn-youtube { background: var(--color-youtube); color: white; }
+
+    /* Ajuste para el selector de capas (hacerlo oscuro) */
+    .leaflet-control-layers { background: var(--color-panel) !important; color: white !important; border: 1px solid var(--color-borde) !important; }
 
     @media (max-width: 600px) {
       .header-subtitle, .contact-label { display: none; }
@@ -93,7 +90,7 @@
 
   <a href="mailto:tu-correo@ejemplo.com" class="contact-footer">
     <span style="color:var(--color-rojo); margin-right: 8px;">✉</span>
-    <span class="contact-label">Si quieres contactar pincha aquí</span>
+    <span class="contact-label">Contacto</span>
   </a>
 
   <div id="map"></div>
@@ -102,13 +99,30 @@
   <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
 
   <script>
-    const map = L.map('map').setView([37.3, -5.9], 10);
+    const map = L.map('map', { zoomControl: true }).setView([37.3, -5.9], 10);
     let allData = [];
 
-    // Capas   
-    const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-      
-    // Buscador junto al zoom
+    // --- CAPAS ---
+    // Gris Asfalto (Esri Gray)
+    const grisAsfalto = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Esri',
+        maxZoom: 16
+    }).addTo(map);
+
+    // Satélite Híbrido
+    const satelite = L.layerGroup([
+        L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'),
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png')
+    ]);
+
+    // Añadir Selector de Capas
+    const baseMaps = {
+        "Gris Asfalto": grisAsfalto,
+        "Satélite": satelite
+    };
+    L.control.layers(baseMaps, null, { collapsed: true }).addTo(map);
+
+    // --- BUSCADOR ---
     const SearchControl = L.Control.extend({
         options: { position: 'topleft' },
         onAdd: function() {
@@ -126,6 +140,7 @@
     });
     map.addControl(new SearchControl());
 
+    // --- MARCADORES ---
     const markers = L.markerClusterGroup();
     const paranormalIcon = L.icon({ 
         iconUrl: 'marker-paranormal.png', 
@@ -137,11 +152,10 @@
     function crearPopup(h) {
       const gMapsUrl = `https://www.google.com/maps?q=${h.lat},${h.lng}`;
       let btnYT = (h.video) ? `<a href="${h.video}" target="_blank" class="btn-popup btn-youtube">🎥 Ver Investigación</a>` : "";
-      return `<b style="color:var(--color-rojo)">${h.name}</b><p style="font-size:12px">${h.description}</p>
+      return `<b style="color:var(--color-rojo)">${h.name}</b><p style="font-size:12px; margin: 5px 0;">${h.description}</p>
               <a href="${gMapsUrl}" target="_blank" class="btn-popup btn-maps">📍 Cómo llegar</a>${btnYT}`;
     }
 
-    // Cargar Datos
     fetch('hotspots.json').then(r => r.json()).then(data => {
       allData = data;
       data.forEach(h => {
