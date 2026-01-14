@@ -5117,7 +5117,78 @@
   "lng": -103.4923,
   "description": "Ojuela es un antiguo pueblo minero cercano a Mapimí, famoso por su puente colgante y por los relatos de accidentes y muertes en las minas de la zona.[web:1][web:22] Entre ruinas y túneles, visitantes han reportado susurros, lamentos y figuras que parecen seguirlos a distancia, reforzando la impresión de que los mineros fallecidos aún rondan el lugar.[web:1][web:22]",
   "video": ""
+},
+  {
+  "name": "Cementerio de la Recoleta (Buenos Aires)",
+  "lat":  -34.5884,
+  "lng": -58.3929,
+  "description": "El Cementerio de la Recoleta, uno de los camposantos más antiguos y emblemáticos de Argentina, es célebre por sus mausoleos monumentales y por ser lugar de descanso de figuras históricas del país.[web:26][web:31][web:33] Diversos rankings internacionales lo consideran uno de los cementerios más embrujados del mundo, y muchos visitantes afirman sentir presencias, escuchar susurros o ver figuras espectrales entre sus pasillos de mármol.[web:31][web:33][web:37]",
+  "video": ""
+},
+{
+  "name": "Iglesia de Santa Felicitas (Barracas, Ciudad de Buenos Aires)",
+  "lat": -34.6377,
+  "lng": -58.3730,
+  "description": "La iglesia de Santa Felicitas en el barrio de Barracas fue construida en memoria de Felicitas Guerrero tras su trágica muerte, y con el tiempo se ganó fama de templo embrujado.[web:27] Vecinos y curiosos cuentan apariciones, sonidos de pasos y una figura femenina que se asoma entre los vitrales y corredores, alimentando una de las leyendas urbanas más difundidas de Buenos Aires.[web:27][web:38]",
+  "video": ""
+},
+{
+  "name": "Torre del Fantasma (La Boca, Ciudad de Buenos Aires)",
+  "lat": -34.6351,
+  "lng": -58.3644,
+  "description": "La Torre del Fantasma, en el barrio de La Boca, es un antiguo edificio de comienzos del siglo XX cuya arquitectura singular y relatos de fenómenos extraños le han dado fama de lugar maldito.[web:38] Historias de una artista que habría muerto allí, luces que se prenden solas y sombras en las ventanas hacen que muchos la consideren uno de los puntos más inquietantes de la ciudad.[web:27][web:38]",
+  "video": ""
+},
+{
+  "name": "Gran Hotel Viena (Miramar, Córdoba)",
+  "lat": -30.9190,
+  "lng": -62.6855,
+  "description": "El Gran Hotel Viena, a orillas de la laguna Mar Chiquita en Miramar, es un enorme complejo hoy convertido en museo que acumula historias de muertes, misterio y supuestas estancias de personajes ligados al nazismo.[web:30] Grupos de investigación paranormal han registrado psicofonías, sombras y cambios bruscos de temperatura, por lo que muchos lo consideran uno de los edificios más embrujados de Argentina.[web:30]",
+  "video": ""
+},
+{
+  "name": "Cerro Uritorco (Capilla del Monte, Córdoba)",
+  "lat": -30.86,
+  "lng": -64.495,
+  "description": "El Cerro Uritorco, en Capilla del Monte, es famoso por los avistamientos de luces extrañas y supuesta actividad ovni que se reporta desde hace décadas.[web:30] Miles de personas suben cada año en busca de experiencias energéticas o contactos, y no faltan relatos de apariciones luminosas y sensaciones difíciles de explicar en sus senderos nocturnos.[web:30]",
+  "video": ""
+},
+{
+  "name": "Cueva de las Brujas (Sanagasta, La Rioja)",
+  "lat": -29.366,
+  "lng": -67.066,
+  "description": "La llamada Cueva de las Brujas, en las sierras cercanas a Sanagasta, es una cavidad natural asociada a reuniones de brujas y prácticas esotéricas en la tradición popular riojana.[web:30] Visitantes mencionan ruidos extraños, ecos que parecen voces y luces que se mueven en la noche, lo que refuerza su leyenda como enclave de magia y fenómenos paranormales.[web:30]",
+  "video": ""
+},
+{
+  "name": "Ovni­puerto de Cachi (Cachi, Salta)",
+  "lat": -25.121,
+  "lng": -66.166,
+  "description": "En las afueras de Cachi se encuentra un gran trazado de piedras en forma de estrella, conocido como el ovnipuerto, que según su creador fue construido por indicación de seres extraterrestres.[web:30] La figura es visible desde el aire y se ha convertido en punto de reunión para ufólogos y curiosos que afirman observar luces y objetos extraños en el cielo nocturno salteño.[web:30]",
+  "video": ""
+},
+{
+  "name": "Ciudad Encantada de La Plata (La Plata, Buenos Aires)",
+  "lat": -34.9214,
+  "lng": -57.9545,
+  "description": "La ciudad de La Plata arrastra fama de estar trazada según símbolos masónicos y llena de historias de magia negra, lo que ha dado origen al concepto de Ciudad Encantada entre cronistas de misterio.[web:30] Recorridos nocturnos y relatos urbanos hablan de rituales, apariciones y una red de historias esotéricas que envuelven plazas, diagonales y edificios emblemáticos.[web:30]",
+  "video": ""
+},
+{
+  "name": "Castillo de Egaña (Rauch, Buenos Aires)",
+  "lat": -36.7280,
+  "lng": -59.1630,
+  "description": "El Castillo de Egaña, una antigua casona señorial cercana a Rauch, pasó de ser un símbolo de riqueza rural a un edificio semidesierto rodeado de historias de muerte y fantasmas.[web:30] Visitantes y residentes mencionan luces que se encienden sin explicación, pasos en corredores y figuras que se asoman a balcones en plena noche pampeana.[web:30]",
+  "video": ""
+},
+{
+  "name": "Villa Epecuén (Buenos Aires)",
+  "lat": -37.1300,
+  "lng": -62.7830,
+  "description": "Villa Epecuén fue un balneario turístico que quedó casi destruido y abandonado tras la inundación de 1985, dejando un paisaje de ruinas emergiendo del agua salada.[web:29][web:36] El escenario desolado, los restos de edificaciones y los relatos de voces y ruidos en un pueblo sin habitantes lo convirtieron en uno de los pueblos fantasma más icónicos de Argentina.[web:29][web:36]",
+  "video": ""
 }
+
 
 
 
