@@ -5257,7 +5257,78 @@
   "lng": 73.0910,
   "description": "Lotus Lake, en la zona de Shakarparian de Islamabad, es un pequeño lago rodeado de vegetación que ganó fama siniestra tras varios crímenes y hallazgos de cuerpos en sus alrededores. Desde entonces circulan testimonios de sombras en la orilla, voces en la oscuridad y una fuerte sensación de inquietud al caminar por la zona durante la noche.",
   "video": ""
+},
+  {
+  "name": "Casa Matusita (Lima)",
+  "lat": -12.0612,
+  "lng": -77.0373,
+  "description": "La Casa Matusita, ubicada cerca de la avenida Garcilaso de la Vega en el centro de Lima, es considerada una de las casas más embrujadas de América Latina por las múltiples leyendas de locura y muerte asociadas a su interior. Relatos sobre familias que habrían perdido la razón, apariciones en las ventanas y extraños sucesos durante investigaciones paranormales han convertido al edificio en un símbolo del misterio limeño.",
+  "video": ""
+},
+{
+  "name": "Gran Hotel Bolívar (Lima)",
+  "lat": -12.0496,
+  "lng": -77.0341,
+  "description": "El Gran Hotel Bolívar, frente a la Plaza San Martín en el centro histórico de Lima, es un hotel clásico donde se han reportado apariciones de una mujer vestida de blanco y otros huéspedes fantasmales en pasillos y habitaciones. Empleados y visitantes mencionan pasos, ascensores que se mueven solos y copas que se quiebran sin explicación, lo que alimenta su fama de hotel encantado.",
+  "video": ""
+},
+{
+  "name": "Fortaleza Real Felipe (Callao, Lima)",
+  "lat": -12.0632,
+  "lng": -77.1500,
+  "description": "La Fortaleza Real Felipe, en el Callao, fue construida en el siglo XVIII para defender el puerto de corsarios y potencias enemigas, acumulando siglos de historia militar y violencia. Hoy es escenario de visitas nocturnas donde se cuentan historias de soldados espectrales, una dama conocida como la Dama de Blanco y pasos que resuenan en los túneles aun cuando no hay visitantes.",
+  "video": ""
+},
+{
+  "name": "Cementerio Presbítero Maestro (Lima)",
+  "lat": -12.0605,
+  "lng": -77.0284,
+  "description": "El Cementerio Presbítero Maestro, uno de los camposantos más antiguos de América, es famoso por sus esculturas y mausoleos monumentales, además de sus múltiples leyendas de fantasmas. Durante las rutas nocturnas los guías narran apariciones, sombras entre las tumbas y casos de visitantes que aseguran sentir presencias o escuchar voces junto a nichos concretos.",
+  "video": ""
+},
+{
+  "name": "Casa Encantada de Lunahuaná (Cañete, Lima)",
+  "lat": -13.0500,
+  "lng": -76.1420,
+  "description": "En las afueras del distrito de Lunahuaná se encuentra la llamada Casa Encantada o Casa Blanca, una casona en ruinas ligada a historias de asesinatos y violencia durante tiempos de guerra. Lugareños y visitantes cuentan gritos, golpes y figuras que se mueven entre los muros derruidos, motivo por el cual muchos evitan acercarse al lugar al caer la noche.",
+  "video": ""
+},
+{
+  "name": "Casa Encantada de Yanahuara (Arequipa)",
+  "lat": -16.3875,
+  "lng": -71.5430,
+  "description": "La casa encantada de Yanahuara, en un tradicional barrio de Arequipa, es una antigua casona colonial del siglo XVII donde se reportan ruidos de cadenas, gritos y pasos en habitaciones vacías. Los habitantes del sector afirman que por las noches se sienten presencias y se ven sombras que cruzan los corredores, por lo que la recomendación popular es visitarla solo de día.",
+  "video": ""
+},
+{
+  "name": "Brujas de Cachiche (Ica)",
+  "lat": -14.0770,
+  "lng": -75.7280,
+  "description": "El sector conocido como Brujas de Cachiche, cerca de Ica, fue históricamente refugio de mujeres acusadas de brujería, según la tradición local. Hoy un parque temático y los relatos de hechiceras, rituales y apariciones nocturnas atraen a turistas que buscan fotografías con estatuas de brujas y recorridos cargados de superstición.",
+  "video": ""
+},
+{
+  "name": "Laguna de Huacachina (Ica)",
+  "lat": -14.0875,
+  "lng": -75.7633,
+  "description": "La laguna de Huacachina, un oasis en medio del desierto de Ica, está asociada a la leyenda de una joven convertida en sirena que arrastraría a los hombres al fondo del agua. Muchos visitantes aseguran sentir una energía extraña de noche junto al espejo de agua y se cuentan historias de apariciones femeninas que se desvanecen en la superficie de la laguna.",
+  "video": ""
+},
+{
+  "name": "Casa Encantada del Rímac (Quinta Santa Rosa, Lima)",
+  "lat": -12.0300,
+  "lng": -77.0260,
+  "description": "En la Quinta Santa Rosa del distrito del Rímac se ubica una vivienda conocida como casa encantada, protagonista de reportes mediáticos y visitas de grupos de cazafantasmas. Sus habitantes relataron televisores que caen sin motivo, cuchillos que se desplazan solos y caída de tierra desde cielorrasos intactos, fenómenos que reforzaron la fama del lugar como foco de intensa actividad paranormal.",
+  "video": ""
+},
+{
+  "name": "Sacsayhuamán (Cusco)",
+  "lat": -13.5094,
+  "lng": -71.9816,
+  "description": "Las ruinas de Sacsayhuamán, en lo alto de Cusco, además de su importancia arqueológica, están rodeadas de relatos de luces extrañas y figuras que se aparecen entre las enormes piedras al anochecer. Visitantes nocturnos mencionan orbes luminosos, sombras gigantes y sensaciones de desorientación súbita en determinadas zonas del complejo.",
+  "video": ""
 }
+
 
 
 
