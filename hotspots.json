@@ -5397,7 +5397,78 @@
   "lng": -72.9980,
   "description": "El Lago de Tota, uno de los lagos más grandes de Colombia, está ligado a la leyenda de una sirena que seduce a los pescadores con su canto para arrastrarlos al fondo. Habitantes de la zona narran historias de luces sobre la superficie del agua, siluetas que emergen entre la niebla y embarcaciones que parecen ser seguidas por algo bajo el lago en noches de niebla.",
   "video": ""
+},
+  {
+  "name": "Oficinas salitreras Humberstone y Santa Laura (Tarapacá)",
+  "lat": -20.2064,
+  "lng": -69.8009,
+  "description": "Las antiguas oficinas salitreras Humberstone y Santa Laura, hoy Patrimonio de la Humanidad, fueron verdaderas ciudades en medio del desierto de Atacama que quedaron abruptamente abandonadas tras la crisis del salitre. Entre casas, teatro, escuela e iglesia en ruinas se reportan apariciones, pasos en pasillos vacíos y voces infantiles, lo que ha llevado a describirlas como algunos de los pueblos fantasma más inquietantes de Chile.",
+  "video": "https://www.youtube.com/watch?v=VqRVpEFZDlc"
+},
+{
+  "name": "Isla de los Muertos (Río Baker, Aysén)",
+  "lat": -47.8070,
+  "lng": -73.2310,
+  "description": "La Isla de los Muertos, en la desembocadura del río Baker en la Patagonia, es un pequeño islote donde más de un centenar de trabajadores madereros aparecieron muertos en 1905 en circunstancias nunca aclaradas. Las cruces de madera que aún se conservan y la soledad del entorno han alimentado historias de almas en pena, luces extrañas entre los árboles y susurros que parecen venir desde las tumbas.",
+  "video": "https://www.youtube.com/watch?v=VqRVpEFZDlc"
+},
+{
+  "name": "Laguna Roja (entre Arica y Tarapacá)",
+  "lat": -18.9810,
+  "lng": -69.1040,
+  "description": "La Laguna Roja, en el altiplano del norte de Chile, es un cuerpo de agua de intenso color rojo asociado a leyendas aymaras que la describen como una laguna maldita. Algunos relatos señalan que quien se baña en sus aguas puede desaparecer o enfermar, y se cuenta que antiguos pobladores evitaban acercarse por miedo a los espíritus que habitarían en el lugar.",
+  "video": "https://www.youtube.com/watch?v=VqRVpEFZDlc"
+},
+{
+  "name": "Casona Dubois (Quinta Normal, Santiago)",
+  "lat": -33.4386,
+  "lng": -70.7028,
+  "description": "La Casona Dubois, en la comuna de Quinta Normal, es una antigua mansión de estilo europeo que se utiliza como centro cultural y que acumula relatos de apariciones y ruidos inexplicables. Visitantes y trabajadores describen sombras que cruzan los salones, risas infantiles y puertas que se cierran solas, lo que la ha convertido en uno de los edificios más citados en listas de lugares embrujados de Santiago.",
+  "video": "https://www.tiktok.com/@chiletravel/video/7428625152096603397"
+},
+{
+  "name": "Palacio Echeverría (Providencia, Santiago)",
+  "lat": -33.4355,
+  "lng": -70.6225,
+  "description": "El Palacio Echeverría, en Providencia, fue uno de los centros de reuniones espiritistas más conocidos de comienzos del siglo XX, ligado a la escritora Inés Echeverría. Dentro de la casona se reportan objetos que se mueven solos, susurros en salones vacíos y la presencia de una figura femenina que recorrería las habitaciones donde antiguamente se realizaban sesiones de espiritismo.",
+  "video": "https://www.youtube.com/watch?v=VqRVpEFZDlc"
+},
+{
+  "name": "Ex Hospital San José (Independencia, Santiago)",
+  "lat": -33.4275,
+  "lng": -70.6535,
+  "description": "El antiguo Hospital San José es recordado por sus condiciones precarias y el alto número de fallecidos que pasaron por sus salas, en especial en el área de maternidad. Tras su cierre parcial, visitantes y personal han relatado lamentos, llantos de bebés y sombras que se desplazan en los pasillos de la zona antigua, por lo que es uno de los recintos más mencionados en rutas de terror en la capital.",
+  "video": "https://www.youtube.com/watch?v=VqRVpEFZDlc"
+},
+{
+  "name": "Torre Santa María (Providencia, Santiago)",
+  "lat": -33.4278,
+  "lng": -70.6332,
+  "description": "La Torre Santa María, rascacielos emblemático de Santiago, quedó marcada por un devastador incendio en 1981 que costó la vida a decenas de personas. Desde entonces algunos trabajadores mencionan ruidos extraños, ascensores que se detienen sin explicación y la sensación de ser observados en ciertos pisos relacionados con la tragedia.",
+  "video": "https://www.tiktok.com/@chiletravel/video/7428625152096603397"
+},
+{
+  "name": "Casa embrujada de Salsipuedes / Pataguas (Región de O'Higgins)",
+  "lat": -34.2300,
+  "lng": -71.3980,
+  "description": "La llamada casa embrujada de Salsipuedes, ubicada en la zona de Pataguas, es una casona rural abandonada convertida en leyenda urbana por los múltiples relatos de apariciones y sucesos extraños. Exploradores y curiosos mencionan golpes en las paredes, susurros dentro de habitaciones vacías y luces que se encienden y apagan mientras recorren el lugar de noche.",
+  "video": "https://www.youtube.com/watch?v=hk_XUzxd9eI"
+},
+{
+  "name": "Sanatorio Los Maitenes (Región de Valparaíso)",
+  "lat": -32.9500,
+  "lng": -71.2500,
+  "description": "El sanatorio abandonado de Los Maitenes, levantado originalmente para tratar enfermedades respiratorias, quedó con sus pabellones vacíos y rodeados de maleza. Entre sus pasillos se cuentan historias de pacientes que aún vagarían por el edificio, puertas que se azotan sin viento y voces que parecen surgir de habitaciones completamente desocupadas.",
+  "video": "https://www.youtube.com/watch?v=wJ5nWYswNt4"
+},
+{
+  "name": "Raja de Manquehua / Cueva de los Brujos (Salamanca, Región de Coquimbo)",
+  "lat": -31.7720,
+  "lng": -70.9760,
+  "description": "La Raja de Manquehua, conocida también como Cueva de los Brujos, es una abertura rocosa en una quebrada cercana a Salamanca asociada desde hace décadas a reuniones de brujas y rituales de magia negra. Habitantes de la zona hablan de procesiones nocturnas con antorchas, esferas de luz que se mueven alrededor del cerro y cantos lejanos que se escuchan en noches sin viento.",
+  "video": "https://www.gochile.cl/en/articles/the-6-most-mysterious-places-in-chile.htm"
 }
+
 
 
 
