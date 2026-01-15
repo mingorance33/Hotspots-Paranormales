@@ -359,7 +359,12 @@
     }
 
     // === Mapa ===
-    const map = L.map("map", { zoomControl: true }).setView([37.3, -5.9], 10);
+    // const map = L.map("map", { zoomControl: true }).setView([37.3, -5.9], 10);
+    // Añadimos minZoom para que no se vea el mundo pequeño y repetido
+    const map = L.map("map", {
+        minZoom: 3,  // No permite alejarse más allá de ver los continentes
+        maxZoom: 18  // Evita que el usuario entre en zonas donde el mapa se ve gris
+    }).setView([37.3886, -5.9823], 13);
     
       // Intentar localizar al usuario
     map.locate({ setView: true, maxZoom: 10 });
@@ -387,7 +392,9 @@
     const satelite = L.layerGroup([
       L.tileLayer(
         "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-        { maxZoom: 19 }
+        { maxZoom: 19,
+        noWrap: true // ESTO evita que el mapa se repita infinitamente a los lados
+        }
       ),
       L.tileLayer("https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}.png", {
         maxZoom: 19,
