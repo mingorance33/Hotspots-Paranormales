@@ -360,7 +360,25 @@
 
     // === Mapa ===
     const map = L.map("map", { zoomControl: true }).setView([37.3, -5.9], 10);
-
+    
+      // Intentar localizar al usuario
+    map.locate({ setView: true, maxZoom: 14 });
+    
+    // Si se encuentra la ubicación, opcionalmente se puede poner un círculo o marcador
+    map.on('locationfound', function(e) {
+        // Crea un pequeño círculo azul en la posición del usuario
+        L.circle(e.latlng, {
+            radius: e.accuracy / 2,
+            color: '#3388ff',
+            fillColor: '#3388ff',
+            fillOpacity: 0.3
+        }).addTo(map);
+    });
+    
+    // Si el usuario rechaza el permiso o hay error, se queda en la vista por defecto (Sevilla)
+    map.on('locationerror', function(e) {
+        console.log("Acceso a ubicación denegado o no disponible.");
+    });
     // Capas base
     const osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
