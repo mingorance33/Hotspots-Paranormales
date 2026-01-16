@@ -12395,5 +12395,670 @@
     "lng": 103.8370,
     "description": "Mount Pleasant Road serpentea entre colinas, antiguos edificios y vegetación espesa, y su nombre contrasta con la reputación de carretera inquietante, asociada a la presencia de pontianaks y otros espíritus. Las leyendas dicen que el olor a flor de frangipani en mitad de la noche indica que una pontianak está cerca, y algunos conductores aseguran haber visto una figura femenina flotando o escuchado risas a su alrededor sin ver a nadie más en la zona.",
     "video": "https://www.sgcarmart.com/articles/features/seven-haunted-roads-in-singapore-not-for-the-faint-of-heart-1259"
-  }
+  },
+  {
+    "name": "Old Changi Hospital (el hospital más embrujado) - CHANGI, SINGAPUR ESTE",
+    "lat": 1.3895,
+    "lng": 103.9893,
+    "description": "Old Changi Hospital, en la zona de Changi, fue construido en los años 30 como hospital militar británico y usado durante la ocupación japonesa como lugar de detención y supuestas torturas, lo que cimentó su reputación como el edificio más embrujado de Singapur. Tras quedar vacío en los 90, sus pasillos desconchados, quirófanos abandonados y ventanas rotas se convirtieron en escenario de historias de prisioneros de guerra, pontianaks y figuras en uniforme médico que se dejan ver fugazmente en las plantas superiores.",
+    "video": "https://stateofbuildings.sg/places/old-changi-hospital/"
+  },
+  {
+    "name": "View Road Hospital / View Road Lodge (antiguo psiquiátrico) - VIEW ROAD, WOODLANDS",
+    "lat": 1.4510,
+    "lng": 103.7880,
+    "description": "El antiguo View Road Hospital, en Woodlands, funcionó como hospital psiquiátrico y después como residencia para trabajadores, y durante años fue citado como uno de los edificios más inquietantes del país. Ex residentes y guardias hablaban de gritos en habitaciones vacías, risas en los corredores, sombras en las ventanas y una sensación de opresión que hacía que muchos evitaran pasar por ciertas plantas de noche.",
+    "video": "https://remembersingapore.org/2011/05/11/top-ten-haunted-places-in-singapore/"
+  },
+  {
+    "name": "Neo Tiew Estate (barrio HDB fantasma) - LIM CHU KANG / NEO TIEW ROAD",
+    "lat": 1.4335,
+    "lng": 103.6960,
+    "description": "Neo Tiew Estate, en el cruce de Lim Chu Kang Road y Neo Tiew Road, es un pequeño conjunto de bloques HDB desalojado y cerrado al público que hoy se usa para entrenamientos militares y es famoso por sus historias de pontianaks. Quienes han entrado durante maniobras cuentan que en los pasillos se sienten miradas desde las puertas abiertas, se oyen golpes en las tuberías y algunos aseguran haber visto figuras femeninas en balcones de pisos oficialmente vacíos.",
+    "video": "https://remembersingapore.org/2011/05/11/top-ten-haunted-places-in-singapore/"
+  },
+  {
+    "name": "Pasir Ris Red House (casa roja embrujada) - JALAN LOYANG BESAR",
+    "lat": 1.3785,
+    "lng": 103.9580,
+    "description": "La Pasir Ris Red House, una casa con marcos y elementos pintados de rojo en Jalan Loyang Besar, se ganó fama como uno de los lugares más espeluznantes de Singapur antes de ser reformada y vallada. Las leyendas hablaban de una silla mecedora que se movía sola en el porche, retratos cuyos ojos seguían a los visitantes y apariciones de una anciana que vigilaba el jardín, lo que la convirtió en punto clásico de exploración nocturna.",
+    "video": "https://remembersingapore.org/2011/05/11/top-ten-haunted-places-in-singapore/"
+  },
+  {
+    "name": "Matilda House (mansión de Punggol) - PUNGGOL WAY",
+    "lat": 1.4045,
+    "lng": 103.9050,
+    "description": "Matilda House, en Punggol, fue una mansión colonial rodeada de vegetación durante décadas, aislada en medio de solares vacíos, asociada a historias de maldiciones y espíritus ofendidos por los planes urbanísticos. Trabajadores de la zona contaban que al talar ciertos árboles ocurrían accidentes, que se oían risas en el interior del edificio vacío y que algunos veían luces moverse dentro, hasta que el inmueble fue integrado en un moderno clubhouse.",
+    "video": "https://thesmartlocal.com/read/haunted-places-singapore/"
+  },
+  {
+    "name": "Pulau Tekong (campamentos de reclutas y fantasmas) - ISLA PULAU TEKONG",
+    "lat": 1.4160,
+    "lng": 104.0310,
+    "description": "Pulau Tekong, isla usada para el Servicio Nacional, está plagada de historias de reclutas que se encuentran con fantasmas durante entrenamientos y guardias nocturnas. Cuentan la leyenda del ‘recluta sin cabeza’ visto en los barracones, figuras adicionales en las formaciones y pasos marchando alrededor de los dormitorios cuando todos deberían estar durmiendo.",
+    "video": "https://thesmartlocal.com/read/haunted-places-singapore/"
+  },
+  {
+    "name": "Haw Par Villa (parque de los Diez Infiernos) - PASIR PANJANG",
+    "lat": 1.2835,
+    "lng": 103.7815,
+    "description": "Haw Par Villa es un parque temático de mitología china lleno de estatuas bizarras y dioramas que representan los Diez Infiernos, con escenas de torturas y castigos que muchos encuentran perturbadoras incluso a plena luz del día. Los guardas cuentan que por la noche el parque parece cobrar vida, se oyen ruidos entre las figuras y hay rumores de estatuas que en realidad serían cuerpos embalsamados o poseídos por espíritus errantes.",
+    "video": "https://thehoneycombers.com/singapore/most-haunted-places-in-singapore/"
+  },
+  {
+    "name": "Bedok Reservoir (el embalse de los suicidios) - BEDOK",
+    "lat": 1.3370,
+    "lng": 103.9270,
+    "description": "Bedok Reservoir, en el este de la isla, ganó una siniestra reputación tras una serie de suicidios y cuerpos encontrados en el agua a principios de la década de 2010. Algunos corredores nocturnos dicen haber escuchado lamentos y gritos procedentes del embalse, y hay quienes afirman sentir una fuerza que parece tirar de ellos hacia el agua en ciertos tramos de la senda perimetral.",
+    "video": "https://expatliving.sg/scary-things-to-see-or-avoid-at-halloween-in-singapore/"
+  },
+  {
+    "name": "St. John’s Island (fantasmas de prisioneros) - ST. JOHN’S ISLAND",
+    "lat": 1.2160,
+    "lng": 103.8510,
+    "description": "St. John’s Island fue usada en el pasado como centro de cuarentena y lugar de detención, y hoy, convertida en lugar de excursión, mantiene historias de prisioneros cuyos espíritus seguirían recorriendo sus edificios e instalaciones. Se cuentan apariciones de figuras encadenadas, voces en antiguos bloques de detención y luces que se mueven entre los árboles cuando ya no queda nadie en las zonas de picnic.",
+    "video": "https://thesmartlocal.com/read/haunted-places-singapore/"
+  },
+  {
+    "name": "Changi Beach y casas antiguas de la costa - CHANGI",
+    "lat": 1.3890,
+    "lng": 103.9870,
+    "description": "Changi Beach fue uno de los escenarios de la masacre de Sook Ching durante la Segunda Guerra Mundial, y junto con antiguas casas de la costa se ha convertido en foco de relatos de soldados ejecutados y víctimas que aún vagan por la zona. Testigos cuentan que de noche se ven filas de sombras mirando al mar, se oyen gritos lejanos y algunos chalets antiguos han sido escenario de historias de huéspedes que se encuentran con figuras ensangrentadas en pasillos y baños.",
+    "video": "https://thesmartlocal.com/read/haunted-places-singapore/"
+  },
+  {
+    "name": "Lim Chu Kang Road (carretera de los cementerios) - LIM CHU KANG",
+    "lat": 1.4230,
+    "lng": 103.7090,
+    "description": "Lim Chu Kang Road atraviesa una zona remota rodeada de cementerios militares y civiles, y es una de las carreteras más temidas durante el Hungry Ghost Festival. Taxistas y conductores cuentan que han recogido pasajeras que piden ir al cementerio y desaparecen al llegar, billetes que se convierten en ‘hell money’ y apariciones en las paradas de autobús cuando en teoría no hay nadie esperando.",
+    "video": "https://www.motorist.sg/article/961/7-haunted-roads-in-singapore-to-avoid-at-night-during-the-hungry-ghost-festival"
+  },
+  {
+    "name": "Punggol Road y Punggol Beach (eje de ejecuciones) - PUNGGOL",
+    "lat": 1.4110,
+    "lng": 103.9090,
+    "description": "Punggol Road conduce a Punggol Beach, otro de los lugares donde se llevaron a cabo ejecuciones durante la ocupación japonesa, y la carretera aparece con frecuencia en listas de vías embrujadas. Conductores hablan de mujeres de rojo y de blanco que cruzan la carretera, olores florales repentinos en tramos vacíos y una sensación de repetición, como si el mismo tramo se recorriera una y otra vez antes de salir de la zona.",
+    "video": "https://www.sgcarmart.com/articles/features/seven-haunted-roads-in-singapore-not-for-the-faint-of-heart-1259"
+  },
+  {
+    "name": "Old Upper Thomson Road (Devil’s Bend) - UPPER THOMSON",
+    "lat": 1.3740,
+    "lng": 103.8220,
+    "description": "Old Upper Thomson Road formó parte del antiguo circuito de carreras de Singapur y su curva Devil’s Bend fue escenario de múltiples accidentes mortales, origen de numerosas leyendas de pilotos fantasma. Hoy se habla de luces de coche que aparecen detrás de los conductores y nunca les adelantan, de una autoestopista que desaparece del asiento trasero y de ruidos de motores de carreras en noches tranquilas.",
+    "video": "https://thesmartlocal.com/read/haunted-places-singapore/"
+  },
+  {
+    "name": "Mount Pleasant Road (pontianak entre los árboles) - MOUNT PLEASANT",
+    "lat": 1.3325,
+    "lng": 103.8370,
+    "description": "Mount Pleasant Road discurre entre colinas arboladas y antiguos edificios de servicio, y su aspecto aislado le ha valido fama de ruta de pontianaks y otros espíritus. Relatos de conductores mencionan el olor a frangipani entrando de golpe en el coche, risas femeninas sin origen aparente y una figura que se deja ver brevemente entre los árboles cuando se encienden las luces largas.",
+    "video": "https://www.motorist.sg/article/961/7-haunted-roads-in-singapore-to-avoid-at-night-during-the-hungry-ghost-festival"
+  },
+  {
+    "name": "Krak des Chevaliers (fortaleza de los cruzados y los fantasmas de la guerra) - CERCA DE HOMS, OESTE DE SIRIA",
+    "lat": 34.7569,
+    "lng": 36.3000,
+    "description": "Krak des Chevaliers, cerca de Homs, es una enorme fortaleza cruzada del siglo XII considerada una de las mejor conservadas del mundo, que ha visto asedios medievales, bombardeos recientes y combates durante la guerra civil. Visitantes y vecinos hablan de una presencia pesada en los pasillos interiores cuando cae la noche, de ecos de pasos con armadura en las galerías vacías y de luces que se ven moverse por las murallas como si los vigilantes de distintas épocas siguieran patrullando la roca.",
+    "video": "https://en.wikipedia.org/wiki/Krak_des_Chevaliers"
+  },
+  {
+    "name": "Tishreen Military Hospital (el hospital del horror) - NORDESTE DE DAMASCO",
+    "lat": 33.5650,
+    "lng": 36.3550,
+    "description": "El hospital militar Tishreen, en las afueras nororientales de Damasco, fue señalado por testigos y antiguos pacientes como un lugar donde opositores al régimen habrían sido torturados y asesinados en secreto, con cadáveres enviados a fosas comunes cercanas. Ex detenidos describen Tishreen como un matadero más que un hospital, con sótanos, cámaras y una gran morgue, un escenario tan marcado por el horror que muchos sirios hablan del edificio como un punto maldito donde los espíritus de las víctimas no encuentran descanso.",
+    "video": "https://www.itv.com/news/2023-10-04/inside-syrias-horror-hospital-where-doctors-torture-suspected-rebels"
+  },
+  {
+    "name": "El hospital subterráneo ‘The Cave’ - BARRIOS DE EASTERN GHOUTA, CERCA DE DAMASCO",
+    "lat": 33.5380,
+    "lng": 36.4010,
+    "description": "En Eastern Ghouta, un barrio asediado durante años, se excavó un hospital bajo tierra conocido como The Cave, donde médicos y enfermeras atendieron a cientos de heridos mientras la superficie se convertía en ciudad fantasma bombardeada. Quienes trabajaron en The Cave relatan un laberinto de túneles, quirófanos sin luz natural y ecos de bombas cayendo encima, y hoy, tras su cierre y vaciado, muchos imaginan ese espacio subterráneo vacío como un hospital fantasma enterrado bajo capas de ruinas y memorias traumáticas.",
+    "video": "https://theworld.org/stories/2020/02/03/what-it-was-underground-hospital-syria"
+  },
+  {
+    "name": "Hospitales-cueva de Kafr Zita y otros centros atacados - PROVINCIA DE HAMA Y OTRAS ZONAS",
+    "lat": 35.3800,
+    "lng": 36.6000,
+    "description": "En lugares como Kafr Zita, en la provincia de Hama, se construyeron hospitales-cueva excavados en roca para protegerse de los bombardeos, algunos de los cuales fueron atacados repetidamente hasta quedar casi borrados del paisaje. Informes médicos describen estos centros como refugios llenos de polvo, sangre y miedo donde el personal trabajaba sabiendo que cualquier momento podía ser el último, y hoy varias de esas cuevas médicas permanecen vacías, convertidas en cicatrices invisibles de la guerra bajo colinas aparentemente tranquilas.",
+    "video": "https://time.com/5943719/syria-medics-irc/"
+  },
+  {
+    "name": "Yarmouk Camp (barrio-hospital fantasma) - SUR DE DAMASCO",
+    "lat": 33.4840,
+    "lng": 36.3000,
+    "description": "El campo de Yarmouk, al sur de Damasco, fue una ciudad-palestina dentro de la capital, con calles, comercios y hospitales, que acabó devastada por asedios, combates y bombardeos hasta quedar descrita como ciudad fantasma. El único hospital que seguía funcionando fue finalmente destruido, dejando tras de sí edificios vacíos, pasillos rotos y equipamiento enterrado bajo los escombros, con los residentes recordando Yarmouk como un lugar donde las sirenas de ambulancia y los gritos nunca se apagaban del todo.",
+    "video": "https://www.map.org.uk/latest/news/829-once-bustling-yarmouk-now-a-ghost-town-and-its-surviving-hospital-is-no-more/"
+  },
+  {
+    "name": "Ciudades y barrios fantasmas de la guerra (Homs, Alepo, Daraya) - DIVERSAS LOCALIDADES SIRIAS",
+    "lat": 34.7300,
+    "lng": 36.7200,
+    "description": "Ciudades como Homs, Alepo o Daraya han visto barrios enteros convertirse en esqueletos de hormigón tras años de combates, con bloques de pisos vacíos, clínicas destruidas y calles donde apenas queda vida. Organizaciones médicas describen hospitales reducidos a fachadas perforadas y equipos cubiertos de polvo, y quienes regresan hablan de pasillos inundados, salas sin techo y la sensación de que edificios enteros se han transformado en cementerios silenciosos para quienes murieron sin ser recuperados.",
+    "video": "https://www.doctorswithoutborders.org/latest/no-way-home-scars-war-syria-remain"
+  },
+  {
+    "name": "Pueblos con tesoros y jinn (aldeas saqueadas) - REGIONES ARQUEOLÓGICAS DEL INTERIOR DE SIRIA",
+    "lat": 35.0000,
+    "lng": 38.0000,
+    "description": "En varias aldeas cercanas a yacimientos arqueológicos de Siria, la miseria de la posguerra ha llevado a que grupos busquen tesoros bajo templos y ruinas siguiendo indicaciones de supuestos jeques capaces de ahuyentar jinn por una tarifa. Vecinos relatan excavaciones nocturnas en tumbas y santuarios, con hombres rezando, prendiendo incienso y asegurando que espantan a los espíritus del lugar mientras cavan, en escenas que mezclan desesperación económica con miedo a los jinn que protegerían los tesoros enterrados.",
+    "video": "https://newlinesmag.com/reportage/treasure-hunters-in-a-new-syria/"
+  },
+  {
+    "name": "Old Dutch Hospital (antiguo hospital embrujado) - FORT, COLOMBO",
+    "lat": 6.9346,
+    "lng": 79.8428,
+    "description": "El Old Dutch Hospital, en el barrio de Fort en Colombo, fue construido en el siglo XVII para atender a soldados y marineros de la Compañía Holandesa de las Indias Orientales, y vivió épocas de hacinamiento, epidemias y muertes constantes. Hoy es un complejo de restaurantes y tiendas, pero trabajadores cuentan que en el ático que habría sido la residencia del médico se escuchan golpes, pasos y arrastres por la noche, como si el viejo hospital siguiera lleno de vida y sufrimiento detrás de sus muros restaurados.",
+    "video": "http://www.sundaytimes.lk/181028/magazine/creepy-tales-of-the-paranormal-317122.html"
+  },
+  {
+    "name": "Jawatte Lunatic Asylum (antiguo asilo psiquiátrico) - COLOMBO",
+    "lat": 6.9020,
+    "lng": 79.8700,
+    "description": "El antiguo manicomio de Jawatte, en Colombo, se construyó a finales del siglo XIX para albergar a cientos de pacientes psiquiátricos en condiciones que pronto se volvieron de extrema masificación y abandono. Con el tiempo, algunos edificios quedaron obsoletos y terminaron cerrados, y hoy el complejo se asocia a historias de lamentos, sombras que cruzan patios interiores y un ambiente cargado que hace pensar en los miles de internos que pasaron parte de su vida entre sus muros.",
+    "video": "https://www.facebook.com/groups/277933739075780/posts/972630566272757/"
+  },
+  {
+    "name": "Galle Fort (fortaleza y hospital holandés) - GALLE, COSTA SUR",
+    "lat": 6.0269,
+    "lng": 80.2170,
+    "description": "Galle Fort, en la costa sur de Sri Lanka, es una fortaleza holandesa Patrimonio de la Humanidad que incluye murallas, iglesias, túneles y el viejo Dutch Hospital dentro de sus límites, y por la noche cambia de un lugar turístico a un escenario cargado de historias de fantasmas. Se cuentan leyendas de soldados holandeses patrullando aún las murallas, susurros en las galerías del hospital antiguo y sombras que se mueven en los túneles y sótanos cerrados, como si los muertos de los asedios y las epidemias siguieran ahí.",
+    "video": "https://www.rofi.lk/blog/haunted-forts-of-sri-lanka-a-spooky-guide-to-ghost-tours-in-ancient-fortresses/"
+  },
+  {
+    "name": "Fort Frederick (soldados espectrales) - TRINCOMALEE",
+    "lat": 8.5690,
+    "lng": 81.2310,
+    "description": "Fort Frederick, en Trincomalee, es una fortaleza construida inicialmente por los portugueses y reconstruida por los holandeses y los británicos, rodeada de templos y acantilados sobre el mar, con siglos de historia militar y religiosa superpuesta. Guías locales hablan de apariciones de soldados en las murallas, ruidos de pasos y armas en las zonas más antiguas y una atmósfera especialmente intensa junto a viejas estructuras y túneles, lo que convierte al fuerte en parada habitual de los tours de fantasmas.",
+    "video": "https://www.rofi.lk/blog/haunted-forts-of-sri-lanka-a-spooky-guide-to-ghost-tours-in-ancient-fortresses/"
+  },
+  {
+    "name": "Galle Face Hotel (huésped inglés fantasma) - GALLE FACE, COLOMBO",
+    "lat": 6.9223,
+    "lng": 79.8430,
+    "description": "El Galle Face Hotel, un histórico hotel frente al mar en Colombo, es famoso por la historia de un oficial británico de la Segunda Guerra Mundial que habría muerto en sus instalaciones y cuyo espíritu continuaría recorriendo pasillos y balcones. Empleados y huéspedes hablan de puertas que se abren solas, olor a tabaco en habitaciones vacías, fotografías que aparecen torcidas y la visión ocasional de un hombre con uniforme antiguo mirando hacia el océano desde las terrazas.",
+    "video": "https://www.alphonsostories.com/blog/sri-lanka/sri-lanka-in-search-of-superstitions-spirits-and-mysterious-hauntings"
+  },
+  {
+    "name": "Greystone Bungalow (mansión embrujada) - NUWARA ELIYA, HILL COUNTRY",
+    "lat": 6.9670,
+    "lng": 80.7820,
+    "description": "En Nuwara Eliya, entre colinas de té y niebla espesa, se encuentra el Greystone Bungalow, una mansión colonial abandonada señalada a menudo como una de las casas más embrujadas de Sri Lanka. Visitantes que se han atrevido a entrar relatan luces que parpadean sin electricidad, objetos que se mueven, susurros en los pasillos y el llanto de una mujer que se escucha a medianoche, mientras la casa permanece oficialmente deshabitada.",
+    "video": "https://www.reddit.com/r/srilanka/comments/1k5538r/i_wanna_hear_some_sri_lankan_ghost_stories/"
+  },
+  {
+    "name": "Haunted Mansion de Nuwara Eliya (bungalow colonial) - ALREDEDORES DE NUWARA ELIYA",
+    "lat": 6.9600,
+    "lng": 80.7800,
+    "description": "En los alrededores de Nuwara Eliya también se menciona otra casa colonial conocida simplemente como la Haunted Mansion, ubicada en una finca de té y abandonada desde hace décadas tras la marcha de sus antiguos dueños británicos. Historias locales hablan de luces en las ventanas cuando no hay nadie, muebles que aparecen movidos, pasos en las escaleras y una figura femenina que se asoma ocasionalmente a los balcones envuelta en niebla.",
+    "video": "https://wathupiti.lk/sri-lankan-ghost-stories/"
+  },
+  {
+    "name": "Devil’s Staircase (carretera de montaña embrujada) - OHIYA A HORTON PLAINS",
+    "lat": 6.7910,
+    "lng": 80.8110,
+    "description": "Devil’s Staircase es un camino de montaña muy empinado y serpentante que conecta Ohiya con la meseta de Horton Plains, conocido por sus curvas peligrosas, niebla cerrada y relatos de viajeros que desaparecieron o murieron tras perderse. Gente de la zona dice que al atardecer se oyen pasos detrás de los caminantes sin que haya nadie, que se ven siluetas entre los árboles que se deshacen en la bruma y que algunos vehículos sienten como si una fuerza invisible los empujara en las bajadas.",
+    "video": "https://wathupiti.lk/sri-lankan-ghost-stories/"
+  },
+  {
+    "name": "Anderson Road (la autoestopista fantasma) - ENTRE KALUTARA Y COLOMBO",
+    "lat": 6.6500,
+    "lng": 79.9500,
+    "description": "Un tramo de carretera entre Kalutara y Colombo, conocido en la tradición popular como Anderson Road, es famoso por la leyenda de una joven que hace autoestop de noche y desaparece del asiento trasero a los pocos minutos. Conductores cuentan que la recogen bajo la lluvia o en la niebla, hablan brevemente con ella y, al mirar por el espejo, ya no está, con el asiento mojado o impregnado de perfume como única prueba de su presencia.",
+    "video": "https://www.rofi.lk/blog/rediscovering-sri-lankas-enigmatic-haunted-places-a-thrilling-road-trip-guide/"
+  },
+  {
+    "name": "Colombo General Hospital (sombras en los pabellones) - COLOMBO",
+    "lat": 6.9180,
+    "lng": 79.8610,
+    "description": "El Hospital General de Colombo, uno de los centros médicos más grandes del país, acumula décadas de historias de muertes, operaciones de urgencia y pasillos abarrotados, y se menciona a menudo en relatos de apariciones de personal y pacientes fallecidos. En algunos pabellones se dice que se ven sombras pasar junto a las camas, se oyen pasos en las guardias nocturnas cuando no hay nadie en el pasillo y se siente una presencia al lado de la camilla antes de una intervención difícil.",
+    "video": "https://www.youtube.com/watch?v=DV_QWr0Nwc0"
+  },
+  {
+    "name": "Old Dutch Fort de Mannar (soldados y cementerio) - MANNAR, NOROESTE",
+    "lat": 8.9660,
+    "lng": 79.9160,
+    "description": "El fuerte holandés de Mannar, en el noroeste de Sri Lanka, se alza junto a un antiguo cementerio donde se cree que hay enterrados oficiales y soldados coloniales, y muchos visitantes aseguran sentir un ambiente especialmente cargado. Se han reportado susurros, cambios bruscos de temperatura y figuras oscuras junto a algunas tumbas, hasta el punto de que se dice que los viejos soldados siguen de guardia alrededor de las ruinas.",
+    "video": "https://wathupiti.lk/sri-lankan-ghost-stories/"
+  },
+  {
+    "name": "Galboda Waterfall (las desapariciones de la cascada) - CERCA DE NUWARA ELIYA",
+    "lat": 6.9730,
+    "lng": 80.7100,
+    "description": "Galboda Waterfall es una cascada escondida en los bosques montañosos que, además de su belleza, tiene fama de estar custodiada por espíritus que se llevan a quienes se acercan demasiado. Residentes cuentan historias de personas que desaparecieron sin dejar rastro en los alrededores de la caída de agua, de voces que se oyen por encima del estruendo del agua y de una sensación de ser observado desde el follaje mientras uno se aproxima a la poza.",
+    "video": "https://wathupiti.lk/sri-lankan-ghost-stories/"
+  },
+  {
+    "name": "Hutale Rock / abawa (colina del guardián Surangamuni) - REGIÓN MONTañOSA",
+    "lat": 7.1500,
+    "lng": 80.7500,
+    "description": "En una zona de montaña conocida como Hutale, se alza una roca llamada abawa, con restos de una antigua plantación de té en la cima, rodeada de historias sobre el espíritu guardián Surangamuni. Habitantes de las fincas cercanas cuentan que hay un sendero prohibido que nadie debe tomar: quien lo hace, o bien muere guiado a su perdición por el espíritu, o bien es elegido para servirlo eternamente, motivo por el cual las familias advierten a los niños desde pequeños que nunca se aventuren por ese camino.",
+    "video": "https://www.reddit.com/r/srilanka/comments/1kfvg4n/what_are_some_strange_creepy_or_fascinating_local/"
+  },
+  {
+    "name": "Leyenda de Mohini (espíritu femenino) - ZONAS RURALES DE SRI LANKA",
+    "lat": 7.0000,
+    "lng": 80.0000,
+    "description": "Mohini es uno de los espíritus más conocidos del folclore de Sri Lanka, descrita como una mujer de belleza sobrenatural que se aparece en carreteras rurales o junto a ríos para atraer a hombres incautos. Relatos contemporáneos la sitúan en caminos oscuros y plantaciones, donde se presenta con olor a perfume y cabello largo, para luego revelar un rostro terrorífico o desaparecer de golpe, dejando a quien la ve con fiebre, mala suerte o incluso la muerte poco después.",
+    "video": "https://www.instagram.com/reel/DLuqE_pK7PH/"
+  },
+  {
+    "name": "Nawanakorn Hospital (hospital abandonado embrujado) - DISTRITO DE KHLONG LUANG, PROVINCIA DE PATHUM THANI",
+    "lat": 14.0860,
+    "lng": 100.6140,
+    "description": "Nawanakorn Hospital, al norte de Bangkok en Pathum Thani, es un hospital que fue abandonado alrededor de 2013 y hoy aparece en múltiples vídeos como uno de los edificios más inquietantes de Tailandia, con plantas enteras vacías, camas oxidadas y murales de pacientes todavía en las paredes. Quienes han caminado por sus pasillos describen quirófanos intactos, documentos esparcidos en el suelo, un silencio opresivo roto por puertas que se mueven solas y la sensación continua de ser observado desde las habitaciones oscuras mientras suben piso tras piso en el bloque principal.",
+    "video": "https://viralpress.com/146027/walk-through-this-terrifying-haunted-hospital-abandoned-in-thailand"
+  },
+  {
+    "name": "Siriraj Hospital (alas antiguas embrujadas) - RÍO CHAO PHRAYA, BANGKOK",
+    "lat": 13.7560,
+    "lng": 100.4850,
+    "description": "Siriraj Hospital, en la ribera del Chao Phraya en Bangkok, es el hospital universitario más antiguo de Tailandia y ha acumulado tantas historias de fantasmas que se habla de él como uno de los hospitales más embrujados de Asia, especialmente en los pabellones viejos y en los alrededores del museo médico. Trabajadores y pacientes mencionan apariciones de enfermeras y mujeres fallecidas en accidentes de tráfico, sombras en las escaleras, ascensores que se detienen en plantas donde no hay nadie y voces que llaman por su nombre a médicos de guardia en mitad de la noche.",
+    "video": "https://happyhourinbkk.com/bangkoks-ghost-stories-9-most-creepy-tales-from-the-capital-city/"
+  },
+  {
+    "name": "Hospitales de Udon Thani (silla de ruedas poseída) - UDON THANI, TAILANDIA NORDESTE",
+    "lat": 17.4070,
+    "lng": 102.7920,
+    "description": "En un hospital de Udon Thani, en el noreste de Tailandia, un vídeo de una silla de ruedas moviéndose sola en la zona exterior del edificio se hizo viral y muchos habitantes interpretaron el movimiento como obra de un fantasma juguetón o de un phi tai hong. El vídeo muestra la silla desplazándose adelante y atrás sin nadie a la vista, incluso cuando no parece haber viento, y aunque algunos lo atribuyen a corrientes de aire, otros ven en ello una señal más de que los hospitales tailandeses están llenos de espíritus inquietos.",
+    "video": "https://thethaiger.com/news/northern-thailand/haunted-hospital-wheelchair-ghost-or-the-wind"
+  },
+  {
+    "name": "Mae Nak Shrine, Wat Mahabut (fantasma de Mae Nak) - BARRIO DE PHRA KHANONG, BANGKOK",
+    "lat": 13.7085,
+    "lng": 100.5950,
+    "description": "En el templo Wat Mahabut, junto al canal de Phra Khanong en Bangkok, se encuentra el santuario de Mae Nak, uno de los fantasmas más famosos de Tailandia, una joven que murió en el parto mientras su marido estaba en la guerra y cuyo espíritu siguió viviendo con él como si nada hubiera pasado. Según la leyenda, quienes intentaron revelar al marido la verdad sufrieron accidentes y maldiciones hasta que un monje consiguió encerrar el espíritu de Mae Nak en una vasija, y hoy muchos tailandeses acuden a su altar para pedir protección en el amor y el matrimonio, dejando ofrendas a un fantasma supuestamente aún muy presente.",
+    "video": "https://thethaiger.com/thai-life/haunted-places-in-thailand"
+  },
+  {
+    "name": "Wat Samian Nari (templo de las hermanas del tren) - DISTRITO DE CHATUCHAK, BANGKOK",
+    "lat": 13.8160,
+    "lng": 100.5580,
+    "description": "Wat Samian Nari, en el distrito de Chatuchak de Bangkok, es un templo conocido por la leyenda de dos hermanas que murieron atropelladas por un tren cerca de las vías adyacentes y que desde entonces se aparecen de noche vestidas de negro. Taxistas y conductores cuentan que recogen a dos mujeres que piden ir al templo, se sientan en el asiento trasero y desaparecen antes de llegar, mientras que vecinos dicen verlas caminando hacia el recinto o de pie junto a las vías en el punto donde ocurrió el accidente.",
+    "video": "https://en.wikipedia.org/wiki/List_of_reportedly_haunted_locations_in_Thailand"
+  },
+  {
+    "name": "Sathorn Unique Tower (rascacielos fantasma) - SATHORN, BANGKOK",
+    "lat": 13.7234,
+    "lng": 100.5163,
+    "description": "Sathorn Unique Tower es un rascacielos inacabado a orillas del Chao Phraya, cuya construcción se detuvo tras la crisis financiera de 1997, dejando una enorme estructura vacía en pleno centro de Bangkok que muchos consideran maldita. Explorado por urbanitas y turistas, el edificio se asocia a suicidios, rituales y apariciones, y se dice que en las plantas altas se oyen pasos, se ven sombras y se siente un miedo irracional, lo que inspiró incluso una película de terror tailandesa basada en su leyenda.",
+    "video": "https://en.wikipedia.org/wiki/List_of_reportedly_haunted_locations_in_Thailand"
+  },
+  {
+    "name": "Wat Suwannaram (templo de los prisioneros ejecutados) - BANGKOK NOI, BANGKOK",
+    "lat": 13.7730,
+    "lng": 100.4810,
+    "description": "Wat Suwannaram, en el distrito de Bangkok Noi, fue utilizado en tiempos del reino de Thonburi como lugar de ejecución de prisioneros de guerra birmanos, lo que le ha conferido fama de estar poblado por espíritus de soldados decapitados y almas en pena. Testimonios modernos hablan de un preta gigante visto en la torre de la campana, de un fantasma masculino sin cabeza vestido con pantalón tradicional y de una mujer fantasma en el embarcadero del templo que aparece a medianoche junto al río.",
+    "video": "https://en.wikipedia.org/wiki/List_of_reportedly_haunted_locations_in_Thailand"
+  },
+  {
+    "name": "Kanchanaburi Death Railway (vía del río Kwai) - PROVINCIA DE KANCHANABURI",
+    "lat": 14.0400,
+    "lng": 99.2410,
+    "description": "El Death Railway, construido por prisioneros de guerra aliados y trabajadores forzados asiáticos durante la ocupación japonesa, atraviesa selvas y colinas de Kanchanaburi y costó la vida a decenas de miles de personas, lo que ha creado la percepción de una vía literalmente construida sobre cadáveres. Se cuentan historias de lamentos en los túneles, sombras de prisioneros en los puentes y una sensación de tristeza intensa en puntos como el Puente sobre el río Kwai o el tramo conocido como Hellfire Pass, donde los trabajadores excavaban la roca a golpe de pico a la luz de antorchas.",
+    "video": "https://en.wikipedia.org/wiki/List_of_reportedly_haunted_locations_in_Thailand"
+  },
+  {
+    "name": "Ratchadaphisek Road (Curva de los Cien Cadáveres) - BANGKOK",
+    "lat": 13.8060,
+    "lng": 100.5700,
+    "description": "Ratchadaphisek Road, una de las grandes arterias de Bangkok, tiene una curva frente al Tribunal Penal donde hay un gran árbol de banyan y una casa de espíritus que han sido testigos de numerosos accidentes mortales, motivo por el cual el tramo se conoce como la Curva de los Cien Cadáveres. Conductores cuentan que de noche se ven sombras cruzando la calzada, luces que parecen seguir a los coches y un peso en el ambiente que hace que muchos reduzcan la velocidad automáticamente al aproximarse a ese punto.",
+    "video": "https://en.wikipedia.org/wiki/List_of_reportedly_haunted_locations_in_Thailand"
+  },
+  {
+    "name": "Sarasin Bridge (puente de los amantes) - ENTRE PHUKET Y PHANG NGA",
+    "lat": 8.1910,
+    "lng": 98.2950,
+    "description": "El Sarasin Bridge conecta la isla de Phuket con la provincia de Phang Nga y se hizo tristemente famoso cuando, en 1973, una pareja de amantes se suicidó allí atándose juntos y saltando al mar al no poder estar juntos por oposición familiar. Desde entonces hay relatos de dos figuras que aparecen caminando de la mano sobre el puente las noches de luna llena, de faros que fallan de repente y de luces que se ven junto a la barandilla, razón por la cual muchos tailandeses consideran el lugar romántico y siniestro a la vez.",
+    "video": "https://thethaiger.com/thai-life/haunted-places-in-thailand"
+  },
+  {
+    "name": "Ko Hingham (isla de las piedras malditas) - PARQUE NACIONAL TARUTAO, SATUN",
+    "lat": 6.5320,
+    "lng": 99.2730,
+    "description": "Ko Hingham es una pequeña isla cubierta de piedras volcánicas negras muy lisas, que según la leyenda están protegidas por el dios Tarutao y traen mala suerte a quien se lleve alguna como recuerdo. Los guardas del parque reciben cada año paquetes con piedras devueltas desde todo el mundo, enviadas por turistas que afirman haber sufrido accidentes, enfermedades o desgracias tras sacar las rocas de la isla y que esperan romper la maldición devolviéndolas a la orilla.",
+    "video": "https://thethaiger.com/thai-life/haunted-places-in-thailand"
+  },
+  {
+    "name": "Haunted Room de Rayong (habitación de las cuatro muertes) - MUEANG RAYONG, PROVINCIA DE RAYONG",
+    "lat": 12.6810,
+    "lng": 101.2580,
+    "description": "En Rayong se habla de una habitación alquilada en la que han muerto al menos cuatro inquilinos en diferentes momentos, el último de ellos un DJ que dejó escrito en la pared que la habitación estaba llena de fantasmas que lo molestaban a diario. Un exorcista que visitó el lugar describió la presencia como intensísima, con múltiples espíritus amontonados en el espacio, lo que llevó a los propietarios a cerrar la habitación y a convertirla en una leyenda urbana de la provincia.",
+    "video": "https://en.wikipedia.org/wiki/List_of_reportedly_haunted_locations_in_Thailand"
+  },
+  {
+    "name": "Widow’s Curve y la carretera de los espíritus - CARRETERA PROVINCIAL EN TAILANDIA",
+    "lat": 16.0000,
+    "lng": 101.0000,
+    "description": "En varias provincias tailandesas se habla de tramos de carretera conocidos como Widow’s Curve, curvas de montaña donde han ocurrido numerosos accidentes y donde la población cree que espíritus femeninos, viudas o mae nak locales reclaman la vida de hombres que viajan solos. Relatos de conductores describen mujeres de blanco en el arcén que desaparecen al pasar, voces que salen de la radio sin emisora y la sensación de que algo empuja al vehículo hacia el guardarraíl en cuanto se entra en la curva maldita.",
+    "video": "https://www.youtube.com/watch?v=A4HAMyVGU-I"
+  },
+  {
+    "name": "Xinglin Hospital (el hospital más embrujado de Taiwán) - DISTRITO DE ANNAN, TAINÁN",
+    "lat": 23.0410,
+    "lng": 120.1480,
+    "description": "Xinglin Hospital, en Annan, Tainán, es un hospital privado que fue clausurado en 1993 por fraude y mala praxis, dejando el edificio abandonado con camas, botellas de medicina y hasta la morgue intactas durante décadas. Con el tiempo se convirtió en el hospital más famoso de Taiwán para exploradores de lo paranormal: se habla de ruidos en quirófanos vacíos, sombras en los pasillos y, sobre todo, de una misteriosa mujer de la limpieza que muchos dicen ver barriendo el atrio del séptimo piso como si siguiera de turno eterno.",
+    "video": "https://www.rtaiwanr.com/tainan/tainan/xinglin-hospital"
+  },
+  {
+    "name": "Antiguo Wong General / Old Taipei Hospital (hospital privado abandonado) - ALREDEDORES DE TAIPEI",
+    "lat": 25.0700,
+    "lng": 121.5200,
+    "description": "En las afueras de Taipei se levanta un antiguo hospital privado conocido en algunos relatos como Wong General, construido en los años 80 y abandonado a finales de los 90 tras problemas de gestión y seguridad. Hoy el edificio permanece como un complejo en ruinas con habitaciones saqueadas, documentos médicos esparcidos y quirófanos vacíos, y exploradores nocturnos cuentan haber captado voces en idiomas mezclados, golpes en las paredes y respuestas inteligentes en sesiones con aparatos de detección, alimentando su fama como uno de los hospitales más embrujados del país.",
+    "video": "https://www.youtube.com/watch?v=PqRYrSKLBkQ"
+  },
+  {
+    "name": "Yuanlin Hospital (hospital urbano abandonado) - YUANLIN, CONDADO DE CHANGHUA",
+    "lat": 23.9660,
+    "lng": 120.5750,
+    "description": "Yuanlin Hospital, en la ciudad de Yuanlin en Changhua, es otro complejo médico dejado vacío, con plantas completas aún identificables como salas de hospital, aunque muy deterioradas y cubiertas de grafitis. La historia más famosa cuenta que unos escolares creyeron ver un cuerpo colgado en el interior, lo que causó revuelo en los medios antes de que se confirmara que era un muñeco dejado por un equipo de rodaje, pero desde entonces la imagen del ‘colgado’ quedó ligada al lugar como símbolo de su atmósfera macabra.",
+    "video": "https://www.kathmanduandbeyond.com/abandoned-taiwan-yuanlin-hospital-%E5%93%A1%E6%9E%97%E9%86%AB%E9%99%A2/"
+  },
+  {
+    "name": "Old Taipei Hospital genérico (hospital de la vieja Taipei) - ZONA URBANA ANTIGUA DE TAIPEI",
+    "lat": 25.0470,
+    "lng": 121.5170,
+    "description": "Además de casos concretos, en foros locales se menciona a menudo un ‘Old Taipei Hospital’, nombre con el que se agrupan varios edificios médicos privados y clínicas de los años 70–80 que hoy están cerrados o semiabandonados en la ciudad. Vecinos y exploradores hablan de camas, sillas de ruedas, salas de rayos X vacías y pasillos con puertas entreabiertas donde se oyen golpes y pasos aunque el edificio lleve años sin uso oficial, reforzando la idea de que buena parte de la infraestructura sanitaria vieja de Taipei ha quedado como red de hospitales fantasma dispersos.",
+    "video": "https://www.facebook.com/steveroninofficial/posts/overnight-investigating-abandoned-old-taipei-hospital-taiwans-most-hauntedmy-f"
+  },
+  {
+    "name": "Bei Yi Highway (autopista Taipei–Yilan embrujada) - PROVINCIAL HIGHWAY 9 ENTRE NUEVA TAIPEI Y YILAN",
+    "lat": 24.9000,
+    "lng": 121.6500,
+    "description": "La Bei Yi Highway, parte de la autopista provincial 9 que conecta Nueva Taipéi con Yilan, es una carretera montañosa llena de curvas cerradas y un largo historial de accidentes mortales que han alimentado su reputación como ‘carretera de la muerte’. Durante años era habitual ver grandes cantidades de papel de ofrendas para los muertos esparcido en los arcenes y se cuentan historias de motos y coches fantasma, luces que aparecen y desaparecen entre la niebla y apariciones que obligan a los conductores a frenar bruscamente en mitad de la noche.",
+    "video": "https://en.wikipedia.org/wiki/List_of_reportedly_haunted_highways"
+  },
+  {
+    "name": "Wanli UFO Village (pueblo OVNI fantasma) - WANLI, NUEVA TAIPÉI",
+    "lat": 25.2130,
+    "lng": 121.6890,
+    "description": "En Wanli, Nueva Taipéi, se alza el famoso ‘pueblo OVNI’, un conjunto de casas de vacaciones experimentales tipo Futuro y Venturo con forma de platillo volador, ampliamente abandonadas después de problemas económicos y accidentes durante la construcción. Las extrañas cápsulas de fibra de vidrio, muchas destrozadas y cubiertas de vegetación, han dado pie a historias de turistas muertos, maldiciones y visitas nocturnas de luces extrañas, por lo que además de escenario de ciencia ficción, el lugar es visto como un auténtico pueblo fantasma futurista.",
+    "video": "https://www.kathmanduandbeyond.com/abandoned-taiwan-yuanlin-hospital-%E5%93%A1%E6%9E%97%E9%86%AB%E9%99%A2/"
+  },
+  {
+    "name": "Leyenda de Mo-shen-a (móshénzǎi / espíritus de montaña) - MONTAÑAS DE TAIWÁN",
+    "lat": 23.7000,
+    "lng": 121.0500,
+    "description": "Entre las leyendas más extendidas de Taiwán está la de los ‘móshénzǎi’ o espíritus de montaña, a menudo descritos como pequeñas entidades o goblins capaces de cambiar de forma y de adoptar la apariencia de familiares o amigos para perder a la gente en el bosque. Muchos taiwaneses relacionan desapariciones inexplicables de ancianos o excursionistas con estas criaturas, que supuestamente guían a sus víctimas cada vez más adentro de la montaña hasta que no pueden encontrar el camino de vuelta, y por ello se aconseja no seguir voces ni caras conocidas en la niebla.",
+    "video": "https://www.reddit.com/r/taiwan/comments/1ioyw7a/what_are_some_urban_legends_from_taiwan/"
+  },
+  {
+    "name": "Sanatorio Khoja Obi Garm (el gigante soviético de montaña) - GISSAR RANGE, AL NORTE DE DUSHANBE",
+    "lat": 38.9070,
+    "lng": 68.7340,
+    "description": "Khoja Obi Garm es un enorme sanatorio de época soviética encajado en un barranco de las montañas Gissar, a unos 60 km al norte de Dushanbe, famoso por sus aguas termales radiactivas y su arquitectura brutalista que parece brotar de la roca. Dentro, los pasillos interminables, las escaleras desiguales, los techos filtrando humedad y los sótanos apenas iluminados dan al lugar un aire de hotel embrujado de los años 70, y muchos visitantes describen crujidos, ecos y la sensación de que el edificio está “vivo”, como si las historias de pacientes y médicos hubieran quedado atrapadas en cada planta.",
+    "video": "https://old.absolutenomads.com/khoja-obi-garm-tajikistans-soviet-sanatorium/"
+  },
+  {
+    "name": "Observatorio soviético abandonado del Pamir (observatorio y pueblo fantasma) - MONTAÑAS DEL PAMIR, TAYIKISTÁN ESTE",
+    "lat": 38.4300,
+    "lng": 73.9000,
+    "description": "En las montañas del Pamir, a gran altitud y a una hora aproximada de coche de la carretera principal, se encuentra un observatorio soviético abandonado junto a un pequeño pueblo que alojaba a científicos y personal técnico, hoy casi completamente vacío. Exploradores que llegan hasta allí describen cúpulas oxidadas, telescopios desmontados, casas con muebles y papeles científicos tirados por el suelo y un silencio escalofriante en el que el viento se cuela por ventanas rotas, dando la sensación de estar en una ciudad fantasma en el techo del mundo.",
+    "video": "https://www.reddit.com/r/urbanexploration/comments/1gt9k0w/abandoned_soviet_observatory_in_tajikistan_in_the/"
+  },
+  {
+    "name": "Pueblos fantasma de la época soviética (hospitales y escuelas vacías) - VARIAS LOCALIDADES DE TAYIKISTÁN",
+    "lat": 38.8000,
+    "lng": 71.0000,
+    "description": "Como en otras repúblicas de Asia Central, en Tayikistán quedaron tras el colapso soviético varios asentamientos mineros y científicos casi abandonados, donde apartamentos, escuelas, pequeñas clínicas y hospitales rurales permanecen en ruinas. Informes de turismo oscuro mencionan bloques de pisos desiertos, ambulatorios con camillas viejas y aulas con pizarras intactas pero cubiertas de polvo, escenarios perfectos para imaginar historias de fantasmas de médicos, maestros y familias que tuvieron que marcharse de la noche a la mañana.",
+    "video": "https://central-asia.guide/dark-tourism-in-central-asia/"
+  },
+  {
+    "name": "Dili’s Ghostly Garrison (cuartel fantasma de la capital) - DILI",
+    "lat": -8.5586,
+    "lng": 125.5736,
+    "description": "En Dili se habla de un antiguo cuartel usado por fuerzas coloniales y por el ejército indonesio durante la ocupación, hoy en gran parte abandonado, donde muchos timorenses creen que siguen patrullando soldados espectrales. Visitantes nocturnos cuentan que se escuchan risas, pasos marciales y órdenes en la oscuridad de los patios, y algunos afirman ver figuras con uniforme moverse entre los edificios derruidos antes de desvanecerse en los corredores sin luz.",
+    "video": "https://creepyhq.com/haunted-places-in-timor-leste/"
+  },
+  {
+    "name": "Maubisse Hospital (hospital blanco sobre el valle) - MAUBISSE, MUNICIPIO DE AINARO",
+    "lat": -8.8410,
+    "lng": 125.6110,
+    "description": "El hospital de Maubisse, en Ainaro, se levanta en la ladera de una montaña sobre un valle verde, en los terrenos de un antiguo cuartel portugués y de una escuela de la época de la ocupación indonesia, en una zona marcada por décadas de violencia. Hoy funciona como hospital regional, pero su ubicación en un antiguo recinto militar y escolar hace que muchos habitantes lo perciban como un lugar donde se superponen historias de soldados, estudiantes y pacientes, y hay quien prefiere evitar pasar de noche frente al complejo blanco que brilla aislado en la oscuridad del valle.",
+    "video": "https://somatosphere.com/2021/hospital-community-health-timor-leste.html/"
+  },
+  {
+    "name": "Liquiçá Colonial Ruins (iglesia y ruinas de la masacre) - LIQUIÇÁ, COSTA OESTE",
+    "lat": -8.5890,
+    "lng": 125.3380,
+    "description": "Liquiçá, a unos 30 km de Dili, conserva ruinas coloniales y una iglesia que fue escenario de una brutal masacre en 1999, cuando milicias proindonesias asesinaron a decenas de civiles que buscaban refugio en el templo. Hoy las fachadas marcadas por el fuego, los edificios vacíos y el recuerdo del olor a humo y sangre hacen que muchos describan la zona como un pueblo fantasma, donde se cree que las almas de las víctimas siguen presentes y donde la brisa del mar parece arrastrar sus lamentos a través de las ruinas.",
+    "video": "https://www.travel-tramp.com/liquica-timor-leste/"
+  },
+  {
+    "name": "Balibo (los fantasmas de los periodistas) - BALIBO, CERCA DE LA FRONTERA OESTE",
+    "lat": -8.9990,
+    "lng": 125.0360,
+    "description": "Balibo, cerca de la frontera con Indonesia, es conocido por el asesinato en 1975 de cinco periodistas australianos, los Balibo Five, y se ha convertido en símbolo de los horrores de la invasión y la guerra. Los habitantes recuerdan historias de luces repentinas, incendios nocturnos y presencias en casas y colinas, y algunos hablan de sentir que los muertos, tanto extranjeros como timorenses, aún vigilan el pueblo y los edificios donde fueron atrapados.",
+    "video": "https://www.etan.org/et2009/05may/31/31ghosts.htm"
+  },
+  {
+    "name": "Crying Cave of Liquiçá (la cueva que llora) - ZONA RURAL DE LIQUIÇÁ",
+    "lat": -8.6000,
+    "lng": 125.3200,
+    "description": "En las colinas rurales de Liquiçá se menciona una cueva conocida como la Crying Cave, donde quienes se adentran aseguran escuchar sollozos y lamentos que parecen surgir de las paredes mismas de roca. Algunos atribuyen estos sonidos a espíritus de personas asesinadas durante los años de conflicto que buscaron refugio en cuevas y bosques, y otros hablan de entidades antiguas del lugar que responden a la violencia derramada en la región, convirtiendo a la cueva en un punto de peregrinación para curiosos y creyentes.",
+    "video": "https://creepyhq.com/haunted-places-in-timor-leste/"
+  },
+  {
+    "name": "Bobonaro’s Restless Tomb (la tumba inquieta) - BOBONARO",
+    "lat": -8.9840,
+    "lng": 125.2190,
+    "description": "En el corazón de Bobonaro se encuentra una tumba aislada rodeada de historias sobre muertos que salen a caminar por la noche, conocida como la Restless Tomb entre aficionados a lo paranormal. Visitantes dicen sentir miradas en la nuca, escuchar pasos detrás de ellos y tener la impresión de que algo invisible rodea la tumba cuando se acercan demasiado, reforzando la idea de que guardianes fantasmales o espíritus curiosos se mueven libremente alrededor del mausoleo.",
+    "video": "https://creepyhq.com/haunted-places-in-timor-leste/"
+  },
+  {
+    "name": "Ermera’s Enchanted Estate (casa encantada en las colinas) - ERMERA",
+    "lat": -8.7500,
+    "lng": 125.3950,
+    "description": "En las colinas cafeteras de Ermera se habla de una antigua casa señorial donde los objetos se mueven solos, se escuchan susurros y se ven luces en habitaciones vacías, conocida como Enchanted Estate. Quienes han dormido allí cuentan que sillas y puertas cambian de posición durante la noche, que se oyen risas o conversaciones en la planta superior cuando está vacía y que es imposible ignorar la sensación de que la casa tiene habitantes invisibles que se divierten gastando bromas a los vivos.",
+    "video": "https://creepyhq.com/haunted-places-in-timor-leste/"
+  },
+  {
+    "name": "Kayaköy (pueblo fantasma griego) - CERCA DE FETHIYE, PROVINCIA DE MUĞLA",
+    "lat": 36.5745,
+    "lng": 29.1140,
+    "description": "Kayaköy, cerca de Fethiye en la costa egea, es un pueblo entero de casas de piedra abandonadas tras el intercambio de población entre Turquía y Grecia en 1923, cuando sus habitantes griegos partieron y los refugiados turcos rechazaron vivir allí. Hoy se conservan unas 2.000 viviendas en ruinas, iglesias y escuelas recubiertas de musgo y maleza, que muchos describen como un pueblo fantasma donde el viento se cuela por ventanas sin cristal y el silencio de las calles vacías parece cargado de la tristeza de quienes se marcharon sin poder despedirse.",
+    "video": "https://www.cnn.com/travel/karakoy-turkey-ghost-town-levissi"
+  },
+  {
+    "name": "Topkapı Palace (palacio de sultanes y sombras) - ESTAMBUL",
+    "lat": 41.0115,
+    "lng": 28.9830,
+    "description": "El Palacio de Topkapı, en Estambul, fue durante siglos la residencia de los sultanes otomanos y escenario de intrigas de harén, ejecuciones secretas y decisiones imperiales que afectaron a millones de personas, lo que ha alimentado su reputación como lugar lleno de almas inquietas. Guardias y guías cuentan historias de pasos en los corredores del harén cuando está vacío, de susurros en salas cerradas y de una sensación especialmente densa en las áreas donde se realizaban castigos y estrangulamientos, como si los fantasmas de eunucos, concubinas y príncipes siguieran rondando los patios interiores.",
+    "video": "https://traveltriangle.com/blog/haunted-places-in-turkey/"
+  },
+  {
+    "name": "Cemil Molla Mansion (mansión del Bósforo embrujada) - KANDİLLİ, ESTAMBUL",
+    "lat": 41.0540,
+    "lng": 29.0630,
+    "description": "La mansión de Cemil Molla, en la orilla asiática del Bósforo en el barrio de Kandilli, es una casona otomana de madera que durante años estuvo semiderruida y envuelta en historias de fantasmas hasta el punto de que obreros se negaban a trabajar en su restauración. Se dice que algunos trabajadores perdieron el habla tras ver apariciones, que de noche se escuchaban pasos y puertas golpeando en la casa vacía y que figuras se asomaban a las ventanas hacia el estrecho, convirtiendo a la mansión en uno de los lugares más comentados de Estambul en cuanto a actividad paranormal.",
+    "video": "https://traveltriangle.com/blog/haunted-places-in-turkey/"
+  },
+  {
+    "name": "Bakırpaşa Mansion (casa encantada de Estambul) - ESTAMBUL",
+    "lat": 41.0100,
+    "lng": 28.9400,
+    "description": "Bakırpaşa Mansion es otra antigua residencia de Estambul famosa entre los locales por relatos de apariciones y sucesos extraños durante intentos de rehabilitación, que la han colocado en varias listas de casas embrujadas de Turquía. Se cuentan historias de trabajadores que oyeron voces en habitaciones vacías, herramientas que desaparecían o cambiaban de lugar y sombras que cruzaban los pasillos en plena obra, alimentando la idea de que antiguos propietarios o sirvientes siguen ocupando la casa en otra dimensión.",
+    "video": "https://traveltriangle.com/blog/haunted-places-in-turkey/"
+  },
+  {
+    "name": "Molla Zeyrek Mosque (viejas iglesias y túneles) - DISTRITO DE ZEYREK, ESTAMBUL",
+    "lat": 41.0185,
+    "lng": 28.9490,
+    "description": "La mezquita Molla Zeyrek, en Estambul, se compone de antiguas iglesias bizantinas reconvertidas, y los vecinos cuentan que bajo ella existirían túneles que conectan con otros barrios, lo que ha alimentado historias de gritos y presencias bajo tierra. Algunos habitantes dicen haber oído alaridos procedentes de las zonas donde antiguamente había establos y bodegas, y muchos creen que fantasmas de monjes, soldados o prisioneros se mueven por esos pasajes subterráneos nunca del todo explorados.",
+    "video": "https://traveltriangle.com/blog/haunted-places-in-turkey/"
+  },
+  {
+    "name": "Cevahir Bedesten (bazar con portal oculto) - GRAN BAZAR, ESTAMBUL",
+    "lat": 41.0107,
+    "lng": 28.9686,
+    "description": "El Cevahir Bedesten, una de las secciones más antiguas del Gran Bazar de Estambul, es un mercado cubierto de bóvedas donde se han acumulado riquezas, robos e historias durante siglos, y algunos comerciantes sostienen que allí existe un ‘portal’ hacia otro mundo. La leyenda dice que ciertas puertas o rincones del bedesten pueden hacer que la gente se desoriente y ‘pierda tiempo’, y se habla de mercaderes que habrían escuchado voces en idiomas desconocidos o visto figuras vestidas con trajes de épocas lejanas entre la multitud que se desvanecen en cuestión de segundos.",
+    "video": "https://traveltriangle.com/blog/haunted-places-in-turkey/"
+  },
+  {
+    "name": "Ani Ghost City (la ciudad fantasma medieval) - CERCA DE KARS, FRONTERA ESTE",
+    "lat": 40.5070,
+    "lng": 43.5720,
+    "description": "Ani, cerca de Kars en la frontera con Armenia, fue una próspera ciudad medieval conocida como ‘la ciudad de las mil iglesias’ que hoy yace en ruinas sobre una meseta ventosa, con templos, murallas y viviendas desiertas que le dan aspecto de ciudad fantasma. Visitantes describen un silencio roto solo por el viento que atraviesa las catedrales derrumbadas, y muchos hablan de escuchar cánticos lejanos o de sentir que alguien los observa desde las ventanas sin cristal de las iglesias, como si los habitantes de la Ani cristiana siguieran presentes.",
+    "video": "https://www.youtube.com/watch?v=mXS_5kGSDFM"
+  },
+  {
+    "name": "Üsküdar y la Bruja del barrio (leyenda de la bruja y los jinn) - ÜSKÜDAR, ESTAMBUL ASIÁTICA",
+    "lat": 41.0220,
+    "lng": 29.0150,
+    "description": "Una conocida leyenda urbana de Estambul habla de la Bruja de Üsküdar, una anciana solitaria que vivía en una casa ruinosa en las afueras del barrio y que habría hecho un pacto con jinn o con el diablo para manipular el destino de la gente. Se dice que atraía a jóvenes a su casa con promesas de hechizos de amor o riqueza, y que algunos nunca volvieron, mientras otros aseguraban que, tras visitarla, escuchaban voces, sufrían pesadillas y veían sombras en los cementerios cercanos, donde supuestamente la bruja realizaba rituales nocturnos.",
+    "video": "https://www.wattpad.com/1482196126-urban-legends-%0Dthe-witch-of-%C3%BCsk%C3%BCdar"
+  },
+  {
+    "name": "Burj Al Babas (urbanización de castillos fantasma) - CERCA DE MUDURNU, PROVINCIA DE BOLU",
+    "lat": 40.4360,
+    "lng": 31.2090,
+    "description": "Burj Al Babas, cerca del pueblo de Mudurnu, es una urbanización surrealista de más de 500 chalets idénticos con forma de pequeños castillos franceses, levantada para millonarios del Golfo pero abandonada a medio construir por bancarrota, formando un auténtico pueblo fantasma de fantasía. Entre las filas de castillos vacíos, muchos visitantes hablan de un silencio extraño, ecos de pasos que no son los suyos y una sensación de irrealidad, como si se caminara por un decorado embrujado donde nunca llegó a vivir nadie pero ya se perciben fantasmas de una riqueza que no fue.",
+    "video": "https://www.atlasobscura.com/articles/turkey-castle-ghost-town"
+  },
+  {
+    "name": "Bosques y caminos de caravanas (caravana fantasma) - REGIONES RURALES DE TURQUÍA",
+    "lat": 39.0000,
+    "lng": 34.0000,
+    "description": "En la Turquía rural abundan relatos de jinn y caravanas fantasma vinculados a viejas rutas comerciales; una historia habla de una caravana que desapareció en un camino de bosque y que a veces regresa solo en forma de sonidos. Un testimonio describe cómo, en una noche sin tráfico, una familia que cruzaba un sendero entre árboles empezó a escuchar cascos de caballos, ruedas y voces a su alrededor sin ver nada, empujándolos a huir mientras el ruido de la caravana invisible los perseguía por el bosque.",
+    "video": "https://www.youtube.com/watch?v=HrvaiorXOKk"
+  },
+  {
+    "name": "Cráter de Darvaza (la Puerta del Infierno) - DESIERTO DE KARAKUM, CERCA DE DARVAZA",
+    "lat": 40.2525,
+    "lng": 58.4393,
+    "description": "El cráter de Darvaza, en el desierto de Karakum, es una enorme cavidad de unos 70 metros de diámetro que arde continuamente desde principios de los años 70, cuando una prospección soviética de gas provocó el colapso del terreno y los geólogos decidieron prenderle fuego para evitar fugas de metano. Décadas después, las llamas siguen ardiendo día y noche, y los viajeros hablan de un resplandor naranja visible a kilómetros, un calor que golpea el rostro al acercarse y la sensación de estar asomado a una verdadera Puerta del Infierno, lo que ha generado leyendas sobre fuerzas sobrenaturales alimentando el fuego sin fin.",
+    "video": "https://lassandaliasdeulises.com/darvaza-la-puerta-del-infierno/"
+  },
+  {
+    "name": "Konye-Urgench (ciudad antigua embrujada) - PROVINCIA DE DASHOGUZ",
+    "lat": 42.3330,
+    "lng": 59.1500,
+    "description": "Konye-Urgench, antigua capital del imperio de Jorezm y hoy Patrimonio de la Humanidad, está cubierta de mausoleos, minaretes y ruinas de murallas que se recortan sobre el desierto, con edificios aislados que parecen flotar en la nada. Las leyendas locales cuentan que los fantasmas de antiguos habitantes y gobernantes siguen vagando entre las estructuras derruidas y muchos visitantes hablan de descensos bruscos de temperatura, susurros que no se pueden localizar y ecos en los pasillos de ladrillo que dan la sensación de que la ciudad nunca se quedó del todo vacía.",
+    "video": "https://creepyhq.com/haunted-places-in-turkmenistan/"
+  },
+  {
+    "name": "Merv (las ruinas de mil batallas) - CERCA DE MARY, DESIERTO DEL KARAKUM",
+    "lat": 37.6610,
+    "lng": 62.1790,
+    "description": "Merv, otra antigua ciudad de la Ruta de la Seda y también Patrimonio de la Humanidad, se extiende en un mar de ruinas de fortalezas, murallas y mausoleos que recuerdan su pasado como gran metrópolis asolada por invasiones y masacres, sobre todo la de los mongoles. Los que pasean por Merv al atardecer describen una sensación de vacío inmenso y, a la vez, de multitud invisible, y hay quien afirma haber visto figuras armadas en las puertas de la antigua ciudad y haber escuchado ecos de gritos y caballos en la lejanía del desierto.",
+    "video": "https://creepyhq.com/haunted-places-in-turkmenistan/"
+  },
+  {
+    "name": "Ruinas de Anau y mezquita derruida - CERCA DE ASHGABAT",
+    "lat": 37.8860,
+    "lng": 58.5330,
+    "description": "Las ruinas de Anau, cerca de la moderna Ashgabat, incluyen restos de una ciudad muy antigua y de una mezquita parcialmente destruida por el gran terremoto de 1948, cuyo minarete y arcos rotos recortan el cielo del desierto. Entre las historias locales se habla de monjes y estudiosos que seguirían rezando entre las piedras caídas, y algunos aseguran haber visto luces salir del interior de la mezquita derruida por la noche y sombras que se mueven entre las columnas derribadas, como si los rituales interrumpidos por la catástrofe continuaran en otro plano.",
+    "video": "https://creepyhq.com/haunted-places-in-turkmenistan/"
+  },
+  {
+    "name": "Cementerio de Nokhur (tumbas con cuernos) - PUEBLO DE NOKHUR, MONTAÑAS KOPET-DAG",
+    "lat": 38.3810,
+    "lng": 56.9850,
+    "description": "El cementerio de Nokhur, en un aislado pueblo de las montañas Kopet-Dag, destaca por sus lápidas ornadas con cuernos de carnero, símbolos de protección y fuerza, que dan al lugar un aspecto único y profundamente simbólico. La tradición dice que aquí reposan almas antiguas y espíritus poderosos, y visitantes relatan una sensación de respeto mezclada con inquietud al caminar entre las tumbas, además de historias de figuras que se mueven entre los cuernos al caer la noche y de un silencio tan denso que muchos lo interpretan como la presencia atenta de los muertos.",
+    "video": "https://creepyhq.com/haunted-places-in-turkmenistan/"
+  },
+  {
+    "name": "Yangykala Canyons (cañones encantados) - PROVINCIA DE BALKAN, OESTE DE TURKMENISTÁN",
+    "lat": 39.0900,
+    "lng": 55.8300,
+    "description": "Los Yangykala Canyons, en el oeste del país, son un conjunto de acantilados y cañones de colores rojos, rosas y naranjas que parecen un paisaje de otro planeta, conocidos tanto por su belleza como por la atmósfera casi sobrenatural que se respira allí. Una leyenda dice que un espíritu antiguo transformó la llanura en un laberinto de paredes para atrapar a sus enemigos, y algunos viajeros cuentan haber oído susurros en el viento y sonidos que parecen voces o pasos entre los barrancos, especialmente al amanecer y al atardecer, cuando las sombras se alargan.",
+    "video": "https://trvlland.com/turkmenistan/myths-and-legends-of-turkmenistan/"
+  },
+  {
+    "name": "Ashgabat nueva (la ciudad blanca fantasma) - ASHGABAT",
+    "lat": 37.9600,
+    "lng": 58.3260,
+    "description": "La nueva Ashgabat es una capital de avenidas desiertas, rascacielos y ministerios recubiertos de mármol blanco, estatuas doradas y fuentes impecables, pero sorprendentemente vacía, hasta el punto de que muchos visitantes la describen como una ciudad fantasma futurista. Crónicas de viajeros hablan de kilómetros de bulevares sin peatones, plazas sin gente y barrios oficiales donde la arquitectura monumental se alza sin vida humana visible, lo que crea la sensación inquietante de estar paseando por un decorado de película donde los habitantes han desaparecido.",
+    "video": "https://varlamov.me/1749635.html"
+  },
+  {
+    "name": "Arkadag (mega ciudad nueva casi vacía) - CERCA DE ASHGABAT",
+    "lat": 38.0000,
+    "lng": 58.0800,
+    "description": "Arkadag es una nueva ciudad construida desde cero en honor al ex presidente Gurbanguly Berdimuhamedow, concebida como urbe futurista de miles de habitantes, pero que por ahora permanece en gran medida vacía, con avenidas, parques y edificios casi sin uso. Reportajes recientes muestran calles amplias y limpias, monumentos dedicados al líder y complejos residenciales de última generación donde apenas se ve movimiento, reforzando la imagen de Turkmenistán como país de grandes proyectos urbanos que parecen auténticas ciudades fantasma contemporáneas.",
+    "video": "https://www.youtube.com/watch?v=e93V8lQ1M30"
+  },
+  {
+    "name": "Gur-e Amir (mausoleo maldito de Tamerlán) - SAMARCANDA",
+    "lat": 39.6540,
+    "lng": 66.9750,
+    "description": "Gur-e Amir, en Samarcanda, es el mausoleo de Tamerlán (Timur), construido a inicios del siglo XV y rodeado por la famosa leyenda de la ‘maldición de Tamerlán’. En junio de 1941, un equipo soviético abrió la tumba pese a las advertencias de ancianos locales que aseguraban que quien la profanara desataría una gran calamidad, y pocos días después comenzó la invasión nazi de la URSS, lo que hizo que muchos creyeran que el espíritu del conquistador se había vengado.",
+    "video": "https://worldcrunch.com/food-travel/haunted-locations-world/"
+  },
+  {
+    "name": "Gur-e Amir (reentierro y maldición aplacada) - SAMARCANDA",
+    "lat": 39.6540,
+    "lng": 66.9750,
+    "description": "Según la tradición popular, en 1942 las autoridades soviéticas ordenaron volver a enterrar correctamente los restos de Tamerlán con rituales adecuados, y poco después el curso de la guerra empezó a cambiar a favor de la URSS con la victoria en Stalingrado. Esta coincidencia reforzó la creencia de que el mausoleo alberga una fuerza espiritual peligrosa si se profana, y que la maldición solo se calma cuando el conquistador descansa en paz, lo que ha convertido a Gur-e Amir en el lugar más temido y respetado de Uzbekistán en términos de ‘embrujo histórico’.",
+    "video": "https://www.advantour.com/uzbekistan/legends.htm"
+  },
+  {
+    "name": "Kantubek (pueblo fantasma del Aral) - ISLA DE VOZROZHDENIYA, MAR DE ARAL",
+    "lat": 45.0800,
+    "lng": 59.1200,
+    "description": "Kantubek, en la antigua isla de Vozrozhdeniya del mar de Aral, fue un asentamiento soviético secreto ligado a pruebas de armas biológicas, conocido también como Aralsk-7, hoy completamente abandonado y en gran parte demolido. Quedan restos de edificios, depósitos y calles sin vida en medio de un paisaje desecado, lo que hace que muchos lo describan como uno de los lugares más inquietantes de Uzbekistán, un auténtico pueblo fantasma científico en mitad del desierto de sal.",
+    "video": "https://en.wikipedia.org/wiki/Kantubek"
+  },
+  {
+    "name": "‘Aral Ghost’ (ruinas y barcos muertos del Aral) - REGIÓN DEL MAR DE ARAL",
+    "lat": 45.0000,
+    "lng": 60.0000,
+    "description": "En la región del mar de Aral, el retroceso del agua dejó al descubierto pueblos costeros, cementerios de barcos y puertos secos que muchos uzbeko consideran un paisaje maldito conocido como el ‘Aral Ghost’. Las imágenes de cascos oxidados sobre arena, muelles que ya no tocan el agua y viviendas vacías han dado pie a relatos de espíritus de marineros y pescadores que seguirían vagando por una costa que desapareció bajo la catástrofe ecológica.",
+    "video": "http://spgazeta.tilda.ws/the-aral-ghost"
+  },
+  {
+    "name": "Ciudades fantasma mineras (Angren y Yangiabad) - REGIÓN DE TASHKENT",
+    "lat": 41.0000,
+    "lng": 70.0000,
+    "description": "En Uzbekistán central, antiguos centros mineros como Angren y Yangiabad conservan bloques de pisos semivacíos, fábricas abandonadas y un parque de atracciones oxidado que han convertido la zona en destino de turismo oscuro. Quienes exploran estas localidades hablan de calles desiertas, escuelas cerradas y hospitales industriales vacíos donde es fácil imaginar los fantasmas de obreros soviéticos, niños y médicos que un día llenaron de ruido lo que hoy son ruinas silenciosas.",
+    "video": "https://central-asia.guide/dark-tourism-in-central-asia/"
+  },
+  {
+  "name": "Dar al Hajar (palacio de la roca embrujado) - WADI DHAHR, CERCA DE SANÁ",
+  "lat": 15.4780,
+  "lng": 44.1400,
+  "description": "Dar al Hajar, el famoso palacio construido sobre una roca en Wadi Dhahr cerca de Saná, fue residencia de imanes y símbolo del poder yemení, y está rodeado de historias de espíritus que custodian sus habitaciones y pasadizos. Visitantes y guardas han relatado ruidos inexplicables, pasos en las escaleras cuando el palacio está vacío y una sensación de presencia en las plantas superiores por la noche, lo que ha alimentado su fama como palacio embrujado que domina el valle desde lo alto de la roca.",
+  "video": "https://creepyhq.com/haunted-places-in-yemen/"
+},
+{
+  "name": "Ruinas de Zafar (antigua capital himyarita) - AL SUR DE SANÁ",
+  "lat": 14.2170,
+  "lng": 44.4080,
+  "description": "Zafar, antigua capital del reino himyarita, conserva ruinas de murallas, palacios y templos que se consideran cargadas de espíritus de antiguos reyes y soldados que murieron defendiendo la ciudad. Historias locales hablan de sonidos de combate, gritos y pasos que resuenan entre las piedras al caer la noche, y de figuras que se ven brevemente entre los restos de las construcciones antes de desvanecerse en la oscuridad del altiplano.",
+  "video": "https://creepyhq.com/haunted-places-in-yemen/"
+},
+{
+  "name": "Al Mahwit Castle (castillo de traiciones y apariciones) - PROVINCIA DE AL MAHWIT",
+  "lat": 15.4700,
+  "lng": 43.5500,
+  "description": "Al Mahwit Castle, en las montañas al oeste de Saná, es una fortaleza levantada sobre un espolón rocoso con vistas a profundos valles, escenario de guerras locales y episodios de traición según la tradición. Los relatos hablan de espíritus de soldados y nobles que murieron de forma violenta y que aún se manifiestan como luces extrañas, puntos fríos en habitaciones concretas y siluetas que se mueven por las almenas en noches sin luna.",
+  "video": "https://creepyhq.com/haunted-places-in-yemen/"
+},
+{
+  "name": "Mezquita de Jibla y tumba de la reina Arwa - JIBLA, CERCA DE IBB",
+  "lat": 13.9170,
+  "lng": 44.1500,
+  "description": "La mezquita de Jibla, donde está enterrada la reina Arwa al‑Sulayhi, del siglo XII, es uno de los lugares más venerados y a la vez más misteriosos de Yemen, con historias que aseguran que el espíritu de la reina sigue caminando por el complejo. Vecinos y peregrinos cuentan haber visto una figura femenina con vestimenta antigua entre los patios y los pórticos, y haber oído susurros o pasos suaves alrededor de la tumba en la quietud de la noche.",
+  "video": "https://creepyhq.com/haunted-places-in-yemen/"
+},
+{
+  "name": "Seiyun Palace (palacio blanco de los espíritus) - SEIYUN, VALLE DE HADRAMAUT",
+  "lat": 15.9430,
+  "lng": 48.7930,
+  "description": "El Seiyun Palace, un enorme palacio de barro blanco en el valle de Hadramaut, fue residencia de sultanes y hoy alberga un museo, pero también se menciona en historias de apariciones de sirvientes y miembros de la familia real. Visitantes nocturnos han hablado de música tenue que parece salir de salas cerradas, de figuras con ropa antigua que cruzan los balcones interiores y de luces que se encienden y apagan en ventanas donde no hay nadie trabajando.",
+  "video": "https://creepyhq.com/haunted-places-in-yemen/"
+},
+{
+  "name": "Pozo de Barhut (el pozo del infierno de Hadramaut) - DESIERTO DE AL‑MAHRA / HADRAMAUT",
+  "lat": 16.3330,
+  "lng": 52.3330,
+  "description": "El Pozo de Barhut, también llamado el pozo del infierno, es una sima natural muy profunda en el este de Yemen rodeada de leyendas que lo describen como morada de jinn y lugar donde un rey himyarita habría escondido tesoros con ayuda de estos seres. Historias recogidas por cronistas y modernos investigadores hablan de olores pestilentes, ruidos extraños procedentes del fondo y la creencia de que quien descienda sin permiso puede no volver, por lo que muchos yemeníes lo consideran un portal a un mundo de espíritus y castigos.",
+  "video": "https://khulasat.org/en/posts/Myths-and-Folklore"
+},
+{
+  "name": "Ciudades y barrios fantasma de la guerra (Saná, Taiz, Haradh) - DIVERSAS ZONAS DE YEMEN",
+  "lat": 15.3500,
+  "lng": 44.2000,
+  "description": "Años de guerra han dejado barrios enteros de ciudades como Saná, Taiz o Haradh reducidos a esqueletos de hormigón, con casas, escuelas y hospitales vacíos que muchos describen como auténticas ciudades fantasma. Organizaciones médicas y humanitarias hablan de hospitales bombardeados convertidos en ‘ghost hospitals’, pasillos sin personal, salas con equipos abandonados y pueblos como Haradh casi totalmente vacíos, donde quienes regresan sienten que caminan entre los ecos y ‘fantasmas’ de los que huyeron o murieron allí.",
+  "video": "https://medical-facilities.yemeniarchive.org"
+}
 ]
