@@ -13835,8 +13835,111 @@
   "lng": -5.8835,
   "description": "El llamado Sanatorio de los Muertos, en realidad el antiguo Complejo Hospitalario San Pablo levantado junto al aeropuerto de Sevilla para uso militar y sanitario a mediados del siglo XX, quedó abandonado tras la apertura y ampliación del Hospital Virgen Macarena y desde entonces se ha convertido en el lugar maldito más famoso de la ciudad. Entre sus pabellones en ruinas, pasillos llenos de grafitis y sótanos semitapiados, exploradores e investigadores aseguran haber registrado psicofonías con voces que piden ayuda, pasos que se acercan por corredores vacíos, bruscas bajadas de temperatura y sombras que se asoman a puertas y ventanas, alimentando la leyenda de que los espíritus de antiguos pacientes y militares siguen vagando por uno de los escenarios más inquietantes del ‘Sevilla paranormal’.",
   "video": "https://www.youtube.com/watch?v=k5I847-hdFg"
-}
+},
+ 
+{
+  "name": "Hospital Nossa Senhora da Paz - SÃO JOSÉ DO RIO PRETO, SÃO PAULO",
+  "lat": -20.8194,
+  "lng": -49.3794,
+  "description": "El antiguo Hospital Nossa Senhora da Paz, desactivado desde 2002 en São José do Rio Preto, es considerado uno de los lugares más inquietantes de la región. Este hospital de cuatro pisos y 12 mil metros cuadrados fue abandonado tras una crisis financiera y un escándalo con suero contaminado. Los exploradores urbanos reportan corredores llenos de sujeira y entulhos, equipos médicos deteriorados, incubadoras abandonadas en la antigua UTI neonatal, y una atmósfera extremadamente pesada. El hospital está ubicado en una de las áreas más valorizadas de la ciudad, lo que contrasta con su estado de abandono y las energías perturbadoras que se sienten en sus instalaciones.",
+  "video": "https://www.tiktok.com/discover/lugares-abandonados-em-s%C3%A3o-jos%C3%A9-do-rio-preto"
+},
 
+{
+  "name": "Estrada do Lobisomem - TRÊS LAGOAS, MATO GROSSO DO SUL",
+  "lat": -20.7511,
+  "lng": -51.6783,
+  "description": "Una de las leyendas más famosas del interior de Brasil es el Lobisomem de Três Lagoas que aterrorizó la ciudad durante las décadas de 1980 y 1990. Moradores de la Vila Haro y el barrio Parque São Carlos en Três Lagoas reportaron apariciones de una criatura con características humanas y animales, especialmente durante las noches de luna llena. El caso ganó repercusión nacional cuando fue reportado por el programa Fantástico de Rede Globo en el cuadro 'Sem Limites' presentado por Lima Duarte. Testigos describieron al ser como una mezcla entre cachorro y porco que fuçava los portones de las casas. Los moradores llegaron a organizar cacerías con paus y foices para encontrar la criatura.",
+  "video": "https://www.youtube.com/watch?v=Nv-pZkhXU6A"
+},
+
+{
+  "name": "Noiva do Eucalipto - TRÊS LAGOAS, MATO GROSSO DO SUL",
+  "lat": -20.7250,
+  "lng": -51.7120,
+  "description": "En la estrada que lleva al distrito de Arapuá en Três Lagoas, aparece el espíritu de la 'Noiva do Eucalipto'. Según relatos, una mujer habría sido víctima de un accidente fatal en esta carretera y, desde entonces, su espíritu vaga por la región vestida de novia, especialmente durante la noche entre los eucaliptos que bordean el camino. La historia ganó fuerza con una foto que circuló en las redes sociales mostrando una figura fantasmagórica entre los eucaliptos, causando terror entre los motoristas que transitan por la zona. Los avistamientos son más frecuentes en noches de niebla.",
+  "video": "https://www.radiocacula.com.br/lendas-urbanas-de-tres-lagoas-misterios-e-historias-que-fascinam-a-cidade/"
+},
+
+{
+  "name": "Igreja de Santo Antônio (Pretinho Aleijado) - TRÊS LAGOAS, MATO GROSSO DO SUL",
+  "lat": -20.7514,
+  "lng": -51.6786,
+  "description": "La Igreja de Santo Antônio, uno de los marcos históricos de Três Lagoas, es palco de la historia del 'Pretinho Aleijado'. Según la leyenda urbana, un hombre con deficiencia física habría sido asesinado durante un asalto a la iglesia décadas atrás. Desde entonces, los fieles y visitantes creen que su espíritu todavía toca el sino de la iglesia, especialmente en momentos de grande emoción religiosa o durante ceremonias importantes. Moradores reportan escuchar el sino sonar en horarios inusuales cuando no hay nadie en el campanario, y algunos afirman haber visto la silueta del hombre cerca de la torre de la iglesia.",
+  "video": "https://www.radiocacula.com.br/lendas-urbanas-de-tres-lagoas-misterios-e-historias-que-fascinam-a-cidade/"
+},
+
+{
+  "name": "Antiga Estação Ferroviária (Lobisomem dos Trilhos) - BAURU, SÃO PAULO",
+  "lat": -22.3149,
+  "lng": -49.0614,
+  "description": "Diz la leyenda que había un lobisomem que vagaba por los trilhos de la ferrovia de Bauru, causando pánico entre los trabajadores del local en una época en que ni siquiera había energía eléctrica. Los funcionarios reportaban uivos, marcas de patas gigantes y hasta contactos directos con la criatura durante las noches de luna llena en la estación ferroviaria de Bauru. El empleado de plantón en la ferrovia durante noches de luna cheia ya sabía lo que hacer: espalhar cruzes de madeira por todo el patio de la estación para protegerse del lobisomem. Esta práctica se volvió un ritual entre los trabajadores nocturnos.",
+  "video": "https://conteudo.solutudo.com.br/bauru/bauru-historias-assustadoras-lendas-urbanas-misterios/"
+},
+
+{
+  "name": "Cemitério do Antigo Leprosário (Asilo Colônia Aimorés) - BAURU, SÃO PAULO",
+  "lat": -22.3472,
+  "lng": -49.0286,
+  "description": "El Antigo Asilo Colônia Aimorés en Bauru, conocido como el 'Leprosário de Bauru', fue abierto en la década de 1930 donde personas con hanseníase eran internadas compulsoriamente, completamente segregadas de la sociedad. El local llegó a receber cerca de duas mil personas que ficavam totalmente aisladas en 'hospitales colônia'. Con las muchas muertes del Asilo, fue creado un cemitério apartado para las víctimas de la hanseníase que hoy está abandonado y envuelto en misterios. En las lápidas es imposible saber algo sobre las personas enterradas. El antiguo leprosário fue tombado como patrimonio histórico, y hoy es el Instituto Lauro de Souza Lima. Exploradores reportan una atmósfera extremadamente pesada y presencias inexplicables.",
+  "video": "https://www.youtube.com/watch?v=r_qLiZ0WadY"
+},
+
+{
+  "name": "Museu Histórico de Londrina - LONDRINA, PARANÁ",
+  "lat": -23.3045,
+  "lng": -51.1696,
+  "description": "El Museu Histórico de Londrina en Paraná es considerado uno de los lugares con mayor actividad paranormal de la ciudad. El parapsicólogo Rogelio Raquel, consultor del programa Fantástico de Rede Globo, investigó el museo y detectó fuerte actividad en la sala que reúne objetos de familias antiguas. El espacio no tiene janelas abiertas y toda la energía de las piezas y visitantes estaría concentrada en el lugar. Los funcionarios reportan objetos que se mueven solos, luces que se apagan y encienden sin explicación, y una atmósfera opresiva especialmente en los horarios nocturnos. El investigador solicitó volver para hacer más pesquisas en el local.",
+  "video": "https://www.folhadelondrina.com.br/folha-mais/fenomenos-ou-assombracao-973136.html"
+},
+
+{
+  "name": "Hospital Abandonado de Londrina - LONDRINA, PARANÁ",
+  "lat": -23.3102,
+  "lng": -51.1628,
+  "description": "Explorar el Hospital Abandonado de Londrina durante la noche es como entrar en un escenario de película de terror en pleno corazón de Londrina, Paraná. Este lugar, que ya fue referencia en la ciudad, hoy está tomado por el silencio, la oscuridad y por historias que erizan la piel. Muchos moradores cuentan que después de cerrado, el hospital se convirtió en palco de leyendas urbanas, con vultos y sonidos inexplicables que resuenan por los corredores desiertos. Exploradores urbanos reportan sentir presencias, escuchar pasos cuando están solos, y experimentar una sensación de estar siendo observados constantemente. Es considerado uno de los lugares más peligrosos para filmar de la región.",
+  "video": "https://www.instagram.com/reel/DNhDMgYSIV_/"
+},
+
+{
+  "name": "Casa en Jardim Bandeirantes (Cementerio Indígena) - LONDRINA, PARANÁ",
+  "lat": -23.2890,
+  "lng": -51.1542,
+  "description": "En el bairro Jardim Bandeirantes en Londrina, existe una casa construida sobre un antiguo cementerio indígena donde nadie consigue vivir debido a la cantidad de manifestaciones sobrenaturales. El parapsicólogo Rogelio Raquel investigó el local y confirma que los cemitérios indígenas de la ciudad son causas de fenômenos paranormales intensos. Los moradores de la casa reportaron puertas que se abren y cierran solas, objetos que se mueven, ruidos inexplicables durante la noche, y la sensación constante de estar siendo observados. La energía del lugar es tan pesada que varias familias abandonaron la residencia pocas semanas después de mudarse.",
+  "video": "https://www.folhadelondrina.com.br/folha-mais/fenomenos-ou-assombracao-973136.html"
+},
+
+{
+  "name": "Cemitério dos Caboclos - MARINGÁ, PARANÁ",
+  "lat": -23.3650,
+  "lng": -51.9380,
+  "description": "El Cemitério dos Caboclos, localizado entre el distrito de Floriano y el municipio de Paiçandu cerca de Maringá, es el local más famoso por apariciones sobrenaturales de la región. La área de Maringá era habitada por mestiços de índios y blancos, conocidos como caboclos, que enterraban sus muertos en este cementerio hasta mediados de los años 1950. Hoy está abandonado, pero muchas personas lo utilizan para realizar prácticas de candomblé, magia o para hacer ofrendas a los muertos. Existen numerosos relatos de personas que vieron vultos, escucharon voces y sintieron presencias en este cementerio. El historiador João Laércio confirma que es un 'local assombrado já famoso em Maringá'.",
+  "video": "https://www.maringahistorica.com.br/publicacoes/3793/historias-de-assombracoes-em-maringa"
+},
+
+{
+  "name": "Antigua Delegacia (Cadeião) - MARINGÁ, PARANÁ",
+  "lat": -23.4273,
+  "lng": -51.9380,
+  "description": "La antigua delegacia de Maringá, ubicada donde funcionaba el Detran (hoy parte de la estructura del Corpo de Bombeiros en la avenida Paraná esquina con avenida Guaíra), es famosa por sus historias de asombración. El antiguo 'cadeião' se hizo famoso como local de tortura y muerte de prisioneros hasta los años 1970 en Maringá. Existen múltiples relatos de personas que vieron vultos y hasta escucharon gritos viniendo del antiguo cadeião mucho tiempo después de haber sido desactivado. Sonidos extraños eran oídos incluso durante el día. Los trabajadores de la región reportan una atmósfera opresiva y perturbadora que persiste hasta hoy en el edificio.",
+  "video": "https://maringapost.com.br/cidade/2024/09/13/sexta-feira-13-conheca-tres-historias-de-assombracoes-em-maringa/"
+},
+
+{
+  "name": "Estacionamiento del Shopping (Antiga Maternidade) - MARINGÁ, PARANÁ",
+  "lat": -23.4250,
+  "lng": -51.9320,
+  "description": "Un shopping en la Avenida São Paulo en el centro de Maringá, Paraná, fue construido sobre el terreno donde en los años 1950 funcionó una de las primeras maternidades de la ciudad. Trabajadores del shopping reportaron escuchar choros de crianças en el estacionamiento del local cuando todavía funcionaba en modelo manual, especialmente durante la noche. En uno de los relatos, hay inclusive la citación sobre el avistamiento de una mujer toda vestida de blanco circulando por el lugar tarde de la noche. Las leyendas indican que debido a la medicina limitada de la época, las tasas de mortalidad infantil eran altas y muchas crianças murieron en el local, dejando sus espíritus vagando.",
+  "video": "https://www.youtube.com/watch?v=VIDEO_MARINGAHISTORICA"
+},
+
+{
+  "name": "Casa Embrujada de la Estrada Guaiapó - MARINGÁ, PARANÁ",
+  "lat": -23.3980,
+  "lng": -51.8920,
+  "description": "En el año 1955, una residencia en la Estrada Guaiapó cerca de Maringá, Paraná, estaría siendo assombrada por demônios según reportes de los moradores. El padre Benno Wagner, que actuaba en la paróquia São José Operário, fue llamado para una sesión de exorcismo. Conforme relatado por el propio pároco, la casa habría comenzado a tremer durante la ceremonia de exorcismo. Esta es una de las historias paranormales más antiguas documentadas de Maringá, y hasta hoy la Estrada Guaiapó tiene reputación de ser un local con energías perturbadoras y manifestaciones sobrenaturales.",
+  "video": "https://maringapost.com.br/cidade/2024/09/13/sexta-feira-13-conheca-tres-historias-de-assombracoes-em-maringa/"
+}
 
 
 
