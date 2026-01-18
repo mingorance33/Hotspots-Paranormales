@@ -18766,6 +18766,572 @@
     "description": "Mathinna llegó a ser una de las mayores localidades del noreste de Tasmania durante la fiebre del oro de 1890, pero empezó a vaciarse tras el misterioso asesinato en 1913 del granjero William Mullins, hallado quemado en una pira funeraria improvisada; nunca se encontró al culpable. Con el fin del oro y el impacto del crimen, la población se desplomó y hoy apenas quedan unas 200 personas y vestigios de su antiguo esplendor, lo que le da fama de pueblo marcado por un crimen fantasma.",
     "video": "https://www.australiangeographic.com.au/history-culture/2016/05/top-10-tasmanian-ghost-towns/"
   }
+,
+    {
+    "name": "Kingseat Hospital, psiquiátrico más temido del país - KARAKA, CERCA DE AUCKLAND (NUEVA ZELANDA)",
+    "lat": -37.1520,
+    "lng": 174.9030,
+    "description": "Kingseat Hospital fue un gran hospital psiquiátrico rural que funcionó desde los años 30 hasta principios de los 90, diseñado como una serie de pabellones aislados entre jardines y campos. Tras el cierre, el recinto se deterioró y empezaron a acumularse más de cien testimonios de apariciones, sombras en los pasillos, gritos lejanos y una famosa figura femenina conocida como la \"Nurse in White\", lo que lo ha convertido en uno de los lugares más embrujados de Nueva Zelanda.",
+    "video": "https://en.wikipedia.org/wiki/Kingseat_Hospital_(New_Zealand)"
+  },
+  {
+    "name": "Napier Prison, presidio, orfanato y psiquiátrico con condenados eternos - NAPIER (NUEVA ZELANDA)",
+    "lat": -39.4825,
+    "lng": 176.9200,
+    "description": "La prisión de Napier, en lo alto de Bluff Hill, operó entre 1862 y 1993 como cárcel principal de la zona y, en distintos momentos, también como orfanato y hospital psiquiátrico para internos conflictivos. Hoy funciona como atracción histórica y paranormal, con tours que relatan la historia del asesino múltiple Roland Edwards y recogen relatos de apariciones, celdas que se cierran solas, pasos en los pasillos y una sensación de opresión que muchos visitantes describen como insoportable.",
+    "video": "https://www.campervannewzealand.co.nz/blog/travel-information/haunted-places-in-nz"
+  },
+  {
+    "name": "Vulcan Hotel y lago azul de St Bathans, oro, asesinatos y la dama de rojo - ST BATHANS (ISLA SUR, NUEVA ZELANDA)",
+    "lat": -44.8840,
+    "lng": 169.8560,
+    "description": "St Bathans es un pequeño pueblo minero de la fiebre del oro de Otago, casi congelado en el tiempo, famoso por su lago azul artificial y por el Vulcan Hotel, un pub histórico de fachada roja. La leyenda habla de \"The Rose\", una trabajadora sexual asesinada en el siglo XIX cuya presencia todavía se siente en la habitación 1, donde huéspedes cuentan que algo se sienta sobre ellos en la cama, les susurra al oído o les impide moverse durante la noche.",
+    "video": "https://www.campervannewzealand.co.nz/blog/travel-information/haunted-places-in-nz"
+  },
+  {
+    "name": "Seacliff Lunatic Asylum, ruinas del hospital más maldito - SEACLIFF, AL NORTE DE DUNEDIN (NUEVA ZELANDA)",
+    "lat": -45.6920,
+    "lng": 170.5660,
+    "description": "El asilo de Seacliff, a unos 30 kilómetros al norte de Dunedin, fue uno de los mayores hospitales psiquiátricos del país y pasó de ser un símbolo de tratamientos modernos a un lugar asociado a abusos, hacinamiento y tragedias. En 1942 un incendio en el pabellón femenino 5 mató a 37 mujeres encerradas en celdas cuyos pestillos no podían abrirse desde dentro; desde su cierre en los 70, las ruinas y el bosque que las rodea son escenario de relatos de gritos nocturnos, figuras entre los árboles y una atmósfera que muchos describen como el lugar más inquietante de Nueva Zelanda.",
+    "video": "https://thespinoff.co.nz/society/13-02-2021/the-story-of-seacliff-the-most-haunted-place-in-new-zealand"
+  },
+  {
+    "name": "Larnach Castle, drama familiar en el único castillo del país - PENÍNSULA DE OTAGO, CERCA DE DUNEDIN (NUEVA ZELANDA)",
+    "lat": -45.8780,
+    "lng": 170.7280,
+    "description": "Larnach Castle, construido en 1871 por el político y banquero William Larnach, mezcla arquitectura de mansión victoriana y torres de castillo con vistas a la península de Otago; la familia vivió allí varias tragedias, incluyendo suicidios y muertes prematuras. Trabajadores y visitantes cuentan ver a una mujer con vestido del siglo XIX vagando por los pasillos, escuchar pasos en habitaciones cerradas y sentir cómo alguien les toca el hombro en la gran escalera cuando no hay nadie detrás.",
+    "video": "https://traveltriangle.com/blog/haunted-places-in-new-zealand/"
+  },
+  {
+    "name": "Macetown, ciudad de oro enterrada por el río - MACETOWN, CERCA DE ARROWTOWN (ISLA SUR, NUEVA ZELANDA)",
+    "lat": -44.8720,
+    "lng": 168.8020,
+    "description": "Macetown nació con la fiebre del oro del siglo XIX en el valle del Arrow River y llegó a tener hasta 300 habitantes, con escuela, iglesia y varias minas activas, pero fue abandonado cuando el oro se agotó y las inundaciones arrasaron gran parte del asentamiento. Hoy solo se puede llegar por una pista 4x4 que cruza varias veces el río, y el visitante encuentra unas pocas casas restauradas, ruinas de piedra y maquinaria oxidada entre la montaña, un auténtico pueblo fantasma alpino.",
+    "video": "https://www.travelguide.co.nz/blog/new-zealands-ghost-towns-exploring-abandoned-history"
+  },
+  {
+    "name": "Waiuta, el mayor pueblo fantasma minero - WAIUTA, COSTA OESTE (ISLA SUR, NUEVA ZELANDA)",
+    "lat": -42.2250,
+    "lng": 171.8520,
+    "description": "Waiuta fue fundado en 1906 tras el hallazgo de un rico filón de oro y llegó a albergar más de 600 personas, con cine, tienda, oficina de correos y una de las minas más productivas del país; todo terminó en 1951, cuando el hundimiento del pozo principal obligó a cerrar la explotación y la población marchó en pocos meses. Hoy el bosque ha reclamado muchas estructuras, pero aún se pueden recorrer las calles, restos de casas, la planta de procesamiento y el cementerio, lo que lo convierte en el pueblo fantasma mejor conservado de Nueva Zelanda.",
+    "video": "https://www.travelguide.co.nz/blog/new-zealands-ghost-towns-exploring-abandoned-history"
+  },
+  {
+    "name": "Denniston, ciudad del carbón colgada sobre un abismo - DENNISTON PLATEAU, COSTA OESTE (ISLA SUR, NUEVA ZELANDA)",
+    "lat": -41.7260,
+    "lng": 171.7890,
+    "description": "Denniston fue un duro asentamiento carbonero construido en lo alto de una meseta ventosa, unido al valle por un plano inclinado tan empinado que los vagones parecían caer por el abismo, y durante décadas albergó a cientos de mineros y sus familias en condiciones extremas. Hoy solo quedan ruinas, antiguos raíles y carteles interpretativos sobre un paisaje gris y castigado por el viento, descrito en guías como un lugar que \"rompía\" o \"forjaba\" a sus habitantes y que ahora parece un poblado fantasma colgado sobre el vacío.",
+    "video": "https://www.nzherald.co.nz/travel/new-zealand-ghost-towns-in-the-south-island-for-a-different-kind-of-road-trip/CWPPVGPDSWSP7IGA"
+  },
+  {
+    "name": "Mangapurua / Bridge to Nowhere, valle evacuado y puente sin camino - MANGAPURUA VALLEY, WHANGANUI NATIONAL PARK (NUEVA ZELANDA)",
+    "lat": -39.0610,
+    "lng": 174.9720,
+    "description": "Tras la Primera Guerra Mundial, el gobierno abrió el remoto valle de Mangapurua para reasentar a veteranos en granjas talladas en la selva, pero el terreno difícil, los corrimientos de tierra y el aislamiento hicieron fracasar el proyecto; en los años 40 se ordenó abandonar todas las granjas. Hoy solo queda el famoso Bridge to Nowhere, un enorme puente de hormigón en mitad del bosque sin carreteras que lo conecten, símbolo de un asentamiento fantasma devorado por la naturaleza.",
+    "video": "https://www.travelguide.co.nz/blog/new-zealands-ghost-towns-exploring-abandoned-history"
+  },
+  {
+    "name": "Spirits Bay / Piwhane, playa donde parten las almas - NORTHLAND, CABO REINGA (NUEVA ZELANDA)",
+    "lat": -34.4300,
+    "lng": 172.8100,
+    "description": "Piwhane / Spirits Bay, cerca del extremo norte de la Isla Norte, es un lugar sagrado para los maoríes, que creen que las almas de los difuntos viajan por la costa hasta el cercano Cabo Reinga para descender por un árbol y dejar este mundo camino del más allá. La bahía combina belleza salvaje con leyendas de luces extrañas, figuras que se ven brevemente en la playa al anochecer y una sensación de carga espiritual tan intensa que muchos visitantes la describen como uno de los lugares más \"encantados\" del país.",
+    "video": "https://en.wikipedia.org/wiki/List_of_reportedly_haunted_locations_in_New_Zealand"
+  }
+,
+    {
+    "name": "Antiguo edificio colonial del gobierno, pasillos de la era británica - SUVA (FIYI)",
+    "lat": -18.1416,
+    "lng": 178.4419,
+    "description": "En Suva se conserva un antiguo edificio colonial del gobierno, levantado en época británica, que hoy aparece en listados de lugares más embrujados de Fiyi por sus largos pasillos, despachos abandonados y sótanos cerrados. Trabajadores y visitantes hablan de pasos cuando el edificio está vacío, puertas que se abren y cierran solas y la sensación de ser observado desde ventanas oscuras, como si los fantasmas de funcionarios, soldados y presos coloniales siguieran rondando el complejo.",
+    "video": "https://creepyhq.com/haunted-places-in-fiji/"
+  },
+  {
+    "name": "Thurston Gardens y edificios históricos, apariciones entre ceibas y cañones - JARDINES THURSTON, SUVA (FIYI)",
+    "lat": -18.1403,
+    "lng": 178.4226,
+    "description": "Los Thurston Gardens, junto al Museo de Fiyi en Suva, ocupan un área donde en el siglo XIX hubo fortificaciones, cementerios y edificios coloniales, y hoy combinan árboles monumentales, cañones antiguos y senderos oscuros. Historias locales hablan de apariciones entre las sombras, sonidos de pasos y voces cerca de los cañones y una presencia que se deja sentir al anochecer, por lo que los jardines se mencionan a menudo como uno de los rincones más inquietantes de la capital.",
+    "video": "https://www.tiktok.com/@fiji.untold/video/7255139705065327873"
+  },
+  {
+    "name": "Antigua logia masónica abandonada, símbolos ocultos frente al mar - LEVUKA, OVALAU (FIYI)",
+    "lat": -17.6845,
+    "lng": 178.8370,
+    "description": "En Levuka, antigua capital colonial de Fiyi y hoy Patrimonio Mundial, subsiste una vieja logia masónica abandonada, con fachada descascarillada, escaleras que crujen y símbolos esotéricos aún visibles en paredes y suelos. Vecinos y exploradores urbanos cuentan que el edificio se siente cargado, con ecos de reuniones secretas, pasos en las plantas superiores cuando no hay nadie y una atmósfera opresiva que contrasta con la tranquilidad del pequeño puerto.",
+    "video": "https://www.tiktok.com/@l1ggy/video/7440233887067950344"
+  },
+  {
+    "name": "Hotel Shangri-La’s Fijian Resort, habitaciones con \"golpes\" y presencias - SIGATOKA, COSTA DE CORAL (FIYI)",
+    "lat": -18.1975,
+    "lng": 177.6465,
+    "description": "El Shangri-La’s Fijian Resort, en una isla privada frente a la Costa de Coral, es un gran complejo turístico construido en los años 70 donde varios huéspedes relatan fenómenos extraños en determinadas habitaciones y pasillos. Testimonios recogidos por investigadores hablan de una habitación sellada tras el pánico de una pareja que vio dos figuras espectrales volando por la estancia, vajilla moviéndose sola, golpes rítmicos en las puertas a medianoche y una presencia que se sienta sobre el pecho de los durmientes, obligándoles a rezar para poder moverse de nuevo.",
+    "video": "https://hauntedauckland.com/site/ghosts-at-hotel-shangri-la-fiji/"
+  },
+  {
+    "name": "Hostales universitarios en antiguo hospital, pasillos de la Dama Blanca - USP LAUCALA CAMPUS, SUVA (FIYI)",
+    "lat": -18.1500,
+    "lng": 178.4500,
+    "description": "En el campus de Laucala de la Universidad del Pacífico Sur, en Suva, algunos de los hostales de estudiantes ocupan edificios que fueron hospital y alojamientos de enfermería, y antiguos residentes cuentan que el terreno donde hoy se levantan nuevos pabellones fue lugar de enterramientos y depósito de cuerpos. Entre los alumnos circulan historias de posesiones, gritos en los pasillos de madrugada y la aparición de una Dama Blanca que se deja ver en ciertas plantas, hasta el punto de que el 8th Hall se considera uno de los lugares más inquietantes del campus.",
+    "video": "https://www.reddit.com/r/Fijian/comments/1iqp5dn/ghost_stories_anyone/"
+  },
+  {
+    "name": "Carretera de Nabou entre pinares, tramo de accidentes y apariciones - ENTRE SIGATOKA Y NADI (FIYI)",
+    "lat": -17.9000,
+    "lng": 177.5000,
+    "description": "Entre Sigatoka y Nadi hay un tramo de carretera que atraviesa bosques de pinos cerca de Nabou, conocido entre conductores locales por su alto número de accidentes mortales y por los relatos de espíritus en la cuneta. Testigos hablan de figuras que aparecen brevemente en mitad de la calzada, luces que acompañan a los vehículos y sensaciones de frío intenso en noches sin viento, lo que ha alimentado la fama de este tramo como uno de los más malditos de la isla principal de Fiyi.",
+    "video": "https://www.reddit.com/r/Fijian/comments/1iqp5dn/ghost_stories_anyone/"
+  }
+,
+    {
+    "name": "Skull Island, santuario de cráneos trofeo - PROVINCIA OCCIDENTAL (ISLAS SALOMÓN)",
+    "lat": -8.2190,
+    "lng": 157.1890,
+    "description": "Skull Island es un pequeño islote frente a la costa de New Georgia donde se conservan decenas de calaveras humanas alineadas en altares de piedra, recuerdo de la antigua práctica melanesia de cortar y conservar las cabezas de enemigos derrotados. Hoy se visita como santuario protegido y lugar de ceremonia, y muchos viajeros describen una atmósfera densa, silenciosa y casi sagrada, como si los espíritus de los antiguos guerreros siguieran custodiando las calaveras frente al mar.",
+    "video": "https://www.visitsolomons.com.sb/been-there-do-this-skull-island-in-the-solomon-islands/"
+  },
+  {
+    "name": "Bloody Ridge, colina empapada en sangre - GUADALCANAL, CERCA DE HONIARA (ISLAS SALOMÓN)",
+    "lat": -9.4630,
+    "lng": 160.0670,
+    "description": "Bloody Ridge es una cresta en Guadalcanal donde tuvieron lugar combates encarnizados entre fuerzas japonesas y aliadas durante la campaña de 1942, con centenares de muertos en ataques nocturnos y cargas a bayoneta. Hoy es un lugar conmemorado como sitio histórico, pero relatos locales y de visitantes hablan de susurros en la oscuridad, pasos entre la hierba alta y una sensación de opresión que hace pensar que los fantasmas de los soldados siguen vagando por la loma.",
+    "video": "https://creepyhq.com/haunted-places-in-solomon-islands/"
+  },
+  {
+    "name": "Hell’s Point, polvorín maldito de explosiones y munición sin detonar - GUADALCANAL, CERCA DE HONIARA (ISLAS SALOMÓN)",
+    "lat": -9.5010,
+    "lng": 160.1200,
+    "description": "Hell’s Point fue un enorme depósito de munición estadounidense en Guadalcanal donde varias explosiones durante la Segunda Guerra Mundial mataron a soldados y dejaron enterradas grandes cantidades de explosivos, que aún hoy se siguen desactivando. La combinación de munición sin detonar, historias de luces extrañas entre los árboles y testimonios de apariciones ha convertido la zona en uno de los lugares más inquietantes del archipiélago, descrito como un campo maldito por la guerra.",
+    "video": "https://creepyhq.com/haunted-places-in-solomon-islands/"
+  },
+  {
+    "name": "Bonegi Beach, pecios de guerra con sombras bajo el agua - BONEGI, CERCA DE HONIARA (ISLAS SALOMÓN)",
+    "lat": -9.4180,
+    "lng": 159.8790,
+    "description": "En Bonegi Beach descansan los restos de dos cargueros japoneses hundidos durante la campaña de Guadalcanal, conocidos como Bonegi I y Bonegi II, hoy cubiertos de coral y muy populares entre buceadores. Además de ser cementerio de hierro y posible tumba de marineros, los pecios arrastran fama de estar encantados: algunos buceadores dicen haber visto figuras humanas fugaces en las bodegas, oído golpes metálicos sin origen claro y sentido descensos bruscos de temperatura en aguas tropicales.",
+    "video": "https://creepyhq.com/haunted-places-in-solomon-islands/"
+  },
+  {
+    "name": "Matanikau y Mataniko, valles de fantasmas de la campaña de Guadalcanal - ZONA DE HONIARA (ISLAS SALOMÓN)",
+    "lat": -9.4360,
+    "lng": 159.9490,
+    "description": "Los ríos y valles del Matanikau y Mataniko, hoy atravesados por barrios de Honiara, fueron escenario de algunos de los combates más brutales de Guadalcanal, con marines y soldados japoneses luchando cuerpo a cuerpo en la selva y en las playas. Crónicas posteriores hablan de veteranos perseguidos por pesadillas con esos parajes, y habitantes actuales cuentan historias de figuras sin rostro que se ven al atardecer junto al agua y de una pesadez emocional que impregna la zona donde miles murieron.",
+    "video": "https://www.counterpunch.org/2019/04/26/pacific-odyssey-ghosts-of-the-matanikau-valley-guadalcanal-solomon-islands/"
+  },
+  {
+    "name": "Vilu War Museum, museo al aire libre con ecos de la batalla - CERCA DE HONIARA (ISLAS SALOMÓN)",
+    "lat": -9.4420,
+    "lng": 159.8760,
+    "description": "El Vilu Military Museum es un museo al aire libre al oeste de Honiara donde se exhiben aviones derribados, cañones y restos de artillería entre cocoteros y selva, muchos de ellos recuperados del campo de batalla de Guadalcanal. Guias y visitantes describen el lugar como inquietante, con fuselajes retorcidos que parecen tumbas abiertas y una sensación de presencia invisible entre las piezas, como si los soldados ligados a esos restos tecnológicos no se hubieran ido del todo.",
+    "video": "https://www.emperordivers.com/solomon-islands-museums/"
+  },
+  {
+    "name": "Henderson Field / Aeropuerto Internacional de Honiara, pista con sombras en la noche - HONIARA (ISLAS SALOMÓN)",
+    "lat": -9.4280,
+    "lng": 160.0540,
+    "description": "Henderson Field, hoy Aeropuerto Internacional de Honiara, fue el aeródromo clave disputado ferozmente durante la campaña de Guadalcanal, con combates aéreos, bombardeos y ataques nocturnos que costaron incontables vidas. Actualmente es un aeropuerto civil, pero su reputación de lugar encantado persiste: hay relatos de luces inexplicables en la pista, figuras que parecen soldados alejándose en la oscuridad y una sensación de historia pesada cada vez que despega o aterriza un avión.",
+    "video": "https://creepyhq.com/haunted-places-in-solomon-islands/"
+  },
+  {
+    "name": "Pecio del MS World Discoverer, crucero fantasma encallado en la jungla - RODERICK BAY, NGGELA SULU (ISLAS SALOMÓN)",
+    "lat": -9.0610,
+    "lng": 160.2190,
+    "description": "El MS World Discoverer era un crucero de expedición que chocó con un arrecife en 2000 y fue abandonado en Roderick Bay, donde quedó escorado de lado, convertido en un gigantesco casco oxidado junto a la selva. Barcos y kayaks pueden acercarse al pecio, que muchos describen como un barco fantasma real: ventanas vacías como ojos, metal corroído y un silencio roto solo por el oleaje, dando la sensación de que el tiempo se detuvo en el momento de la evacuación.",
+    "video": "https://drenchedproductions.com/sailing-the-solomon-islands-for-a-ghost-abandoned-cruise-ship-world-discoverer-shipwreck/"
+  }
+,
+    {
+    "name": "Rabaul, ciudad enterrada por el volcán y base fantasma de guerra - RABAUL, NUEVA BRETAÑA ORIENTAL (PAPÚA NUEVA GUINEA)",
+    "lat": -4.2050,
+    "lng": 152.1720,
+    "description": "Rabaul fue una próspera ciudad portuaria y base principal japonesa en la Segunda Guerra Mundial, bombardeada intensamente desde el aire y rodeada de túneles, búnkeres y baterías ocultas en la caldera volcánica. En 1994, dos volcanes (Tavurvur y Vulcan) entraron en erupción y sepultaron la mayor parte de la ciudad bajo ceniza; hoy se pueden recorrer ruinas medio enterradas, cascos de barcos en la bahía y fortificaciones vacías, un escenario de ciudad fantasma marcada tanto por la guerra como por el fuego de la tierra.",
+    "video": "https://www.abc.net.au/news/science/2023-08-28/volcanic-eruption-png-rabaul-destroyed-1994-revisiting-ruins/102541138"
+  },
+  {
+    "name": "Bomana War Cemetery, filas de cruces bajo el trópico - BOMANA, CERCA DE PORT MORESBY (PAPÚA NUEVA GUINEA)",
+    "lat": -9.3980,
+    "lng": 147.2730,
+    "description": "El cementerio de guerra de Bomana, a las afueras de Port Moresby, es el mayor camposanto militar del Pacífico, con miles de tumbas de soldados aliados caídos en Papúa Nueva Guinea durante la Segunda Guerra Mundial. Visitantes describen una mezcla de paz y profunda tristeza entre filas interminables de cruces blancas, y algunos relatan susurros, figuras fugaces entre las lápidas y una sensación de que los muertos siguen en formación, vigilando la colina incluso décadas después del conflicto.",
+    "video": "https://creepyhq.com/haunted-places-in-papua-new-guinea/"
+  },
+  {
+    "name": "Ghost Mountain / Eora Creek, sendero de espectros en la selva - REGIÓN DE KOKODA, PROVINCIA ORO (PAPÚA NUEVA GUINEA)",
+    "lat": -9.1960,
+    "lng": 147.7900,
+    "description": "La llamada Ghost Mountain, en la zona de Eora Creek cerca de la famosa pista de Kokoda, fue atravesada por tropas australianas y japonesas durante una marcha brutal en la Segunda Guerra Mundial que costó numerosas vidas por combate, hambre y enfermedad. El sendero, hoy casi devorado por la selva y promocionado en rutas de trekking histórico, lleva por crestas envueltas en niebla y barrancos donde se dice que aún se sienten miradas y se oyen voces que parecen pedir a los caminantes que se den la vuelta.",
+    "video": "https://forestsnews.org/93446/ghost-mountain-trail-png-eco-tourism"
+  },
+  {
+    "name": "Swamp Ghost, bombardero B-17 abandonado en un pantano - CERCANÍAS DEL RÍO AGIAMBO, PROVINCIA OESTE (PAPÚA NUEVA GUINEA)",
+    "lat": -8.1350,
+    "lng": 147.1300,
+    "description": "El \"Swamp Ghost\" es el apodo de un bombardero B-17E estadounidense que quedó intacto en un remoto pantano tras un aterrizaje forzoso en 1942, y que durante décadas alimentó leyendas locales al verse solo la silueta del avión entre las aguas y la niebla. Antes de su recuperación, exploradores hablaban de un fuselaje cubierto de musgo emergiendo del barro, un avión fantasma perdido en la jungla y una atmósfera tan extraña que muchos habitantes evitaban el área por respeto a los espíritus de la guerra.",
+    "video": "https://www.smithsonianmag.com/travel/swamp-ghosts-163952669/"
+  },
+  {
+    "name": "Asaro Mudmen, guerreros espectrales de barro - CERCA DE GOROKA, HIGHLANDS ORIENTALES (PAPÚA NUEVA GUINEA)",
+    "lat": -6.0830,
+    "lng": 145.3870,
+    "description": "En las tierras altas de Asaro, cerca de Goroka, los famosos Mudmen utilizan máscaras de barro de rasgos grotescos y cuerpos cubiertos de arcilla blanca para parecer espíritus vengativos surgidos de la niebla, una tradición nacida como táctica para aterrorizar a enemigos sin necesidad de luchar. Las representaciones nocturnas, con figuras avanzando lentamente entre el humo y el fuego, se consideran uno de los espectáculos más inquietantes del país, donde la frontera entre ritual cultural y aparición fantasmagórica se vuelve muy delgada.",
+    "video": "https://www.geoex.com/blog/ghosts-of-papua-new-guinea"
+  },
+  {
+    "name": "Bomana y Lae, cementerios de guerra con vigilias eternas - LAE Y ALREDEDORES (PAPÚA NUEVA GUINEA)",
+    "lat": -6.7320,
+    "lng": 146.9940,
+    "description": "Además de Bomana, la ciudad de Lae alberga otro gran cementerio de guerra donde descansan soldados caídos en las campañas de Nueva Guinea, con lápidas alineadas bajo el sol tropical y el ruido lejano de la selva. Crónicas de viajeros y recopilaciones de lugares embrujados hablan de apariciones de soldados de uniforme entre las tumbas al amanecer, como si siguieran montando guardia, y de una sensación de respeto y presencia constante que hace que muchos bajen la voz al cruzar el recinto.",
+    "video": "https://creepyhq.com/haunted-places-in-papua-new-guinea/"
+  }
+,
+    {
+    "name": "Mystery Island / Inyeug, islote paradisíaco que nadie quiere habitar de noche - INYEUG, JUNTO A ANEITYUM (VANUATU)",
+    "lat": -20.2490,
+    "lng": 169.7710,
+    "description": "La diminuta isla de Inyeug, rebautizada como Mystery Island para los cruceros, es un banco de arena con palmeras y aguas turquesas donde solo desembarcan turistas y vendedores durante el día; al caer el sol, la isla queda completamente desierta. Los propietarios tradicionales de Aneityum creen que Mystery Island está habitada por espíritus por la noche y evitan dormir allí, por lo que se ha ganado fama de isla embrujada en la que los vivos solo son bienvenidos mientras haya luz.",
+    "video": "https://seeingthissphere.wordpress.com/pacific-islands/vanuatu/mystery-island/"
+  },
+  {
+    "name": "Isla de Aneityum, aldeas fantasma y poblado que aparece y desaparece - ANEITYUM (VANUATU)",
+    "lat": -20.2000,
+    "lng": 169.8000,
+    "description": "En Aneityum, la isla grande cercana a Mystery Island, la tradición oral habla de antiguas aldeas abandonadas tras epidemias y guerras tribales, algunas de las cuales se dicen que aparecen y desaparecen como si fueran un poblado fantasma. Relatos modernos sobre lugares embrujados en Vanuatu mencionan un \"phantom village\" en Aneityum donde viajeros aseguran haber visto casas y figuras a lo lejos que luego se desvanecen, alimentando la idea de un pueblo que pertenece más al mundo de los espíritus que al de los vivos.",
+    "video": "https://creepyhq.com/haunted-places-in-vanuatu/"
+  },
+  {
+    "name": "SS President Coolidge, el pecio habitado por el \"Lady\" - ESPIRITU SANTO, CERCA DE LUGANVILLE (VANUATU)",
+    "lat": -15.5330,
+    "lng": 167.2500,
+    "description": "El SS President Coolidge fue un lujoso transatlántico reconvertido en transporte de tropas que se hundió en 1942 al chocar con minas amistosas frente a Espiritu Santo, quedando varado de lado muy cerca de la costa con más de 5.000 soldados a bordo (casi todos rescatados). Hoy es uno de los pecios de buceo más famosos del mundo, con corredores intactos, cañones y vehículos en sus entrañas, y muchos submarinistas hablan de sentir presencias, escuchar golpes en el casco y encontrar la icónica figura femenina del \"Lady\" en la sala de fumadores rodeada de una energía extraña.",
+    "video": "https://spacificatravel.com/blog/diving-the-ss-coolidge-in-espirito-santo-vanuatu"
+  },
+  {
+    "name": "Lolowai, pueblo fantasma a la sombra del volcán - LOLOWAI, ISLA AMBAE (VANUATU)",
+    "lat": -15.4050,
+    "lng": 167.8510,
+    "description": "Lolowai, en la isla volcánica de Ambae, fue un pequeño centro administrativo y portuario que quedó prácticamente abandonado cuando las erupciones y la ceniza obligaron a evacuar a la población, dejando casas, edificios públicos y caminos vacíos. Listados de lugares embrujados en Vanuatu lo describen como un auténtico pueblo fantasma, donde visitantes reportan ver figuras en las calles vacías, oír voces lejanas entre los edificios y sentir una quietud inquietante, como si el pueblo esperase a que sus habitantes regresasen de un día que nunca termina.",
+    "video": "https://creepyhq.com/haunted-places-in-vanuatu/"
+  },
+  {
+    "name": "Plantación embrujada de sándalo, golpes de hacha en la noche - ERROMANGO (VANUATU)",
+    "lat": -18.8000,
+    "lng": 169.1500,
+    "description": "Erromango fue escenario de intensas explotaciones de sándalo y conflictos entre colonos y pobladores locales en el siglo XIX, y en la isla se conservan ruinas de antiguas plantaciones y edificios asociados a asesinatos y trabajos forzados. Historias recientes hablan de una plantación abandonada donde visitantes aseguran oír golpes de hacha, ver figuras con ropa antigua entre los árboles y sentir repentinas bajadas de temperatura, como si los espíritus de los trabajadores muertos siguieran talando madera en la oscuridad.",
+    "video": "https://creepyhq.com/haunted-places-in-vanuatu/"
+  },
+  {
+    "name": "Cueva del hechicero, rituales y símbolos en la roca - ISLA AMBAE (VANUATU)",
+    "lat": -15.4160,
+    "lng": 167.8600,
+    "description": "En Ambae se menciona una cueva vinculada a antiguos hechiceros donde se realizaban rituales de magia y sacrificios, situada en una ladera selvática con acceso difícil y paredes cubiertas de carbón y símbolos. Las leyendas locales aseguran que la cueva está protegida por espíritus y que entrar sin el permiso adecuado puede atraer desgracias; visitantes curiosos cuentan haber oído cánticos lejanos, visto sombras contra la roca y experimentado mareos repentinos al internarse en la oscuridad.",
+    "video": "https://creepyhq.com/haunted-places-in-vanuatu/"
+  }
+,
+    {
+    "name": "Nan Madol, ciudad megalítica flotante embrujada - POHNPEI (ESTADOS FEDERADOS DE MICRONESIA)",
+    "lat": 6.8380,
+    "lng": 158.3300,
+    "description": "Nan Madol es una antigua ciudad ceremonial construida sobre más de 90 islotes artificiales en la laguna de Pohnpei, con muros de enormes bloques de basalto apilados como troncos, canales entre manglares y tumbas reales de la dinastía Saudeleur. Las leyendas locales dicen que los bloques fueron movidos con magia, que los espíritus de los antiguos gobernantes aún vigilan el lugar y que pasar la noche dentro de las ruinas trae la muerte, motivo por el que muchos habitantes evitan visitarla al anochecer y la consideran una ciudad fantasma sagrada en mitad del océano.",
+    "video": "https://moonmausoleum.com/the-haunted-ancient-city-of-nan-madol-floating-in-the-pacific-ocean/"
+  },
+  {
+    "name": "Cripta real de Nandauwas, tumba de los jefes Saudeleur - NAN MADOL, POHNPEI (ESTADOS FEDERADOS DE MICRONESIA)",
+    "lat": 6.8365,
+    "lng": 158.3290,
+    "description": "En el islote de Nandauwas, dentro del complejo de Nan Madol, se alza un recinto amurallado que protegía la cripta de los jefes supremos Saudeleur, construido con muros de basalto tan altos que parecen una fortaleza flotante dentro de la laguna. Relatos modernos y tradiciones orales describen la zona como el corazón más tabú del sitio, donde los espíritus de la realeza y los sacrificados para acompañarlos en la muerte aún merodean, y donde muchos visitantes aseguran sentir una presión física y un silencio anómalo apenas cruzan el umbral.",
+    "video": "https://www.historyhit.com/nan-madol-venice-of-the-pacific/"
+  },
+  {
+    "name": "Chuuk Lagoon, la Ghost Fleet de Truk - CHUUK (ESTADOS FEDERADOS DE MICRONESIA)",
+    "lat": 7.4160,
+    "lng": 151.7830,
+    "description": "La laguna de Chuuk (antigua Truk) fue el principal fondeadero de la Flota Imperial japonesa en Micronesia hasta que, en 1944, la Operación Hailstone hundió más de 50 barcos y alrededor de 250 aviones en un ataque masivo, dejando miles de muertos atrapados en los cascos. Hoy los pecios se conocen como la Ghost Fleet, un paraíso para el buceo técnico donde se pueden ver tanques, aviones, máscaras de gas y restos humanos en bodegas silenciosas; muchos buceadores hablan de sensaciones de ser observados, ruidos metálicos sin origen claro y una atmósfera tan cargada que algunos emergen llorando sin saber por qué.",
+    "video": "https://www.atlasobscura.com/places/ghost-fleet-of-truk-lagoon"
+  },
+  {
+    "name": "Pecio del Rio de Janeiro Maru, petrolero que sangra aceite oscuro - CHUUK LAGOON (ESTADOS FEDERADOS DE MICRONESIA)",
+    "lat": 7.3560,
+    "lng": 151.9000,
+    "description": "El Rio de Janeiro Maru, antiguo transatlántico reconvertido en buque auxiliar japonés, yace hundido en la laguna de Chuuk y en años recientes ha empezado a filtrar combustible, creando manchas de aceite que suben desde las profundidades como si el barco \"sangrara\" al mar. Autoridades ambientales hablan de un fantasma tóxico de la guerra que amenaza los arrecifes, mientras que buceadores describen el pecio como opresivo, con bodegas llenas de restos militares y una sensación de estar penetrando en un cadáver de acero que aún no termina de morir.",
+    "video": "https://islandtimes.org/a-japanese-ghost-fleet-of-rusting-wwii-wrecks-is-poisoning-this-pacific-paradise/"
+  },
+  {
+    "name": "Lelu Ruins, ciudad canalizada hermana de Nan Madol - ISLA LELU, KOSRAE (ESTADOS FEDERADOS DE MICRONESIA)",
+    "lat": 5.3290,
+    "lng": 163.0080,
+    "description": "En la pequeña isla de Lelu, frente a Kosrae, se encuentran las ruinas de una antigua ciudad real construida con muros de basalto, canales y tumbas, a menudo comparada con una versión más compacta de Nan Madol. Crónicas históricas y folclore local hablan de una élite poderosa y de castigos ejemplares; las ruinas, medio devoradas por la vegetación, se consideran un lugar cargado de manas y espíritus, que muchos habitantes visitan con respeto y cierta aprensión al caer la tarde.",
+    "video": "https://visit-micronesia.fm/ruins/"
+  }
+,
+    {
+    "name": "Bikini Atoll, flota fantasma nuclear - ATOLÓN DE BIKINI (ISLAS MARSHALL)",
+    "lat": 11.5920,
+    "lng": 165.3830,
+    "description": "En Bikini Atoll, Estados Unidos detonó 23 bombas nucleares entre 1946 y 1958, usando la laguna como escenario para una \"ghost fleet\" de casi cien barcos de guerra sacrificados a las explosiones atómica y submarina. Hoy, bajo aguas aún radiactivas, descansan acorazados, portaaviones y submarinos cubiertos de coral que se han convertido en uno de los destinos de buceo más inquietantes del mundo, donde muchos hablan de una presencia pesada entre los cascos, como si los ensayos apocalípticos siguieran latiendo en silencio bajo la superficie.",
+    "video": "https://www.scubadiving.com/bikini-atoll-wreckage-scuba-diving"
+  },
+  {
+    "name": "Campo de pruebas de Bikini, islas vaporizadas y nieve radiactiva - ATOLÓN DE BIKINI (ISLAS MARSHALL)",
+    "lat": 11.6000,
+    "lng": 165.4000,
+    "description": "Las pruebas nucleares en Bikini incluyeron la explosión termonuclear Castle Bravo, tan potente que vaporizó varias islas del atolón y generó una nube de polvo blanco radiactivo que cayó como nieve sobre atolones habitados a cientos de kilómetros. Los habitantes de Rongelap y otras islas, que jugaron con \"la nieve\" hasta que su piel empezó a quemarse y su pelo a caer, hablan de maldiciones y fantasmas de la radiación que siguen enfermando generaciones, convirtiendo el campo de pruebas en una herida maldita abierta en pleno Pacífico.",
+    "video": "https://en.wikipedia.org/wiki/Nuclear_testing_at_Bikini_Atoll"
+  },
+  {
+    "name": "Bikini Atoll Ghost Fleet, cementerio de acorazados y portaaviones - LAGUNA DE BIKINI (ISLAS MARSHALL)",
+    "lat": 11.5900,
+    "lng": 165.3900,
+    "description": "Para la Operación Crossroads se reunió en Bikini una flota de 95 barcos, entre ellos el acorazado USS Arkansas, el portaaviones USS Saratoga y numerosos cruceros y destructores, alineados como víctimas en espera de la bomba. Los buceadores que descienden hoy a este cementerio cuentan pasillos vacíos, cañones apuntando a la nada, salas de máquinas congeladas y la sensación de estar visitando un camposanto de acero que nunca fue campo de batalla, sino sacrificio ritual a la era nuclear.",
+    "video": "https://thedirtydozenexpeditions.com/bikini-atoll-wrecks"
+  },
+  {
+    "name": "Runit Dome, la tumba nuclear que filtra veneno al mar - ISLA RUNIT, ATOLÓN DE ENEWETAK (ISLAS MARSHALL)",
+    "lat": 11.5520,
+    "lng": 162.3450,
+    "description": "En la pequeña isla de Runit, en Enewetak, un enorme cráter de explosión fue rellenado en los años 70 con unos 85.000 metros cúbicos de residuos radiactivos y sellado con una cúpula de hormigón conocida como Runit Dome o \"the Tomb\". Hoy el domo está agrietado, a ras del mar y parcialmente inundado por el aumento del nivel del océano, y los habitantes lo ven como una tumba envenenada que podría romperse y liberar su contenido al Pacífico, un verdadero punto maldito donde el fantasma de la Guerra Fría amenaza a las generaciones futuras.",
+    "video": "https://www.abc.net.au/news/2017-11-27/the-dome-runit-island-nuclear-test-leaking-due-to-climate-change/9161442"
+  },
+  {
+    "name": "Rongelap y otros atolones, islas de los niños quemados por la lluvia blanca - ATOLÓN DE RONGELAP (ISLAS MARSHALL)",
+    "lat": 11.1600,
+    "lng": 166.8900,
+    "description": "El atolón de Rongelap y otros cercanos quedaron cubiertos tras Castle Bravo por hasta dos centímetros de ceniza radiactiva, que los niños confundieron con nieve antes de sufrir quemaduras, ampollas y caída masiva del cabello, mientras los adultos veían cómo sus cuerpos se llenaban de llagas. Décadas después, estudios, testimonios y obras sobre el \"Pikinni Ghost\" hablan de un fantasma nuclear que sigue enfermando y desplazando a sus pobladores, y muchos marshallinos consideran estas islas como paisajes encantados por los muertos y los no nacidos que nunca llegaron a vivir sin contaminación.",
+    "video": "https://beyondnuclear.org/remembering-the-horror-of-castle-bravo/"
+  }
+,
+    {
+    "name": "Betio / Tarawa, el atolón más sangriento de la guerra - BETIO, ATOLÓN DE TARAWA (KIRIBATI)",
+    "lat": -1.3700,
+    "lng": 172.9300,
+    "description": "En noviembre de 1943 la pequeña isla de Betio, en Tarawa, fue escenario de una de las batallas más sangrientas del Pacífico: en apenas 76 horas murieron más de mil marines estadounidenses y miles de soldados japoneses, hasta el punto de que casi ningún defensor sobrevivió. Hoy la isla está llena de casas y colegios construidos sobre antiguos búnkeres, tanques semienterrados en la playa, posiciones de cañones costeros y fosas comunes; los habitantes conviven con restos humanos y munición sin explotar, y muchos consideran Betio un lugar cargado de espíritus de guerra que nunca fueron correctamente despedidos.",
+    "video": "https://venturetheplanet.com/staying-in-the-town-of-betio-location-of-one-of-the-bloodiest-battles-of-wwii-tarawa-kiribati/"
+  },
+  {
+    "name": "Playas y búnkeres de Tarawa, sombras entre los tanques oxidados - ATOLÓN DE TARAWA (KIRIBATI)",
+    "lat": -1.3550,
+    "lng": 172.9650,
+    "description": "En las playas de Tarawa todavía se ven búnkeres japoneses de hormigón, pillboxes, cañones costeros y tanques varados que emergen del agua en marea baja, junto a restos de barcos y aviones hundidos durante la operación Galvanic de 1943. Rutas históricas explican cómo muchos cuerpos quedaron enterrados bajo la arena y el coral, y relatos recientes hablan de una atmósfera inquietante al atardecer, con el mar lamiendo cascos oxidados como si lavara una y otra vez la sangre derramada.",
+    "video": "https://www.kiribatitourism.gov.ki/kiribati-experiences/world-war-ii/1000/"
+  },
+  {
+    "name": "Butaritari / Makin, jungla con fosas de soldados ocultas - BUTARITARI (KIRIBATI)",
+    "lat": 3.1800,
+    "lng": 172.8200,
+    "description": "La isla de Butaritari, conocida también como Makin, fue escenario de un raid de marines en 1942 y de otra dura batalla en 1943; hoy sigue conservando cráteres de bombas, restos de vehículos y zonas de selva donde, según los lugareños, se enterró a muchos soldados japoneses en fosas improvisadas. Crónicas de viajeros hablan de depresiones en el terreno, piezas de maquinaria y testimonios locales que señalan \"aquí están los japoneses\", dando a la jungla un aire de cementerio de guerra camuflado bajo cocoteros y cerdos que hozan sobre tumbas sin marcar.",
+    "video": "https://www.usni.org/magazines/naval-history-magazine/2000/february/galvanic-ghosts"
+  },
+  {
+    "name": "Banaba / Ocean Island, isla-mina convertida en pueblo fantasma de fósforo - BANABA (KIRIBATI)",
+    "lat": -0.8650,
+    "lng": 169.5360,
+    "description": "Banaba fue explotada durante 80 años por compañías coloniales que arrancaron cerca del 90 % de la superficie de la isla para extraer fosfato, dejando un paisaje de agujas de roca afilada, edificios rotos, maquinaria oxidada y apenas un pequeño asentamiento de residentes. Reportajes la describen como un antiguo paraíso convertido en un pueblo minero fantasma en mitad del Pacífico, con casas vacías, camiones abandonados y la sensación de que la isla misma ha sido despojada de su alma y dejada a morir tras el saqueo.",
+    "video": "https://www.sbs.com.au/news/article/an-island-destroyed-from-tropical-paradise-to-ghostly-mining-town/o5crdgmx7"
+  },
+  {
+    "name": "Kiritimati / Christmas Island, campo de pruebas atómicas en el paraíso - KIRITIMATI (KIRIBATI)",
+    "lat": 1.9850,
+    "lng": -157.4750,
+    "description": "En Kiritimati, la enorme isla-atolón también conocida como Christmas Island, Reino Unido y posteriormente Estados Unidos realizaron una serie de pruebas nucleares atmosféricas en los años 50 y 60, detonando bombas de hidrógeno sobre una comunidad de isleños y soldados que apenas entendían el peligro. Testimonios recopilados décadas después hablan de cielos que se volvían más brillantes que el sol, ondas de choque que tiraban a la gente al suelo y recuerdos traumáticos que muchos describen como un \"fantasma atómico\" que aún persigue a veteranos y habitantes, dejando la isla marcada como un paraíso con cicatrices invisibles.",
+    "video": "https://theconversation.com/the-atomic-history-of-kiritimati-a-tiny-island-where-humanity-realised-its-most-lethal-potential-114642"
+  }
+,
+    {
+    "name": "Topside, desierto de agujas de roca y minas muertas - INTERIOR DE NAURU (NAURU)",
+    "lat": -0.5335,
+    "lng": 166.9220,
+    "description": "La zona interior elevada de Nauru, conocida como Topside, fue arrasada durante décadas de minería de fosfato hasta dejar un paisaje de agujas de piedra caliza de hasta 15 metros de altura, canales secos y tierra completamente estéril, como si le hubieran arrancado la piel a la isla. Hoy Topside es un desierto blanco abrasador, con restos de maquinaria oxidada, perros asilvestrados y una atmósfera tan extraña que muchos visitantes lo describen como un mundo postapocalíptico o una isla maldita por haber vendido su propio cuerpo a cambio de riqueza.",
+    "video": "https://www.dark-tourism.com/index.php/nauru"
+  },
+  {
+    "name": "Antigua nave de almacenamiento de fosfato, catedral industrial fantasma - AIWO (NAURU)",
+    "lat": -0.5352,
+    "lng": 166.9127,
+    "description": "En Aiwo se levanta una enorme nave de almacenamiento de fosfato abandonada, con montones de polvo blanco cubiertos ya de musgo verde y estructuras metálicas corroídas, iluminadas por claros de luz que se cuelan por el techo roto. Quien la visita habla de un silencio pesado, del eco de pasos entre columnas y del olor químico pegado al aire, como si el fantasma de la industria que hizo rica y luego arruinó a Nauru siguiera atrapado en esta catedral industrial vacía frente al mar.",
+    "video": "https://www.dark-tourism.com/index.php/nauru"
+  },
+  {
+    "name": "Prisión colonial y japonesa, celdas de castigo en ruinas - CERCA DE TOPSIDE (NAURU)",
+    "lat": -0.5359,
+    "lng": 166.9178,
+    "description": "Entre la vegetación del interior se conservan restos de un antiguo centro de comunicaciones que fue reutilizado como prisión por las autoridades coloniales alemanas y después por el ejército japonés en la Segunda Guerra Mundial, con celdas de hormigón y puertas de acero. Las ruinas, cubiertas de grafitis y parcialmente tragadas por la selva, se sienten opresivas y extrañas; algunos relatos incluso mencionan que una de las cámaras pudo usarse para ejecuciones con gas, lo que refuerza la fama del lugar como uno de los puntos más oscuros de la isla.",
+    "video": "https://www.dark-tourism.com/index.php/nauru"
+  },
+  {
+    "name": "Command Ridge, cañones y túneles japoneses oxidándose sobre la isla - COMMAND RIDGE (NAURU)",
+    "lat": -0.5338,
+    "lng": 166.9165,
+    "description": "En Command Ridge, uno de los puntos más altos de Nauru, aún se ve un gran cañón antiaéreo japonés y túneles excavados en la roca desde los que se controlaba el horizonte durante la ocupación de la isla en la Segunda Guerra Mundial. Hoy las armas están oxidadas y rodeadas de matorrales, y quienes suben hasta allí hablan de vistas espectaculares sobre un interior devastado por la minería y de la sensación de estar pisando un mirador fantasma de la guerra, abandonado de prisa cuando terminó el conflicto.",
+    "video": "https://www.crooked-compass.com/travel-blog/naurus-history-wwii-wrecks-relics/"
+  },
+  {
+    "name": "Búnkeres japoneses de la costa, casamatas medio tragadas por el mar - COSTA NORESTE DE NAURU (NAURU)",
+    "lat": -0.5060,
+    "lng": 166.9550,
+    "description": "A lo largo de la costa de Nauru se conservan búnkeres y casamatas japonesas de hormigón, especialmente en la zona noreste, donde algunos se están hundiendo en la arena o siendo golpeados por el oleaje. Fotografías y crónicas los muestran como cajas de cemento agrietado con troneras hacia el mar, llenas de óxido y basura, que transmiten la sensación de un frente costero fantasma vigilando una invasión que nunca llegó.",
+    "video": "https://www.traveladventures.org/continents/oceania/nauru-coast05.html"
+  }
+,
+    {
+    "name": "Isla de Peleliu, jungla llena de fantasmas de guerra - PELELIU (PALAOS)",
+    "lat": 7.0000,
+    "lng": 134.2330,
+    "description": "Peleliu fue escenario en 1944 de una de las batallas más sangrientas del Pacífico, donde marines estadounidenses y tropas japonesas se enfrentaron durante semanas por un pequeño aeródromo, dejando miles de muertos en cuevas, búnkeres y colinas calcinadas. Hoy la isla es tranquila, pero aún conserva tanques oxidados, búnkeres abiertos, cuevas con restos de botellas y huesos, y numerosos testimonios de visitantes y veteranos que hablan de susurros, gritos lejanos y la sensación de no estar nunca solo en la jungla.",
+    "video": "http://historyofmountneedlepie.blogspot.com/2014/09/peleliu-exploring-1944-pacific-war.html"
+  },
+  {
+    "name": "Cuevas japonesas y colinas de Peleliu, túneles con restos humanos - PELELIU (PALAOS)",
+    "lat": 6.9970,
+    "lng": 134.2300,
+    "description": "La red de cuevas y túneles japoneses en Peleliu, excavada en colinas coralinas como Umurbrogol, permitió a los defensores resistir durante semanas en condiciones extremas; muchas de esas cavidades aún conservan restos de botellas, cascos, proyectiles y, en algunos casos, huesos. Quien se adentra en ellas describe un calor asfixiante y un silencio antinatural, rotos solo por el goteo del agua, y varios visitantes han colocado pequeños altares a los muertos, reforzando la percepción de que estas cuevas son tumbas colectivas embrujadas.",
+    "video": "http://historyofmountneedlepie.blogspot.com/2014/09/peleliu-exploring-1944-pacific-war.html"
+  },
+  {
+    "name": "Ghost Ships de Palau, flota hundida de la Operación Desecrate One - ALREDEDORES DE KOROR / MALAKAL HARBOUR (PALAOS)",
+    "lat": 7.3300,
+    "lng": 134.4600,
+    "description": "Bajo las aguas azules de Palau reposan decenas de barcos japoneses hundidos en la Operación Desecrate One de 1944, desde pequeños cargueros hasta enormes petroleros como el Amatsu Maru, hoy cubiertos de coral y convertidos en arrecifes artificiales. Buceadores describen estos pecios como barcos fantasma: sombras que emergen lentamente de la oscuridad, cubiertas llenas de maquinaria congelada en el tiempo y la sensación de descender a una ciudad de hierro habitada por los ecos de los marineros que murieron allí.",
+    "video": "https://xray-mag.com/content/ghost-ships-palau"
+  },
+  {
+    "name": "Pecio del Iro Maru, cañón gigante apuntando desde la penumbra - CERCA DE KOROR (PALAOS)",
+    "lat": 7.3200,
+    "lng": 134.4550,
+    "description": "El Iro Maru, petrolero japonés hundido en 1944, descansa erguido en el fondo cerca de Koror, con la proa cubierta de coral y un enorme cañón circular que se alza como un ojo metálico lleno de vida marina. Reportajes de buceo cuentan cómo los buceadores flotan sobre su proa imaginando el bombardeo que lo mandó al fondo y cómo el silencio actual, roto solo por burbujas y peces, se siente como un homenaje permanente a los marineros que nunca salieron del barco.",
+    "video": "https://www.scubadiving.com/photos/ghost-fleet-operation-desecrate-one"
+  },
+  {
+    "name": "Restos de la batalla de Angaur, isla pequeña con cicatrices de bombardeos - ISLA ANGAUR (PALAOS)",
+    "lat": 6.9060,
+    "lng": 134.1300,
+    "description": "La vecina isla de Angaur también fue escenario de combates en 1944 y hoy conserva cráteres de bombas, posiciones de artillería y restos de infraestructura japonesa camuflados entre la jungla y las plantaciones. Guías locales hablan de zonas donde la selva crece sobre trincheras y búnkeres, y de una sensación de isla tranquila en la superficie pero llena de cicatrices invisibles de cuerpos enterrados, munición sin explotar y recuerdos de un frente casi olvidado.",
+    "video": "https://palaudiveadventures.com/wwii-wrecks-palau/"
+  }
+,
+    {
+    "name": "To'aga Beach, dispensario embrujado y danzas de figuras sin cabeza - OFU, MANU'A (SAMOA AMERICANA)",
+    "lat": -14.1900,
+    "lng": -169.6150,
+    "description": "En la playa de To'aga, en la isla de Ofu, existió un pequeño dispensario médico cuya zona era evitada por los habitantes, que advertían de no pasar por allí al mediodía ni de noche porque estaba habitada por aitu, espíritus peligrosos. Una famosa historia habla de un bote que, al acercarse a To'aga en una noche de luna, vio sobre la arena una siva, un baile samoano, liderado por figuras obscenas y sin cabeza que parecían ser las mismas enfermeras que acababan de dejar en la otra isla; poco después el dispensario se demolió y aún hoy se considera un tramo de costa embrujado.",
+    "video": "https://www.nps.gov/npsa/learn/historyculture/toagaaitu.htm"
+  },
+  {
+    "name": "Atauloma Girls School, internado en ruinas reclamado por la selva - AFAO, TUTUILA (SAMOA AMERICANA)",
+    "lat": -14.3550,
+    "lng": -170.8000,
+    "description": "La Atauloma Girls School fue un internado de principios del siglo XX construido en una ladera selvática para educar a chicas samoanas, que también servía como vía de acceso a la escuela de enfermería de la base naval de Pago Pago; el edificio se abandonó hacia 1970 y hoy solo quedan muros y dormitorios en ruinas. El lugar ha ganado fama de embrujado, hasta el punto de aparecer en el programa Ghost Hunters International, y exploradores describen pasillos cubiertos de vegetación, habitaciones con literas oxidadas y una atmósfera tan cargada que muchos sienten que no están solos entre los restos de la escuela.",
+    "video": "https://en.wikipedia.org/wiki/Atauloma_Girls_School"
+  },
+  {
+    "name": "Mount Vaea y tumba de Robert Louis Stevenson, sombras en el sendero - CERCA DE APIA, UPOLU (SAMOA)",
+    "lat": -13.8460,
+    "lng": -171.7830,
+    "description": "El Mount Vaea, la colina que domina Apia, alberga la tumba del escritor Robert Louis Stevenson, que vivió y murió en Samoa y es venerado como Tusitala, \"el contador de historias\"; un sendero sube entre selva densa hasta su tumba con vistas al mar. Relatos modernos de lugares embrujados en Samoa cuentan que algunos caminantes aseguran ver una figura solitaria en el sendero o escuchar susurros en el viento cerca de la sepultura, como si el espíritu del escritor siguiera paseando por la montaña que eligió como descanso final.",
+    "video": "https://creepyhq.com/haunted-places-in-samoa/"
+  },
+  {
+    "name": "Falefa Valley, valle de guerreros y ecos de batalla - UPOLU (SAMOA)",
+    "lat": -13.9000,
+    "lng": -171.6000,
+    "description": "Falefa Valley es una zona verde y aparentemente tranquila de Upolu que, según la tradición, fue escenario de antiguas batallas entre clanes samoanos, con muchos guerreros muertos cuyos cuerpos quedaron en el valle. Historias locales hablan de apariciones, sonidos de pasos y choques de armas al caer la noche, y algunos residentes aseguran escuchar voces que parecen venir de ningún sitio, como si los guerreros siguieran repitiendo una lucha que terminó hace siglos.",
+    "video": "https://creepyhq.com/haunted-places-in-samoa/"
+  },
+  {
+    "name": "Piula Cave Pool, piscina de cueva con manos invisibles - PIULA, UPOLU (SAMOA)",
+    "lat": -13.8840,
+    "lng": -171.5790,
+    "description": "Piula Cave Pool es una piscina natural de agua dulce conectada al mar bajo una iglesia metodista, un lugar muy popular para bañarse donde el agua cristalina entra y sale por una cueva baja. El folclore afirma que el lugar está habitado por espíritus, y algunos bañistas han contado que sienten manos invisibles que les rozan o tiran suavemente de ellos bajo el agua, lo que ha dado al sitio una reputación de belleza paradisíaca con un toque inquietante.",
+    "video": "https://creepyhq.com/haunted-places-in-samoa/"
+  },
+  {
+    "name": "Lefaga y Matareva, playas de novia fantasma y ahogada - LEFAGA / MATAREVA, UPOLU (SAMOA)",
+    "lat": -13.9630,
+    "lng": -171.9140,
+    "description": "Las playas de Lefaga y la cercana Matareva son famosas por su belleza de postal, pero también por leyendas de mujeres muertas trágicamente; en Lefaga se habla de una novia que murió el día de su boda y vaga buscando a su amor, mientras que en Matareva se cuenta la historia de una joven ahogada cuya presencia sigue caminando por la orilla al anochecer. Visitantes y lugareños dicen haber visto figuras femeninas solitarias en la espuma de las olas que desaparecen cuando alguien se acerca, reforzando la fama de estas playas como escenarios de amores fantasma.",
+    "video": "https://creepyhq.com/haunted-places-in-samoa/"
+  }
+,
+    {
+    "name": "Ha’amonga ‘a Maui, trilito megalítico y portal de otros mundos - NEAR NIUPOUTAPU, TONGATAPU (TONGA)",
+    "lat": -21.0705,
+    "lng": -175.1340,
+    "description": "Ha’amonga ‘a Maui es un trilito de piedra caliza de unas 40 toneladas conocido como el \"Stonehenge del Pacífico\", construido alrededor del siglo XIII posiblemente como entrada ceremonial o calendario solar para el rey Tu‘i Tonga. La tradición dice que fue levantado por el semidiós Maui, que cargó las piedras desde Samoa, y muchas historias modernas lo describen como un portal entre mundos donde algunos visitantes sienten presencias, escuchan susurros en el viento y perciben una energía extraña al situarse bajo el dintel.",
+    "video": "https://creepyhq.com/haunted-places-in-tonga/"
+  },
+  {
+    "name": "Royal Tombs of Lapaha / Paepae ‘o Tele’a, langi donde vigilan los reyes muertos - LAPAHA, TONGATAPU (TONGA)",
+    "lat": -21.1450,
+    "lng": -175.0510,
+    "description": "En Lapaha se alzan los langi, enormes tumbas reales de bloques de coral cuidadosamente encajados, entre ellas Paepae ‘o Tele’a, una estructura de tres niveles que simboliza cielo, tierra y mar y servía como portal hacia Pulotu, el más allá tongano. Crónicas históricas y leyendas modernas sostienen que algunos enterramientos incluyeron sacrificios humanos y que los espíritus de los Tu‘i Tonga aún custodian el lugar; visitantes hablan de sombras entre las piedras, repentinos escalofríos y una sensación muy fuerte de estar siendo observados mientras caminan junto a los muros.",
+    "video": "https://tongaindependent.com/coral-kings-and-buried-giants-tongas-sacred-engineering-and-the-pacifics-lost-civilizations/"
+  },
+  {
+    "name": "Mala’ekula Royal Tombs, cementerio real envuelto en silencio pesado - NUKU’ALOFA, TONGATAPU (TONGA)",
+    "lat": -21.1365,
+    "lng": -175.2040,
+    "description": "Mala’ekula, el cementerio real de Nuku’alofa, es el lugar de descanso de la dinastía Tupou desde finales del siglo XIX, con grandes túmulos y monumentos visibles tras una verja que lo mantiene siempre cerrado al público. Aunque las visitas se limitan a observar desde fuera, el sitio se considera extremadamente tapu: relatos de lugares embrujados en Tonga mencionan luces extrañas, figuras oscuras entre las lápidas y una atmósfera tan solemne y densa que muchos bajan la voz de forma instintiva al acercarse.",
+    "video": "https://book.tongapocketguide.com/free/malaekula-royal-tombs"
+  },
+  {
+    "name": "Kolovai Bat Sanctuary, espíritus guerreros entre los zorros voladores - KOLOVAI, TONGATAPU (TONGA)",
+    "lat": -21.0800,
+    "lng": -175.3300,
+    "description": "El santuario de murciélagos de Kolovai alberga grandes colonias de zorros voladores colgando de los árboles, cuyo aleteo y chillidos al atardecer llenan el bosque de sonidos extraños. Leyendas recogidas en compilaciones de supersticiones tonganas y listados de lugares embrujados dicen que antiguos guerreros y espíritus locales habitan la zona, y muchos visitantes aseguran sentir miradas invisibles, escuchar pasos entre las hojas y notar cómo el ambiente se vuelve inquietante cuando cae la noche y los murciélagos se agitan.",
+    "video": "https://creepyhq.com/haunted-places-in-tonga/"
+  },
+  {
+    "name": "Hufangalupe Archway, puerta de la doncella que saltó al vacío - COSTA SUR DE TONGATAPU (TONGA)",
+    "lat": -21.2200,
+    "lng": -175.1900,
+    "description": "Hufangalupe, el \"Pigeon’s Doorway\", es un arco natural de piedra caliza sobre un mar embravecido, escenario de una leyenda en la que una joven se arrojó desde el acantilado por un amor imposible. Historias modernas lo describen como un lugar muy cargado: algunos visitantes hablan de una tristeza intensa, de oír llantos en el viento y de ver fugazmente la silueta de una mujer en el borde del acantilado antes de que desaparezca entre la espuma.",
+    "video": "https://creepyhq.com/haunted-places-in-tonga/"
+  },
+  {
+    "name": "Mapu’a ‘a Vaea Blowholes, espíritus del mar en los geiseres de roca - HOUMA, TONGATAPU (TONGA)",
+    "lat": -21.2480,
+    "lng": -175.2870,
+    "description": "Los blowholes de Mapu’a ‘a Vaea lanzan chorros de agua a varios metros de altura a través de agujeros en la roca costera, produciendo un estruendo que se escucha a gran distancia cuando el oleaje es fuerte. El folclore tongano asocia el lugar con espíritus marinos que vigilan la costa, y recopilaciones de sitios embrujados cuentan que algunos visitantes aseguran ver figuras fantasmales cerca de los surtidores y oír sonidos extraños mezclados con el rugido del agua, como voces que emergen del océano.",
+    "video": "https://creepyhq.com/haunted-places-in-tonga/"
+  }
+,
+    {
+    "name": "Funafuti WWII Relics, base secreta bombardeada y pecios en la laguna - FUNAFUTI (TUVALU)",
+    "lat": -8.5170,
+    "lng": 179.1940,
+    "description": "Durante la Segunda Guerra Mundial, Funafuti se convirtió en una base clave para fuerzas estadounidenses, con pista de aterrizaje, búnkeres, cañones y depósitos de combustible repartidos por el estrecho islote de Fongafale. Hoy aún se pueden ver restos de aviones estrellados, piezas de artillería y gun emplacements oxidados entre la vegetación y las casas, y la combinación de ruinas bélicas con el silencio de la laguna da a la capital de Tuvalu un aire de pequeño campo de batalla fantasma perdido en mitad del océano.",
+    "video": "https://awe-inspiringplaces.com/funafuti-ww2-relics/"
+  },
+  {
+    "name": "Te Aso o te Paula, día del bombardeo y de los espíritus sobrevivientes - FUNAFUTI (TUVALU)",
+    "lat": -8.5160,
+    "lng": 179.1980,
+    "description": "El 23 de abril de 1943 aviones japoneses bombardearon Funafuti, matando a dos soldados estadounidenses y a un anciano local llamado Esau; la fecha se recuerda como Te Aso o te Paula, \"el día de la bomba\", pero también como un día de salvación por las pocas víctimas. Las ceremonias actuales mezclan recuerdo y espiritualidad: para muchos tuvaluanos, los espíritus de los muertos siguen presentes en la pista, las trincheras y la costa donde cayeron las bombas, y cada aniversario se percibe como un momento en que los vivos y los muertos se reúnen de nuevo.",
+    "video": "https://pmn.co.nz/read/News/te-aso-o-te-paula-tuvaluan-community-to-mark-80th-anniversary-of-bombing-attack"
+  },
+  {
+    "name": "Funafuti Lagoon Hotel, habitaciones construidas sobre antiguo terreno tapu - FUNAFUTI (TUVALU)",
+    "lat": -8.5200,
+    "lng": 179.1965,
+    "description": "El Funafuti Lagoon Hotel (antiguo Vaiaku Lagi Hotel) es el principal alojamiento de la capital y, según el folclore local, está levantado sobre tierras que fueron cementerio o lugar sagrado antes de la guerra. Relatos recopilados en listas de lugares embrujados hablan de luces que parpadean sin explicación, puntos fríos en pasillos abiertos y huéspedes que sienten ser observados o ven fugazmente figuras con atuendo tradicional tuvaluano en los pasillos del hotel antes de desaparecer.",
+    "video": "https://creepyhq.com/haunted-places-in-tuvalu/"
+  },
+  {
+    "name": "Nukufetau, atolón de guerreros y espíritus que patrullan la noche - NUKUFETAU (TUVALU)",
+    "lat": -8.0000,
+    "lng": 178.3500,
+    "description": "Nukufetau fue usado como base aliada durante la Segunda Guerra Mundial, pero su fama embrujada viene también de mucho antes: leyendas locales cuentan que los espíritus de antiguos guerreros recorren el atolón para protegerlo de intrusos. Visitantes mencionados en crónicas paranormales hablan de cantos y tambores lejanos de noche, sombras que cruzan la playa y la sensación de que alguien camina junto a ellos en senderos vacíos, como si los guardianes invisibles siguieran patrullando las motu.",
+    "video": "https://creepyhq.com/haunted-places-in-tuvalu/"
+  },
+  {
+    "name": "Nanumea, isla de búnkeres, aviones caídos y tropas fantasma - NANUMEA (TUVALU)",
+    "lat": -5.6700,
+    "lng": 176.1300,
+    "description": "Nanumea fue un importante aeródromo aliado en la guerra, con pista, búnkeres y depósitos repartidos por la isla; se conservan relatos de ataques japoneses y de aviones aliados derribados en la zona. Historias modernas de lugares embrujados cuentan que cerca de los viejos refugios y restos de fuselajes se oyen pasos, susurros en la noche y, en ocasiones, el sonido lejano de motores de avión donde solo hay mar y viento, como si las tripulaciones perdidas siguieran sobrevolando la isla.",
+    "video": "https://creepyhq.com/haunted-places-in-tuvalu/"
+  },
+  {
+    "name": "Teone Cemetery, cementerio principal con sombras entre las tumbas - FUNAFUTI, TEONE (TUVALU)",
+    "lat": -8.5185,
+    "lng": 179.1995,
+    "description": "El cementerio de Teone, en Funafuti, es el principal camposanto de Tuvalu, con lápidas sencillas que miran hacia el océano y tumbas que recuerdan tanto a víctimas de guerra como a familias enteras perdidas por enfermedades y mareas. Listas de lugares más embrujados del país citan apariciones, pequeñas luces que se mueven entre las tumbas y la sensación de ser seguido al caminar entre las cruces, reflejo de una tradición en la que los espíritus de los ancestros siguen muy presentes en la vida cotidiana de los vivos.",
+    "video": "https://creepyhq.com/haunted-places-in-tuvalu/"
+  }
 
 
 
