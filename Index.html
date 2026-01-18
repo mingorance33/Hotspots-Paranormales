@@ -1,39 +1,612 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Mapa de Lugares Malditos</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="utf-8">
+	<title>Mapa de Lugares Malditos</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+			background-color: black;
+			color: #cccccc;
+		}
 
-  <!-- Tus estilos existentes -->
-  <link rel="stylesheet" href="styles.css" />
+		#map {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1;
+		}
 
-  <!-- Overlay de inicio -->
-  <style>
-    #startup-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.9);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 1.5rem;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
-      font-size: 1.2rem;
-      z-index: 9999;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.6s ease;
-    }
-    #startup-overlay.visible {
-      opacity: 1;
-      pointer-events: auto;
-    }
-    #startup-overlay span {
-      display: block;
+		#right-panel {
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			width: 30%;
+			max-width: 450px;
+			min-width: 280px;
+			background-color: #111;
+			color: #ffffff;
+			z-index: 2;
+			display: flex;
+			flex-direction: column;
+			pointer-events: auto;
+		}
+
+		#title-bar {
+			background-color: #222;
+			padding: 10px 15px;
+			border-bottom: 1px solid #444;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		#title-bar h1 {
+			font-size: 18px;
+			margin: 0;
+		}
+
+		#title-bar #total-count {
+			font-size: 14px;
+			color: #888;
+		}
+
+		#filter-bar {
+			padding: 10px 15px;
+			background-color: #1a1a1a;
+			border-bottom: 1px solid #333;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+		}
+
+		#filter-bar select,
+		#filter-bar input {
+			background-color: #222;
+			color: #fff;
+			border: 1px solid #444;
+			border-radius: 4px;
+			padding: 4px 6px;
+			font-size: 13px;
+		}
+
+		#filter-bar input {
+			flex: 1 1 120px;
+		}
+
+		#filter-bar select {
+			flex: 0 0 110px;
+		}
+
+		#location-details {
+			flex: 1;
+			padding: 10px 15px;
+			overflow-y: auto;
+		}
+
+		.location-title {
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+
+		.location-meta {
+			font-size: 12px;
+			color: #999;
+			margin-bottom: 10px;
+		}
+
+		.location-description {
+			font-size: 13px;
+			line-height: 1.4;
+			margin-bottom: 10px;
+		}
+
+		.location-video {
+			margin-top: 10px;
+		}
+
+		.location-video a {
+			color: #7fb3ff;
+			text-decoration: none;
+			font-size: 13px;
+		}
+
+		.location-video a:hover {
+			text-decoration: underline;
+		}
+
+		#credits {
+			font-size: 11px;
+			color: #777;
+			padding: 8px 15px;
+			border-top: 1px solid #333;
+			background-color: #181818;
+		}
+
+		#credits a {
+			color: #999;
+			text-decoration: none;
+		}
+
+		#credits a:hover {
+			color: #fff;
+			text-decoration: underline;
+		}
+
+		@media (max-width: 900px) {
+			#right-panel {
+				width: 100%;
+				max-width: none;
+				height: 45%;
+				top: auto;
+				bottom: 0;
+			}
+
+			#map {
+				height: 55%;
+			}
+		}
+
+		@media (max-width: 600px) {
+			#title-bar h1 {
+				font-size: 14px;
+			}
+
+			#filter-bar {
+				padding: 8px 10px;
+			}
+		}
+
+		.leaflet-popup-content-wrapper {
+			background: #111;
+			color: #ddd;
+			border-radius: 8px;
+		}
+
+		.leaflet-popup-tip {
+			background: #111;
+		}
+
+		.popup-title {
+			font-weight: bold;
+			margin-bottom: 5px;
+			font-size: 14px;
+		}
+
+		.popup-description {
+			font-size: 12px;
+			line-height: 1.3;
+		}
+
+		.popup-video-link {
+			margin-top: 8px;
+			display: block;
+			font-size: 12px;
+			color: #7fb3ff;
+			text-decoration: none;
+		}
+
+		.popup-video-link:hover {
+			text-decoration: underline;
+		}
+
+		#search-input::-webkit-input-placeholder {
+			color: #666;
+		}
+
+		#search-input:-moz-placeholder {
+			color: #666;
+		}
+
+		#search-input::-moz-placeholder {
+			color: #666;
+		}
+
+		#search-input:-ms-input-placeholder {
+			color: #666;
+		}
+
+		#search-input::placeholder {
+			color: #666;
+		}
+
+		.leaflet-control-attribution {
+			display: none;
+		}
+
+		body {
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+		}
+
+		body::-webkit-scrollbar {
+			display: none;
+		}
+
+		#search-input {
+			width: 100%;
+		}
+
+		select {
+			max-width: 120px;
+		}
+
+		html,
+		body {
+			background-color: #000 !important;
+		}
+
+		#zoom-in,
+		#zoom-out {
+			position: absolute;
+			z-index: 3;
+			right: 10px;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			border: none;
+			background-color: rgba(0,0,0,0.7);
+			color: #fff;
+			cursor: pointer;
+			font-size: 20px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		#zoom-in {
+			top: 10px;
+		}
+
+		#zoom-out {
+			top: 52px;
+		}
+
+		#zoom-in:hover,
+		#zoom-out:hover {
+			background-color: rgba(255,255,255,0.1);
+		}
+
+		.leaflet-control-container .leaflet-top.leaflet-left .leaflet-control-zoom {
+			display: none !important;
+		}
+
+		#right-panel span {
+			color: #888;
+		}
+
+		.highlighted {
+			background-color: rgba(255,255,0,0.1);
+		}
+
+		#hint {
+			font-size: 12px;
+			color: #777;
+			padding: 4px 15px 8px 15px;
+			border-bottom: 1px solid #333;
+			background-color: #151515;
+		}
+
+		#hint span {
+			color: #aaa;
+		}
+
+		#map {
+			touch-action: none;
+		}
+
+		a {
+			color: #7fb3ff;
+		}
+
+		a:hover {
+			color: #a4c8ff;
+		}
+
+		/* Overlay de inicio */
+		#startup-overlay {
+			position: fixed;
+			inset: 0;
+			background: rgba(0, 0, 0, 0.9);
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 1.5rem;
+			font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+				sans-serif;
+			font-size: 1.2rem;
+			z-index: 9999;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 0.6s ease;
+		}
+		#startup-overlay.visible {
+			opacity: 1;
+			pointer-events: auto;
+		}
+		#startup-overlay span {
+			display: block;
+			max-width: 480px;
+			line-height: 1.5;
+		}
+	</style>
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+		integrity="sha256-sA+e2at/6M8zHnHnS8E1A6LJbG3p3pbt2J0iC6tWSw="
+		crossorigin=""/>
+</head>
+
+<body>
+	<div id="map"></div>
+
+	<div id="right-panel">
+		<div id="title-bar">
+			<h1>Mapa de Lugares Malditos</h1>
+			<div id="total-count">0 lugares</div>
+		</div>
+		<div id="hint">
+			<span>Consejo:</span> Usa el buscador o filtra por país para encontrar lugares malditos concretos.
+		</div>
+		<div id="filter-bar">
+			<select id="country-filter">
+				<option value="">Todos los países</option>
+			</select>
+			<input type="text" id="search-input" placeholder="Buscar por nombre, descripción..." />
+		</div>
+		<div id="location-details">
+			<div class="location-title">Selecciona un marcador</div>
+			<div class="location-meta">Haz clic en un marcador del mapa para ver los detalles aquí.</div>
+			<div class="location-description">
+				Este mapa recopila manicomios, pueblos fantasma, hospitales abandonados y otros lugares malditos de todo el mundo.
+			</div>
+		</div>
+		<div id="credits">
+			Hecho con 🖤 para mapas y lugares oscuros |
+			Datos compilados manualmente |
+			Mapa: © <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener">OpenStreetMap</a> contributors
+		</div>
+	</div>
+
+	<!-- Overlay de inicio -->
+	<div id="startup-overlay" aria-hidden="true">
+		<span></span>
+	</div>
+
+	<button id="zoom-in">+</button>
+	<button id="zoom-out">−</button>
+
+	<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+		integrity="sha256-nPLb7G8G92Lh0bXnH3UX0rDhmG8I5pIeSue2FY0zMQ8="
+		crossorigin=""></script>
+
+	<script>
+		const map = L.map('map', {
+			worldCopyJump: true
+		}).setView([20, 0], 2);
+
+		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+			maxZoom: 19
+		}).addTo(map);
+
+		document.getElementById('zoom-in').addEventListener('click', () => {
+			map.zoomIn();
+		});
+		document.getElementById('zoom-out').addEventListener('click', () => {
+			map.zoomOut();
+		});
+
+		let hotspots = [];
+		let markers = [];
+		let markerGroup = L.layerGroup().addTo(map);
+
+		const countryFilter = document.getElementById('country-filter');
+		const searchInput = document.getElementById('search-input');
+		const totalCountEl = document.getElementById('total-count');
+		const locationDetails = document.getElementById('location-details');
+
+		function renderDetails(hotspot) {
+			locationDetails.innerHTML = '';
+
+			const titleEl = document.createElement('div');
+			titleEl.className = 'location-title';
+			titleEl.textContent = hotspot.name;
+
+			const metaEl = document.createElement('div');
+			metaEl.className = 'location-meta';
+			metaEl.textContent = `Coordenadas: ${hotspot.lat}, ${hotspot.lng}`;
+
+			const descEl = document.createElement('div');
+			descEl.className = 'location-description';
+			descEl.textContent = hotspot.description;
+
+			locationDetails.appendChild(titleEl);
+			locationDetails.appendChild(metaEl);
+			locationDetails.appendChild(descEl);
+
+			if (hotspot.video) {
+				const videoEl = document.createElement('div');
+				videoEl.className = 'location-video';
+				const a = document.createElement('a');
+				a.href = hotspot.video;
+				a.target = '_blank';
+				a.rel = 'noopener';
+				a.textContent = 'Ver vídeo / fuente relacionada';
+				videoEl.appendChild(a);
+				locationDetails.appendChild(videoEl);
+			}
+		}
+
+		function createPopupContent(hotspot) {
+			const container = document.createElement('div');
+			const titleEl = document.createElement('div');
+			titleEl.className = 'popup-title';
+			titleEl.textContent = hotspot.name;
+
+			const descEl = document.createElement('div');
+			descEl.className = 'popup-description';
+			descEl.textContent = hotspot.description;
+
+			container.appendChild(titleEl);
+			container.appendChild(descEl);
+
+			if (hotspot.video) {
+				const link = document.createElement('a');
+				link.href = hotspot.video;
+				link.target = '_blank';
+				link.rel = 'noopener';
+				link.className = 'popup-video-link';
+				link.textContent = 'Ver vídeo / fuente';
+				container.appendChild(link);
+			}
+
+			return container;
+		}
+
+		function extractCountry(name) {
+			const match = name.match(/\(([^)]+)\)\s*$/);
+			if (!match) return '';
+			const country = match[1].trim().toUpperCase();
+			if (country.startsWith('ESTADOS UNIDOS')) return 'ESTADOS UNIDOS';
+			if (country.startsWith('REINO UNIDO')) return 'REINO UNIDO';
+			if (country.startsWith('RUSIA')) return 'RUSIA';
+			return country;
+		}
+
+		function populateCountryFilter(hotspots) {
+			const countries = new Set();
+			hotspots.forEach(h => {
+				const c = extractCountry(h.name);
+				if (c) countries.add(c);
+			});
+
+			const sorted = Array.from(countries).sort((a, b) => a.localeCompare(b, 'es'));
+			sorted.forEach(c => {
+				const opt = document.createElement('option');
+				opt.value = c;
+				opt.textContent = c;
+				countryFilter.appendChild(opt);
+			});
+		}
+
+		function applyFilters() {
+			const countryVal = countryFilter.value.trim().toUpperCase();
+			const searchVal = searchInput.value.trim().toLowerCase();
+
+			markerGroup.clearLayers();
+			markers = [];
+
+			let filtered = hotspots.filter(h => {
+				const country = extractCountry(h.name);
+				if (countryVal && country !== countryVal) return false;
+
+				if (searchVal) {
+					const text = (h.name + ' ' + h.description).toLowerCase();
+					if (!text.includes(searchVal)) return false;
+				}
+				return true;
+			});
+
+			filtered.forEach(h => {
+				const marker = L.marker([h.lat, h.lng]);
+				marker.bindPopup(createPopupContent(h));
+				marker.on('click', () => renderDetails(h));
+				markerGroup.addLayer(marker);
+				markers.push(marker);
+			});
+
+			totalCountEl.textContent = `${filtered.length} lugares`;
+
+			if (filtered.length > 0) {
+				const first = filtered[0];
+				map.setView([first.lat, first.lng], 5);
+				renderDetails(first);
+			} else {
+				locationDetails.innerHTML = `
+					<div class="location-title">Sin resultados</div>
+					<div class="location-description">Prueba a cambiar el país o el texto de búsqueda.</div>
+				`;
+			}
+		}
+
+		fetch('hotspots.json')
+			.then(response => response.json())
+			.then(data => {
+				hotspots = data;
+				populateCountryFilter(hotspots);
+				applyFilters();
+			})
+			.catch(err => {
+				console.error('Error cargando hotspots.json:', err);
+				locationDetails.innerHTML = `
+					<div class="location-title">Error</div>
+					<div class="location-description">
+						No se pudieron cargar las localizaciones. Asegúrate de que el archivo hotspots.json está accesible.
+					</div>
+				`;
+			});
+
+		countryFilter.addEventListener('change', applyFilters);
+		searchInput.addEventListener('input', () => {
+			clearTimeout(searchInput._t);
+			searchInput._t = setTimeout(applyFilters, 250);
+		});
+	</script>
+
+	<!-- Script overlay: contar hotspots y mostrar mensaje solo la primera vez -->
+	<script>
+		(async () => {
+			try {
+				// solo primera vez
+				if (localStorage.getItem("seenIntroLocations") === "1") return;
+
+				const overlay = document.getElementById("startup-overlay");
+				if (!overlay) return;
+				const overlayText = overlay.querySelector("span");
+
+				const res = await fetch("hotspots.json", { cache: "no-store" });
+				if (!res.ok) throw new Error("No se pudo cargar hotspots.json en overlay");
+				const data = await res.json();
+
+				let count = 0;
+				if (Array.isArray(data)) {
+					count = data.length;
+				} else if (data && typeof data === "object") {
+					count = Object.keys(data).length;
+				}
+
+				overlayText.textContent =
+					count > 0
+						? `Actualmente hay ${count} localizaciones malditas en el mapa.`
+						: "Cargando localizaciones malditas en el mapa...";
+
+				requestAnimationFrame(() => {
+					overlay.classList.add("visible");
+				});
+
+				setTimeout(() => {
+					overlay.classList.remove("visible");
+					setTimeout(() => overlay.remove(), 700);
+				}, 1500);
+
+				localStorage.setItem("seenIntroLocations", "1");
+			} catch (err) {
+				console.error("Error overlay inicio:", err);
+				const overlay = document.getElementById("startup-overlay");
+				if (overlay) overlay.remove();
+			}
+		})();
+	</script>
+</body>
+</html>
       max-width: 480px;
       line-height: 1.5;
     }
