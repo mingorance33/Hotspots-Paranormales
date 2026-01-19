@@ -581,6 +581,31 @@
       return found ? tagsHTML : "";
     }
 
+    // --------- NUEVO: compartir al portapapeles ---------
+    const BASE_URL = "https://mapaparanormal.netlify.app";
+    const ZOOM_COMPARTIR = 18;
+
+    function copiarAlPortapapeles(texto) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(texto)
+          .then(() => alert("Enlace copiado al portapapeles"))
+          .catch(() => alert("No se pudo copiar el enlace"));
+      } else {
+        const input = document.createElement("input");
+        input.value = texto;
+        document.body.appendChild(input);
+        input.select();
+        try {
+          document.execCommand("copy");
+          alert("Enlace copiado al portapapeles");
+        } catch (e) {
+          alert("No se pudo copiar el enlace");
+        }
+        document.body.removeChild(input);
+      }
+    }
+    // ----------------------------------------------------
+
     // Popup con nuevo botón Compartir
     function crearPopup(h) {
       const dict = t[lang] || t.es;
@@ -622,10 +647,12 @@
         </a>
       `;
 
-      // NUEVO: botón para abrir tu mapa paranormal centrado en ese punto
-      const shareUrl = `https://mapaparanormal.netlify.app/?lat=${h.lat}&lng=${h.lng}&zoom=17`;
+      // NUEVO: botón que copia enlace al portapapeles con zoom cercano
+      const shareUrl = `${BASE_URL}/?lat=${h.lat}&lng=${h.lng}&zoom=${ZOOM_COMPARTIR}`;
       const btnShare = `
-        <a href="${shareUrl}" target="_blank" class="btn-popup btn-maps">
+        <a href="javascript:void(0)" 
+           onclick="copiarAlPortapapeles('${shareUrl}')"
+           class="btn-popup btn-maps">
           ${dict.btnShare}
         </a>
       `;
