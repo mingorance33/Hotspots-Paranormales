@@ -467,10 +467,12 @@
     if (!isNaN(params.lat) && !isNaN(params.lng)) {
       const z = !isNaN(params.zoom) ? params.zoom : 17;
       map.setView([params.lat, params.lng], z);
+    } else {
+      // Solo si NO hay parámetros, usar geolocalización
+      map.locate({ setView: true, maxZoom: 10 });
     }
 
-    // Geolocalización
-    map.locate({ setView: true, maxZoom: 10 });
+    // Geolocalización (sin cambiar vista si ya está centrada por parámetros)
     map.on("locationfound", function (e) {
       L.circle(e.latlng, {
         radius: e.accuracy / 2,
