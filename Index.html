@@ -651,7 +651,8 @@
       }
 
       const tags = generarTags(h.description);
-      const gMapsUrl = `https://www.google.com/maps/search?api=1&query=${h.lat},${h.lng}`;
+     // const gMapsUrl = `https://www.google.com/maps/search?api=1&query=${h.lat},${h.lng}`;
+      const gMapsUrl = `https://www.google.com/maps/search/?api=1&query=${h.lat},${h.lng}`;
 
       const btnYT =
         h.video && h.video.trim() !== ""
