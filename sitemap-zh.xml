@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://mapaparanormal.netlify.app/zh</loc>
+    <xhtml:link rel="alternate" hreflang="es"
+                href="https://mapaparanormal.netlify.app" />
+    <xhtml:link rel="alternate" hreflang="en"
+                href="https://mapaparanormal.netlify.app/en" />
+    <xhtml:link rel="alternate" hreflang="vi"
+                href="https://mapaparanormal.netlify.app/vi" />
+    <xhtml:link rel="alternate" hreflang="zh"
+                href="https://mapaparanormal.netlify.app/zh" />
+    <xhtml:link rel="alternate" hreflang="x-default"
+                href="https://mapaparanormal.netlify.app" />
+  </url>
+
+</urlset>
