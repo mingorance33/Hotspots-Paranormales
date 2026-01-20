@@ -9,4 +9,7 @@
   <sitemap>
     <loc>https://mapaparanormal.netlify.app/sitemap-vi.xml</loc>
   </sitemap>
+  <sitemap>
+    <loc>https://mapaparanormal.netlify.app/sitemap-zh.xml</loc>
+  </sitemap>
 </sitemapindex>
